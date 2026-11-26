@@ -7,12 +7,14 @@ on:
       - 'sync-live-*'
       - 'basic-rules-test-*'
       - 'basic-rules-live-*'
+      - 'price-rules-test-*'
+      - 'price-rules-live-*'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Modo de operação (fetch-and-transform | dry-run-push | live-push | basic-rules-test | basic-rules-live)'
+        description: 'Modo de operação'
         required: true
-        default: 'basic-rules-test'
+        default: 'price-rules-test'
         type: choice
         options:
           - fetch-and-transform
@@ -20,6 +22,8 @@ on:
           - live-push
           - basic-rules-test
           - basic-rules-live
+          - price-rules-test
+          - price-rules-live
       overwrite:
         description: 'Reescrever descrições/SEO já preenchidos?'
         required: false
@@ -64,6 +68,10 @@ jobs:
         if: ${{ startsWith(github.ref, 'refs/tags/basic-rules-') || inputs.mode == 'basic-rules-test' || inputs.mode == 'basic-rules-live' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-basic-rules
 
+      - name: Aplicar Regras de Preço (Relógios + Demais 150%)
+        if: ${{ startsWith(github.ref, 'refs/tags/price-rules-') || inputs.mode == 'price-rules-test' || inputs.mode == 'price-rules-live' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules
+
       - name: Transformar Conteúdo Rico (HTML + Specs + SEO)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-') || inputs.mode == 'fetch-and-transform' || inputs.mode == 'live-push' }}
         run: |
@@ -77,9 +85,17 @@ jobs:
         if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push
 
+      - name: Validar Envio de Preços (Dry-Run Push Prices)
+        if: ${{ startsWith(github.ref, 'refs/tags/price-rules-test-') || inputs.mode == 'price-rules-test' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices
+
       - name: Executar Atualização Real na Yampi (Live Push)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute
+
+      - name: Executar Atualização Real de Preços na Yampi (Live Push Prices)
+        if: ${{ startsWith(github.ref, 'refs/tags/price-rules-live-') || inputs.mode == 'price-rules-live' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices --execute
 
       - name: Commitar Catálogo de Staging Atualizado no Repositório
         run: |
@@ -87,4 +103,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/staging/
           git diff --staged --quiet || git commit -m "chore(catalog): sync staging snapshot with Yampi API v2"
+          git pull --rebase origin main
           git push origin HEAD:main

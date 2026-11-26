@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Yampi Catalog Batch Updater (Bling-Safe Pipeline)
 =================================================
@@ -347,6 +347,10 @@ class YampiClient:
     def update_product(self, product_id: int, payload: Dict[str, Any]) -> Dict[str, Any]:
         """Executa `PUT /catalog/products/{id}` atualizando o produto na Yampi."""
         return self.request("PUT", f"catalog/products/{product_id}", payload=payload)
+
+    def update_sku(self, sku_id: int, payload: Dict[str, Any]) -> Dict[str, Any]:
+        """Executa `PUT /catalog/skus/{id}` atualizando preço/dados do SKU na Yampi."""
+        return self.request("PUT", f"catalog/skus/{sku_id}", payload=payload)
 
 
 # ---------------------------------------------------------------------------
@@ -1012,6 +1016,143 @@ def cmd_apply_basic_rules(
     return changed_count
 
 
+
+
+def compute_target_sale_price(snapshot: Dict[str, Any], sku_entry: Dict[str, Any]) -> float:
+    """
+    Calcula o novo `price_sale` conforme as regras de precificação:
+    - Relógios Rolex, Hublot, Audemars Piguet (AP), Patek: R$ 499,00
+    - Relógios Omega, Bvlgari/Bulgari, Montblanc: R$ 429,00
+    - Demais relógios: R$ 399,00
+    - Outros produtos (perfumes, pulseiras, colares): +150% sobre o `price_cost` (cost * 2.50)
+    """
+    name = (snapshot.get("name") or "").lower()
+    bling = snapshot.get("bling_link_readonly") or {}
+    root_sku = (bling.get("root_sku") or sku_entry.get("sku") or "").upper()
+    cat_ids = bling.get("category_ids") or []
+    is_watch = (8245303 in cat_ids) or ("relógio" in name) or ("relogio" in name)
+
+    if is_watch:
+        if any(k in name for k in ("rolex", "hublot", "audemars", "patek")) or root_sku.startswith(("RX-", "HB-", "AP-", "PP-")):
+            return 499.00
+        if any(k in name for k in ("omega", "bvlgari", "bulgari", "montblanc")) or root_sku.startswith(("OG-", "BV-", "MB-")):
+            return 429.00
+        return 399.00
+
+    cost = float(sku_entry.get("price_cost") or 0.0)
+    if cost > 0:
+        return round(cost * 2.50, 2)
+    return float(sku_entry.get("price_sale") or 0.0)
+
+
+def cmd_apply_price_rules(staging_file: Path) -> int:
+    """
+    Calcula os novos preços de venda em lote para todos os SKUs do manifesto local
+    e marca `price_update_ready = True` preservando `price_cost` e vínculo Bling.
+    """
+    if not staging_file.exists():
+        raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+
+    staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
+    snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
+
+    sku_count = 0
+    for snap in snapshots:
+        bling = snap.get("bling_link_readonly") or {}
+        skus = bling.get("skus") or []
+        for s in skus:
+            new_sale = compute_target_sale_price(snap, s)
+            s["target_price_sale"] = new_sale
+            s["target_price_discount"] = 0.0
+            sku_count += 1
+        snap["price_update_ready"] = bool(skus)
+
+    staging_data["price_rules_applied_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    staging_data["ready_to_push_prices_count"] = sku_count
+    staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    logger.info("Regras de preço aplicadas em %d SKUs em '%s'.", sku_count, staging_file)
+    return sku_count
+
+
+def cmd_push_prices(
+    client: YampiClient,
+    staging_file: Path,
+    execute_live: bool = False,
+    backup_dir: Path = Path("backups_yampi"),
+) -> Dict[str, Any]:
+    """
+    Envia `PUT /catalog/skus/{sku_id}` atualizando `price_sale` e `price_discount`
+    enquanto preserva `product_id`, `sku`, `price_cost` e `erp_id`.
+    """
+    if not staging_file.exists():
+        raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+
+    staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
+    snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
+
+    sku_tasks = []
+    for snap in snapshots:
+        if not snap.get("price_update_ready"):
+            continue
+        pid = snap["product_id"]
+        for s in snap.get("bling_link_readonly", {}).get("skus", []):
+            if "target_price_sale" in s and s.get("id"):
+                sku_tasks.append((snap, s, pid))
+
+    if not sku_tasks:
+        logger.info("Nenhum SKU marcado com `price_update_ready` para atualizar.")
+        return {"total_skus": 0, "updated": 0, "failed": 0, "dry_run": not execute_live}
+
+    timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    backup_path = backup_dir / f"yampi_prices_backup_{timestamp}.json"
+    backup_path.write_text(
+        json.dumps([{"product_id": pid, "sku": s} for _, s, pid in sku_tasks], indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    updated = 0
+    failed = 0
+    for idx, (snap, s, pid) in enumerate(sku_tasks, start=1):
+        sku_id = s["id"]
+        cost = float(s.get("price_cost") or 0.0)
+        new_sale = float(s["target_price_sale"])
+        payload = {
+            "product_id": pid,
+            "sku": s.get("sku"),
+            "price_cost": cost,
+            "price_sale": new_sale,
+            "price_discount": float(s.get("target_price_discount", 0.0)),
+        }
+        if not execute_live:
+            logger.info(
+                "[DRY-RUN SKU %d/%d] PUT /catalog/skus/%s (Produto: %s | Custo: %.2f -> Venda: %.2f)",
+                idx, len(sku_tasks), sku_id, snap.get("name"), cost, new_sale,
+            )
+            continue
+
+        try:
+            logger.info(
+                "[LIVE SKU %d/%d] Atualizando SKU %s (%s): R$ %.2f -> R$ %.2f",
+                idx, len(sku_tasks), sku_id, s.get("sku"), float(s.get("price_sale") or 0.0), new_sale,
+            )
+            client.update_sku(sku_id, payload)
+            s["price_sale"] = new_sale
+            s["price_discount"] = payload["price_discount"]
+            snap["price_update_ready"] = False
+            snap["last_price_pushed_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+            updated += 1
+        except Exception as exc:
+            failed += 1
+            logger.error("Erro ao atualizar SKU %s (%s): %s", sku_id, s.get("sku"), exc)
+
+    if execute_live:
+        staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    logger.info("Resumo preços: total=%d | atualizados=%d | falhas=%d | dry_run=%s", len(sku_tasks), updated, failed, not execute_live)
+    return {"total_skus": len(sku_tasks), "updated": updated, "failed": failed, "dry_run": not execute_live}
+
+
 # ---------------------------------------------------------------------------
 # Autoteste Offline (Valida o Pipeline e a Proteção de Vínculo com o Bling)
 # ---------------------------------------------------------------------------
@@ -1173,6 +1314,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
     rules_parser.add_argument("--watch-category-id", type=int, default=8245303)
     rules_parser.add_argument("--min-stock", type=int, default=4)
 
+    # Subcomando: apply-price-rules
+    subparsers.add_parser("apply-price-rules", help="Calcula novos preços em lote para relógios e demais itens.")
+    # Subcomando: push-prices
+    pp_parser = subparsers.add_parser("push-prices", help="Envia atualização de preços via PUT /catalog/skus/{id}.")
+    pp_parser.add_argument("--execute", action="store_true", help="Executa o PUT real nos SKUs.")
+
     # Subcomando: push
     push_parser = subparsers.add_parser(
         "push",
@@ -1211,6 +1358,10 @@ def main(argv: Optional[List[str]] = None) -> int:
         )
         return 0
 
+    if args.command == "apply-price-rules":
+        cmd_apply_price_rules(staging_file=staging_path)
+        return 0
+
     if args.command == "apply-basic-rules":
         cmd_apply_basic_rules(
             staging_file=staging_path,
@@ -1243,6 +1394,8 @@ def main(argv: Optional[List[str]] = None) -> int:
             watch_category_id=args.watch_category_id,
             min_active_stock=args.min_stock,
         )
+    elif args.command == "push-prices":
+        cmd_push_prices(client=client, staging_file=staging_path, execute_live=args.execute)
     elif args.command == "push":
         cmd_push(
             client=client,
