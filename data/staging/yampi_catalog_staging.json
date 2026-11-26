@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T18:09:44.145922+00:00",
+  "fetched_at": "2026-11-26T18:50:07.518114+00:00",
   "merchant_alias": "boutique-br",
   "total_products": 275,
   "products": [
@@ -185,8 +185,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608817,
@@ -370,8 +369,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608818,
@@ -555,8 +553,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608819,
@@ -740,8 +737,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608820,
@@ -925,8 +921,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608821,
@@ -1110,8 +1105,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608822,
@@ -1138,17 +1132,15 @@
             "id": 307407368,
             "sku": "AX-2010",
             "erp_id": "16729483141",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.14,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -1262,7 +1254,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -1284,7 +1276,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:36:03.000000",
+                "date": "2026-11-26 15:09:44.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -1297,9 +1289,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:44.758232+00:00"
+      }
     },
     {
       "product_id": 46608823,
@@ -1326,17 +1316,15 @@
             "id": 307407369,
             "sku": "AX-2000",
             "erp_id": "16729483140",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.14,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -1450,7 +1438,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -1472,7 +1460,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:36:06.000000",
+                "date": "2026-11-26 15:09:46.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -1485,9 +1473,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:46.994322+00:00"
+      }
     },
     {
       "product_id": 46608824,
@@ -1671,8 +1657,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608826,
@@ -1856,8 +1841,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608827,
@@ -2028,8 +2012,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608828,
@@ -2200,8 +2183,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608829,
@@ -2372,8 +2354,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608830,
@@ -2544,8 +2525,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608831,
@@ -2716,8 +2696,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608832,
@@ -2744,17 +2723,15 @@
             "id": 307407378,
             "sku": "TH-1020",
             "erp_id": "16722769521",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 0,
             "weight": 0.13,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 5,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -2868,7 +2845,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 0,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -2890,7 +2867,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:36:23.000000",
+                "date": "2026-11-26 15:09:49.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -2903,9 +2880,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:49.201500+00:00"
+      }
     },
     {
       "product_id": 46608833,
@@ -2932,17 +2907,15 @@
             "id": 307407379,
             "sku": "TH-1010",
             "erp_id": "16722769519",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 0,
             "weight": 0.13,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 9,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -3056,7 +3029,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 0,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -3078,7 +3051,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:36:26.000000",
+                "date": "2026-11-26 15:09:51.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -3091,9 +3064,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:51.482431+00:00"
+      }
     },
     {
       "product_id": 46608834,
@@ -3120,17 +3091,15 @@
             "id": 307407380,
             "sku": "TH-1000",
             "erp_id": "16722769518",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 160,
             "weight": 0.13,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 6,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -3244,7 +3213,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 160,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -3266,7 +3235,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:36:28.000000",
+                "date": "2026-11-26 15:09:53.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -3279,9 +3248,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:53.726779+00:00"
+      }
     },
     {
       "product_id": 46608835,
@@ -3465,8 +3432,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608836,
@@ -3650,8 +3616,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608837,
@@ -3835,8 +3800,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608838,
@@ -4020,8 +3984,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608839,
@@ -4205,8 +4168,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608840,
@@ -4390,8 +4352,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608841,
@@ -4575,8 +4536,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608842,
@@ -4760,8 +4720,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608843,
@@ -4945,8 +4904,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608844,
@@ -5130,8 +5088,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608845,
@@ -5315,8 +5272,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608846,
@@ -5500,8 +5456,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608847,
@@ -5685,8 +5640,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608848,
@@ -5870,8 +5824,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608849,
@@ -6055,8 +6008,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608850,
@@ -6240,8 +6192,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608851,
@@ -6425,8 +6376,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608852,
@@ -6610,8 +6560,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608854,
@@ -6795,8 +6744,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608855,
@@ -6980,8 +6928,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608856,
@@ -7165,8 +7112,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608857,
@@ -7350,8 +7296,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608858,
@@ -7535,8 +7480,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608859,
@@ -7720,8 +7664,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608860,
@@ -7905,8 +7848,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608861,
@@ -8090,8 +8032,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608862,
@@ -8275,8 +8216,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608863,
@@ -8460,8 +8400,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608864,
@@ -8645,8 +8584,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608865,
@@ -8830,8 +8768,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608866,
@@ -9015,8 +8952,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608867,
@@ -9200,8 +9136,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608868,
@@ -9385,8 +9320,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608869,
@@ -9570,8 +9504,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608870,
@@ -9755,8 +9688,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608871,
@@ -9940,8 +9872,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608872,
@@ -10125,8 +10056,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608873,
@@ -10310,8 +10240,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608874,
@@ -10495,8 +10424,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608875,
@@ -10680,8 +10608,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608877,
@@ -10865,8 +10792,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608879,
@@ -11050,8 +10976,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608880,
@@ -11235,8 +11160,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608881,
@@ -11420,8 +11344,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608882,
@@ -11605,8 +11528,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608883,
@@ -11790,8 +11712,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608884,
@@ -11975,8 +11896,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608885,
@@ -12160,8 +12080,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608886,
@@ -12345,8 +12264,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608887,
@@ -12530,8 +12448,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608888,
@@ -12715,8 +12632,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608889,
@@ -12900,8 +12816,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608890,
@@ -13085,8 +13000,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608891,
@@ -13270,8 +13184,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608892,
@@ -13455,8 +13368,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608893,
@@ -13640,8 +13552,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608894,
@@ -13825,8 +13736,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608895,
@@ -14010,8 +13920,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608896,
@@ -14195,8 +14104,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608897,
@@ -14380,8 +14288,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608898,
@@ -14565,8 +14472,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608899,
@@ -14750,8 +14656,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608900,
@@ -14935,8 +14840,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608901,
@@ -15120,8 +15024,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608902,
@@ -15305,8 +15208,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608904,
@@ -15490,8 +15392,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608905,
@@ -15675,8 +15576,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608906,
@@ -15860,8 +15760,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608907,
@@ -16045,8 +15944,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608908,
@@ -16230,8 +16128,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608909,
@@ -16415,8 +16312,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608910,
@@ -16600,8 +16496,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608911,
@@ -16785,8 +16680,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608912,
@@ -16970,8 +16864,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608913,
@@ -17155,8 +17048,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608914,
@@ -17340,8 +17232,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608915,
@@ -17525,8 +17416,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608916,
@@ -17710,8 +17600,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608917,
@@ -17895,8 +17784,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608918,
@@ -18080,8 +17968,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608920,
@@ -18265,8 +18152,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608921,
@@ -18450,8 +18336,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608922,
@@ -18635,8 +18520,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608923,
@@ -18820,8 +18704,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608924,
@@ -19005,8 +18888,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608925,
@@ -19190,8 +19072,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608926,
@@ -19375,8 +19256,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608927,
@@ -19560,8 +19440,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608928,
@@ -19745,8 +19624,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608929,
@@ -19930,8 +19808,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608931,
@@ -20115,8 +19992,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608933,
@@ -20300,8 +20176,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608934,
@@ -20472,8 +20347,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608935,
@@ -20644,8 +20518,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608936,
@@ -20816,8 +20689,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608937,
@@ -20988,8 +20860,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608938,
@@ -21160,8 +21031,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608939,
@@ -21332,8 +21202,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608940,
@@ -21504,8 +21373,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608941,
@@ -21676,8 +21544,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608942,
@@ -21848,8 +21715,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608943,
@@ -22020,8 +21886,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608944,
@@ -22192,8 +22057,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608945,
@@ -22364,8 +22228,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608946,
@@ -22536,8 +22399,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608947,
@@ -22721,8 +22583,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608949,
@@ -22906,8 +22767,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608950,
@@ -23091,8 +22951,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608951,
@@ -23276,8 +23135,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608952,
@@ -23461,8 +23319,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608953,
@@ -23646,8 +23503,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608954,
@@ -23831,8 +23687,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608955,
@@ -24016,8 +23871,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608956,
@@ -24201,8 +24055,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608957,
@@ -24386,8 +24239,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608959,
@@ -24571,8 +24423,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608960,
@@ -24756,8 +24607,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608961,
@@ -24941,8 +24791,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608962,
@@ -25126,8 +24975,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608963,
@@ -25311,8 +25159,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608964,
@@ -25496,8 +25343,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608965,
@@ -25681,8 +25527,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608966,
@@ -25866,8 +25711,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608967,
@@ -26051,8 +25895,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608969,
@@ -26236,8 +26079,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608971,
@@ -26421,8 +26263,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608972,
@@ -26606,8 +26447,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608973,
@@ -26791,8 +26631,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608974,
@@ -26976,8 +26815,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608975,
@@ -27161,8 +26999,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608976,
@@ -27346,8 +27183,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608977,
@@ -27531,8 +27367,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608978,
@@ -27716,8 +27551,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608980,
@@ -27901,8 +27735,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608981,
@@ -28086,8 +27919,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608982,
@@ -28271,8 +28103,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608983,
@@ -28456,8 +28287,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608984,
@@ -28641,8 +28471,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608985,
@@ -28826,8 +28655,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608986,
@@ -29011,8 +28839,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608987,
@@ -29196,8 +29023,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608988,
@@ -29381,8 +29207,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608989,
@@ -29566,8 +29391,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608990,
@@ -29751,8 +29575,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608991,
@@ -29936,8 +29759,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608993,
@@ -30121,8 +29943,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608994,
@@ -30306,8 +30127,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608995,
@@ -30491,8 +30311,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608997,
@@ -30676,8 +30495,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608998,
@@ -30861,8 +30679,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46608999,
@@ -31046,8 +30863,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609000,
@@ -31231,8 +31047,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609001,
@@ -31416,8 +31231,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609002,
@@ -31601,8 +31415,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609003,
@@ -31786,8 +31599,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609004,
@@ -31971,8 +31783,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609005,
@@ -32156,8 +31967,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609006,
@@ -32341,8 +32151,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609007,
@@ -32369,17 +32178,15 @@
             "id": 307407616,
             "sku": "DS-1030",
             "erp_id": "16709871022",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.1,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 0,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -32493,7 +32300,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -32515,7 +32322,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:21.000000",
+                "date": "2026-11-26 15:09:55.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -32528,9 +32335,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:55.877402+00:00"
+      }
     },
     {
       "product_id": 46609008,
@@ -32557,17 +32362,15 @@
             "id": 307407617,
             "sku": "DS-1070",
             "erp_id": "16709871016",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 0,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -32681,7 +32484,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -32703,7 +32506,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:23.000000",
+                "date": "2026-11-26 15:09:57.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -32716,9 +32519,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:09:58.157862+00:00"
+      }
     },
     {
       "product_id": 46609009,
@@ -32745,17 +32546,15 @@
             "id": 307407618,
             "sku": "DS-1080",
             "erp_id": "16709871012",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 190,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -32869,7 +32668,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 190,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -32891,7 +32690,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:26.000000",
+                "date": "2026-11-26 15:10:00.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -32904,9 +32703,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:00.293718+00:00"
+      }
     },
     {
       "product_id": 46609010,
@@ -32933,17 +32730,15 @@
             "id": 307407619,
             "sku": "DS-1100",
             "erp_id": "16709871004",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33057,7 +32852,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -33079,7 +32874,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:28.000000",
+                "date": "2026-11-26 15:10:02.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -33092,9 +32887,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:02.572811+00:00"
+      }
     },
     {
       "product_id": 46609011,
@@ -33121,17 +32914,15 @@
             "id": 307407620,
             "sku": "DS-1130",
             "erp_id": "16709870998",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 3,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33245,7 +33036,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -33267,7 +33058,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:30.000000",
+                "date": "2026-11-26 15:10:04.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -33280,9 +33071,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:04.780686+00:00"
+      }
     },
     {
       "product_id": 46609012,
@@ -33309,17 +33098,15 @@
             "id": 307407621,
             "sku": "DS-1050",
             "erp_id": "16709870991",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33433,7 +33220,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -33455,7 +33242,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:32.000000",
+                "date": "2026-11-26 15:10:06.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -33468,9 +33255,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:06.981339+00:00"
+      }
     },
     {
       "product_id": 46609014,
@@ -33497,17 +33282,15 @@
             "id": 307407625,
             "sku": "DS-1110",
             "erp_id": "16709870986",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33621,7 +33404,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -33643,7 +33426,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:34.000000",
+                "date": "2026-11-26 15:10:09.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -33656,9 +33439,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:09.240716+00:00"
+      }
     },
     {
       "product_id": 46609015,
@@ -33685,17 +33466,15 @@
             "id": 307407626,
             "sku": "DS-1060",
             "erp_id": "16709870981",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 0,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33809,7 +33588,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -33831,7 +33610,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:37.000000",
+                "date": "2026-11-26 15:10:11.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -33844,9 +33623,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:11.433610+00:00"
+      }
     },
     {
       "product_id": 46609016,
@@ -33873,17 +33650,15 @@
             "id": 307407627,
             "sku": "DS-1090",
             "erp_id": "16709870977",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 0,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -33997,7 +33772,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34019,7 +33794,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:39.000000",
+                "date": "2026-11-26 15:10:13.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34032,9 +33807,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:13.722875+00:00"
+      }
     },
     {
       "product_id": 46609017,
@@ -34061,17 +33834,15 @@
             "id": 307407628,
             "sku": "DS-1040",
             "erp_id": "16709870975",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -34185,7 +33956,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34207,7 +33978,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:41.000000",
+                "date": "2026-11-26 15:10:15.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34220,9 +33991,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:15.920411+00:00"
+      }
     },
     {
       "product_id": 46609018,
@@ -34249,17 +34018,15 @@
             "id": 307407629,
             "sku": "DS-1120",
             "erp_id": "16709870972",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 1,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -34373,7 +34140,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34395,7 +34162,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:43.000000",
+                "date": "2026-11-26 15:10:17.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34408,9 +34175,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:18.118840+00:00"
+      }
     },
     {
       "product_id": 46609019,
@@ -34437,17 +34202,15 @@
             "id": 307407630,
             "sku": "DS-1140",
             "erp_id": "16709870971",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 1,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -34561,7 +34324,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34583,7 +34346,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:46.000000",
+                "date": "2026-11-26 15:10:20.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34596,9 +34359,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:20.320907+00:00"
+      }
     },
     {
       "product_id": 46609020,
@@ -34625,17 +34386,15 @@
             "id": 307407631,
             "sku": "DS-1150",
             "erp_id": "16709870968",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 170,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 0,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -34749,7 +34508,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 170,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34771,7 +34530,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:48.000000",
+                "date": "2026-11-26 15:10:22.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34784,9 +34543,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:22.596104+00:00"
+      }
     },
     {
       "product_id": 46609021,
@@ -34813,17 +34570,15 @@
             "id": 307407632,
             "sku": "DS-1010",
             "erp_id": "16709870966",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 0,
             "weight": 0.3,
             "height": 14,
             "width": 14,
             "length": 14,
             "total_in_stock": 10,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -34937,7 +34692,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 0,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 14,
               "height": 14,
@@ -34959,7 +34714,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:42:50.000000",
+                "date": "2026-11-26 15:10:24.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -34972,9 +34727,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:24.779089+00:00"
+      }
     },
     {
       "product_id": 46609022,
@@ -35145,8 +34898,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609023,
@@ -35317,8 +35069,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609024,
@@ -35502,8 +35253,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609025,
@@ -35687,8 +35437,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609026,
@@ -35872,8 +35621,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609027,
@@ -36057,8 +35805,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609028,
@@ -36242,8 +35989,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609029,
@@ -36427,8 +36173,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609030,
@@ -36612,8 +36357,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609031,
@@ -36797,8 +36541,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609032,
@@ -36982,8 +36725,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609033,
@@ -37167,8 +36909,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609034,
@@ -37352,8 +37093,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609035,
@@ -37537,8 +37277,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609036,
@@ -37722,8 +37461,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609037,
@@ -37907,8 +37645,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609038,
@@ -38092,8 +37829,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609040,
@@ -38277,8 +38013,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609041,
@@ -38462,8 +38197,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609042,
@@ -38647,8 +38381,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609043,
@@ -38832,8 +38565,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609045,
@@ -39017,8 +38749,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609046,
@@ -39202,8 +38933,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609047,
@@ -39387,8 +39117,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609048,
@@ -39572,8 +39301,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609049,
@@ -39757,8 +39485,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609050,
@@ -39942,8 +39669,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609051,
@@ -40127,8 +39853,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609052,
@@ -40312,8 +40037,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609053,
@@ -40497,8 +40221,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609054,
@@ -40682,8 +40405,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609055,
@@ -40867,8 +40589,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609056,
@@ -41052,8 +40773,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609057,
@@ -41237,8 +40957,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609058,
@@ -41422,8 +41141,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609059,
@@ -41607,8 +41325,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609060,
@@ -41792,8 +41509,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609062,
@@ -41977,8 +41693,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609063,
@@ -42162,8 +41877,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609064,
@@ -42347,8 +42061,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609065,
@@ -42532,8 +42245,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609066,
@@ -42717,8 +42429,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609067,
@@ -42902,8 +42613,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609069,
@@ -42930,17 +42640,15 @@
             "id": 307407692,
             "sku": "DS-2010",
             "erp_id": "16709870753",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 185,
             "weight": 0.18,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -43054,7 +42762,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 185,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -43076,7 +42784,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:44:28.000000",
+                "date": "2026-11-26 15:10:26.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -43089,9 +42797,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:26.952659+00:00"
+      }
     },
     {
       "product_id": 46609070,
@@ -43118,17 +42824,15 @@
             "id": 307407693,
             "sku": "DS-2020",
             "erp_id": "16709870747",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 185,
             "weight": 0.18,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -43242,7 +42946,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 185,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -43264,7 +42968,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:44:30.000000",
+                "date": "2026-11-26 15:10:29.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -43277,9 +42981,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:29.204001+00:00"
+      }
     },
     {
       "product_id": 46609071,
@@ -43463,8 +43165,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609072,
@@ -43648,8 +43349,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609073,
@@ -43833,8 +43533,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609074,
@@ -44018,8 +43717,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609075,
@@ -44203,8 +43901,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609076,
@@ -44388,8 +44085,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609077,
@@ -44573,8 +44269,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609078,
@@ -44758,8 +44453,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609079,
@@ -44943,8 +44637,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609080,
@@ -45128,8 +44821,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609081,
@@ -45313,8 +45005,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609082,
@@ -45498,8 +45189,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609083,
@@ -45683,8 +45373,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609084,
@@ -45868,8 +45557,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609085,
@@ -46053,8 +45741,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46609086,
@@ -46081,17 +45768,15 @@
             "id": 307407709,
             "sku": "AX-1010",
             "erp_id": "16709870687",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 175,
             "weight": 0.08,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -46205,7 +45890,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 175,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -46227,7 +45912,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:45:06.000000",
+                "date": "2026-11-26 15:10:31.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -46240,9 +45925,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:31.400747+00:00"
+      }
     },
     {
       "product_id": 46609087,
@@ -46269,17 +45952,15 @@
             "id": 307407710,
             "sku": "AX-1020",
             "erp_id": "16709870680",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 175,
             "weight": 0.08,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 2,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -46393,7 +46074,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 175,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -46415,7 +46096,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:45:08.000000",
+                "date": "2026-11-26 15:10:33.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -46428,9 +46109,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:33.609449+00:00"
+      }
     },
     {
       "product_id": 46757765,
@@ -46614,8 +46293,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757766,
@@ -46799,8 +46477,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757767,
@@ -46984,8 +46661,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757768,
@@ -47169,8 +46845,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757769,
@@ -47354,8 +47029,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757771,
@@ -47539,8 +47213,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757772,
@@ -47724,8 +47397,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757773,
@@ -47909,8 +47581,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757774,
@@ -48094,8 +47765,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757775,
@@ -48279,8 +47949,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757776,
@@ -48464,8 +48133,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757778,
@@ -48649,8 +48317,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757779,
@@ -48834,8 +48501,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757780,
@@ -49019,8 +48685,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757781,
@@ -49204,8 +48869,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757782,
@@ -49232,17 +48896,15 @@
             "id": 308264664,
             "sku": "TH-1040",
             "erp_id": "16734010905",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 160,
             "weight": 0.13,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 4,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -49356,7 +49018,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 160,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -49378,7 +49040,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:45:43.000000",
+                "date": "2026-11-26 15:10:35.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -49391,9 +49053,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:35.948440+00:00"
+      }
     },
     {
       "product_id": 46757783,
@@ -49420,17 +49080,15 @@
             "id": 308264665,
             "sku": "TH-1030",
             "erp_id": "16734010904",
-            "price_sale": 329.0,
-            "price_discount": 0.0,
+            "price_sale": 329,
+            "price_discount": 0,
             "price_cost": 160,
             "weight": 0.13,
             "height": 0,
             "width": 0,
             "length": 0,
             "total_in_stock": 4,
-            "variations": [],
-            "target_price_sale": 329.0,
-            "target_price_discount": 0.0
+            "variations": []
           }
         ]
       },
@@ -49544,7 +49202,7 @@
               "availability_soldout": -1,
               "days_availability_formated": "Imediata",
               "price_cost": 160,
-              "price_sale": 399,
+              "price_sale": 329,
               "price_discount": 0,
               "width": 0,
               "height": 0,
@@ -49566,7 +49224,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-26 14:45:46.000000",
+                "date": "2026-11-26 15:10:37.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -49579,9 +49237,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false,
-      "last_price_pushed_at": "2026-11-26T18:10:38.186622+00:00"
+      }
     },
     {
       "product_id": 46757784,
@@ -49765,8 +49421,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757785,
@@ -49950,8 +49605,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757786,
@@ -50135,8 +49789,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757787,
@@ -50320,8 +49973,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757788,
@@ -50505,8 +50157,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     },
     {
       "product_id": 46757789,
@@ -50690,10 +50341,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "price_update_ready": false
+      }
     }
-  ],
-  "price_rules_applied_at": "2026-11-26T18:09:44.284174+00:00",
-  "ready_to_push_prices_count": 25
+  ]
 }
