@@ -958,6 +958,8 @@ def cmd_transform(
             custom_ai_fn=ai_fn,
         ):
             updated_count += 1
+            if use_gemini:
+                staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
 
     staging_data["transformed_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
     staging_data["ready_to_push_count"] = sum(1 for s in snapshots if s.get("update_ready"))
@@ -1584,6 +1586,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
 
 
 
