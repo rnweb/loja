@@ -1,0 +1,11 @@
+# Ambientes e Segredos
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Backups locais temporários
+data/backups/*.json
+*.log
+.DS_Store

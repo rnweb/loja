@@ -1,0 +1,78 @@
+name: Yampi Catalog Batch Sync (Bling-Safe)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Modo de operação (fetch-and-transform | dry-run-push | live-push)'
+        required: true
+        default: 'fetch-and-transform'
+        type: choice
+        options:
+          - fetch-and-transform
+          - dry-run-push
+          - live-push
+      overwrite:
+        description: 'Reescrever descrições/SEO já preenchidos?'
+        required: false
+        default: false
+        type: boolean
+      store_name:
+        description: 'Nome da loja para sufixo de SEO Title'
+        required: false
+        default: ''
+        type: string
+  schedule:
+    # Executa automaticamente todo dia às 06:00 BRT (09:00 UTC) para enriquecer novos produtos vindos do Bling
+    - cron: '0 9 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  yampi-batch-sync:
+    runs-on: ubuntu-latest
+    env:
+      YAMPI_ALIAS: ${{ secrets.YAMPI_ALIAS }}
+      YAMPI_USER_TOKEN: ${{ secrets.YAMPI_USER_TOKEN }}
+      YAMPI_USER_SECRET_KEY: ${{ secrets.YAMPI_USER_SECRET_KEY }}
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validar Integridade Bling-Safe (Self-Test)
+        run: python3 scripts/yampi_batch_updater.py self-test
+
+      - name: Buscar Catálogo da Yampi (Fetch) e Transformar (Transform)
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'live-push' }}
+        run: |
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch
+          OVERWRITE_FLAG=""
+          if [ "${{ inputs.overwrite }}" = "true" ]; then
+            OVERWRITE_FLAG="--overwrite"
+          fi
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}"
+
+      - name: Validar Envio em Lote (Dry-Run Push)
+        if: ${{ inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' }}
+        run: |
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push
+
+      - name: Executar Atualização Real na Yampi (Live Push)
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'live-push' }}
+        run: |
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute
+
+      - name: Commitar Catálogo de Staging Atualizado no Repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/staging/
+          git diff --staged --quiet || git commit -m "chore(catalog): sync staging snapshot with Yampi API v2"
+          git push

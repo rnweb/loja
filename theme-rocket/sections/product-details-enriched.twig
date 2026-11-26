@@ -1,0 +1,13 @@
+{#
+  Seção do Tema Rocket: Detalhes e Especificações Estruturadas do Produto
+  Referência Yampi Editor de Código: https://docs.yampi.com.br/editor-codigo/intro
+  Renderiza descrição HTML, especificações técnicas (convertidas em tabela) e medidas
+  populadas em lote pelo pipeline `yampi_batch_updater.py`.
+#}
+<div class="holder-product-enriched" data-product-id="{{ product.id }}" data-product-sku="{{ product.sku }}">
+  <product-technical-specs
+    :description="{{ product.texts.description | json_encode | escape('html_attr') }}"
+    :specifications="{{ product.texts.specifications | json_encode | escape('html_attr') }}"
+    :measures="{{ product.texts.measures | json_encode | escape('html_attr') }}"
+  ></product-technical-specs>
+</div>
