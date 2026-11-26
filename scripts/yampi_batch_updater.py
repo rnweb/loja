@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Yampi Catalog Batch Updater (Bling-Safe Pipeline)
 =================================================
@@ -741,7 +741,7 @@ def build_bling_safe_put_payload(snapshot: Dict[str, Any]) -> Dict[str, Any]:
     if bling_info.get("brand_id") is not None:
         payload["brand_id"] = bling_info["brand_id"]
     if bling_info.get("category_ids"):
-        payload["categories"] = bling_info["category_ids"]
+        payload["categories_ids"] = bling_info["category_ids"]
 
     return payload
 
@@ -1093,7 +1093,7 @@ def run_self_test() -> None:
     assert put_payload["slug"] == "camiseta-oversized-algodao-egipcio", "O slug do produto foi alterado!"
     assert put_payload["ncm"] == "6109.10.00", "O NCM fiscal foi alterado!"
     assert put_payload["brand_id"] == 44, "O brand_id foi perdido!"
-    assert put_payload["categories"] == [12, 19], "Os IDs de categorias foram perdidos!"
+    assert put_payload["categories_ids"] == [12, 19], "Os IDs de categorias foram perdidos!"
     assert "skus" not in put_payload, "O payload de produto não deve sobrescrever a lista de SKUs/estoques do Bling!"
     assert "<h2>Camiseta Oversized Algodão Egípcio</h2>" in put_payload["description"]
     assert "Opções de Cor:" in put_payload["description"]
