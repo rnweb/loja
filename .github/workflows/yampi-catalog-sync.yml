@@ -5,17 +5,21 @@ on:
     tags:
       - 'sync-test-*'
       - 'sync-live-*'
+      - 'basic-rules-test-*'
+      - 'basic-rules-live-*'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Modo de operação (fetch-and-transform | dry-run-push | live-push)'
+        description: 'Modo de operação (fetch-and-transform | dry-run-push | live-push | basic-rules-test | basic-rules-live)'
         required: true
-        default: 'fetch-and-transform'
+        default: 'basic-rules-test'
         type: choice
         options:
           - fetch-and-transform
           - dry-run-push
           - live-push
+          - basic-rules-test
+          - basic-rules-live
       overwrite:
         description: 'Reescrever descrições/SEO já preenchidos?'
         required: false
@@ -53,10 +57,16 @@ jobs:
       - name: Validar Integridade Bling-Safe (Self-Test)
         run: python3 scripts/yampi_batch_updater.py self-test
 
-      - name: Buscar Catálogo da Yampi (Fetch) e Transformar (Transform)
+      - name: Buscar Catálogo da Yampi (Fetch)
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch
+
+      - name: Aplicar Regras Básicas (Categoria + Estoque < 4 + Nome da Descrição)
+        if: ${{ startsWith(github.ref, 'refs/tags/basic-rules-') || inputs.mode == 'basic-rules-test' || inputs.mode == 'basic-rules-live' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-basic-rules
+
+      - name: Transformar Conteúdo Rico (HTML + Specs + SEO)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-') || inputs.mode == 'fetch-and-transform' || inputs.mode == 'live-push' }}
         run: |
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch
           OVERWRITE_FLAG=""
           if [ "${{ inputs.overwrite }}" = "true" ]; then
             OVERWRITE_FLAG="--overwrite"
@@ -64,14 +74,12 @@ jobs:
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}"
 
       - name: Validar Envio em Lote (Dry-Run Push)
-        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' }}
-        run: |
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push
+        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push
 
       - name: Executar Atualização Real na Yampi (Live Push)
-        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || inputs.mode == 'live-push' }}
-        run: |
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute
+        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute
 
       - name: Commitar Catálogo de Staging Atualizado no Repositório
         run: |
