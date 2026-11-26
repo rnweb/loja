@@ -719,12 +719,29 @@ def call_gemini_enrichment(
     }
 
     payload_bytes = json.dumps(body, ensure_ascii=False).encode("utf-8")
-    candidate_models = list(dict.fromkeys([model, "gemini-2.5-flash-lite", "gemini-2.0-flash"]))
 
+    if not hasattr(call_gemini_enrichment, "_models_cache"):
+        discovered = []
+        try:
+            list_url = f"https://generativelanguage.googleapis.com/v1beta/models?key={urllib.parse.quote(api_key)}"
+            with urllib.request.urlopen(urllib.request.Request(list_url, method="GET"), timeout=20) as r:
+                models_data = json.loads(r.read().decode("utf-8"))
+            for m in models_data.get("models", []):
+                m_name = (m.get("name") or "").replace("models/", "")
+                methods = m.get("supportedGenerationMethods") or []
+                if "generateContent" in methods and m_name.startswith(("gemini-3", "gemini-2.5")):
+                    if not any(x in m_name for x in ("tts", "image", "audio", "robotics", "lite")):
+                        discovered.append(m_name)
+        except Exception as exc:
+            logger.warning("Não foi possível listar modelos Gemini: %s", exc)
+        call_gemini_enrichment._models_cache = list(dict.fromkeys([model] + discovered))
+        logger.info("Modelos Gemini candidatos: %s", call_gemini_enrichment._models_cache)
+
+    candidate_models = call_gemini_enrichment._models_cache
     last_err = None
     for current_model in candidate_models:
         endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={urllib.parse.quote(api_key)}"
-        for attempt in range(1, 3):
+        for attempt in range(1, 5):
             req = urllib.request.Request(
                 endpoint,
                 data=payload_bytes,
@@ -748,17 +765,18 @@ def call_gemini_enrichment(
                 err_msg = exc.read().decode("utf-8", errors="replace")
                 last_err = f"HTTP {exc.code} ({current_model}): {err_msg[:300]}"
                 if exc.code in (429, 500, 502, 503, 504):
-                    logger.warning("Gemini %s -> HTTP %s (tentativa %d/2).", current_model, exc.code, attempt)
-                    time.sleep(6.0 * attempt)
+                    wait_s = 10.0 * attempt
+                    logger.warning("Gemini %s -> HTTP %s (tentativa %d/4). Aguardando %.0fs...", current_model, exc.code, attempt, wait_s)
+                    time.sleep(wait_s)
                     continue
-                if exc.code == 404:
-                    logger.warning("Modelo %s indisponível (404), tentando próximo fallback...", current_model)
+                if exc.code in (400, 404):
+                    logger.warning("Modelo %s indisponível (%s), tentando próximo...", current_model, exc.code)
                     break
                 raise RuntimeError(last_err) from exc
             except (TimeoutError, urllib.error.URLError, json.JSONDecodeError) as exc:
                 last_err = str(exc)
-                logger.warning("Gemini %s timeout/erro (%s), tentativa %d/2.", current_model, exc, attempt)
-                time.sleep(4.0 * attempt)
+                logger.warning("Gemini %s timeout/erro (%s), tentativa %d/4.", current_model, exc, attempt)
+                time.sleep(5.0 * attempt)
     raise RuntimeError(f"Falha em todos os modelos Gemini: {last_err}")
 
 
@@ -958,6 +976,8 @@ def cmd_transform(
             custom_ai_fn=ai_fn,
         ):
             updated_count += 1
+            if use_gemini:
+                staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
             if use_gemini:
                 staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
 
