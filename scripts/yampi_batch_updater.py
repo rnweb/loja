@@ -742,7 +742,7 @@ def call_gemini_enrichment(
             }
         except urllib.error.HTTPError as exc:
             if exc.code in (429, 500, 502, 503, 504) and attempt < 4:
-                wait_s = 3.0 * attempt
+                wait_s = 15.0 * attempt
                 logger.warning("Gemini HTTP %s (tentativa %d/4). Aguardando %.1fs...", exc.code, attempt, wait_s)
                 time.sleep(wait_s)
                 continue
@@ -938,7 +938,7 @@ def cmd_transform(
         if use_gemini:
             logger.info("Enriquecendo com Gemini (%s): ID %s - %s", gemini_model, pid, snap.get("name"))
             ai_fn = lambda s: call_gemini_enrichment(s, api_key=gemini_key, model=gemini_model, store_name=store_name)
-            time.sleep(0.5)
+            time.sleep(4.2)
 
         if enrich_snapshot_in_place(
             snap,
@@ -1573,3 +1573,4 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
