@@ -1,0 +1,140 @@
+2026-11-26 20:12:35 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
+2026-11-26 20:12:35 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
+{
+  "name": "Camiseta Oversized Algodão Egípcio",
+  "slug": "camiseta-oversized-algodao-egipcio",
+  "active": true,
+  "searchable": true,
+  "simple": false,
+  "description": "<div class=\"yampi-custom-description\">\n  <h2>Camiseta Oversized Algodão Egípcio</h2>\n  <p>Camiseta algodao egipcio importada via Bling</p>\n  <h3>Principais Características e Diferenciais</h3>\n  <ul>\n    <li><strong>Qualidade Garantida:</strong> Produto selecionado com rigoroso controle de padrão (Studio Minimal).</li>\n    <li><strong>Pronta Entrega &amp; Envio Rápido:</strong> Estoque sincronizado em tempo real com despacho ágil.</li>\n    <li><strong>Opções de Cor:</strong> Preta, Off-White.</li>\n    <li><strong>Opções de Tamanho:</strong> M, G.</li>\n  </ul>\n</div>",
+  "specifications": "Marca: Studio Minimal; Código SKU: CAM-EGIP-PAI; NCM: 6109.10.00; Cor: Preta; Tamanho: M; Cor: Off-White; Tamanho: G",
+  "measures": "Dimensões: 4 cm (A) x 25 cm (L) x 32 cm (C) | Peso: 0.28 kg",
+  "search_terms": "t-shirt; camisa premiun",
+  "texts": {
+    "description": "<div class=\"yampi-custom-description\">\n  <h2>Camiseta Oversized Algodão Egípcio</h2>\n  <p>Camiseta algodao egipcio importada via Bling</p>\n  <h3>Principais Características e Diferenciais</h3>\n  <ul>\n    <li><strong>Qualidade Garantida:</strong> Produto selecionado com rigoroso controle de padrão (Studio Minimal).</li>\n    <li><strong>Pronta Entrega &amp; Envio Rápido:</strong> Estoque sincronizado em tempo real com despacho ágil.</li>\n    <li><strong>Opções de Cor:</strong> Preta, Off-White.</li>\n    <li><strong>Opções de Tamanho:</strong> M, G.</li>\n  </ul>\n</div>",
+    "specifications": "Marca: Studio Minimal; Código SKU: CAM-EGIP-PAI; NCM: 6109.10.00; Cor: Preta; Tamanho: M; Cor: Off-White; Tamanho: G",
+    "measures": "Dimensões: 4 cm (A) x 25 cm (L) x 32 cm (C) | Peso: 0.28 kg",
+    "search_terms": "t-shirt; camisa premiun"
+  },
+  "seo_title": "Camiseta Oversized Algodão Egípcio | Minha Loja",
+  "seo_description": "Camiseta Oversized Algodão Egípcio Camiseta algodao egipcio importada via Bling Principais Características e Diferenciais Qualidade Garantida: Produto seleci...",
+  "seo_keywords": "Camiseta Oversized Algodão Egípcio; Studio Minimal; Camisetas; Masculino",
+  "seo": {
+    "title": "Camiseta Oversized Algodão Egípcio | Minha Loja",
+    "description": "Camiseta Oversized Algodão Egípcio Camiseta algodao egipcio importada via Bling Principais Características e Diferenciais Qualidade Garantida: Produto seleci...",
+    "keywords": "Camiseta Oversized Algodão Egípcio; Studio Minimal; Camisetas; Masculino",
+    "canonical_url": ""
+  },
+  "erp_id": "BLING-ERP-778899",
+  "ncm": "6109.10.00",
+  "brand_id": 44,
+  "categories_ids": [
+    12,
+    19
+  ]
+}
+2026-11-26 20:12:35 | INFO     | Buscando página 1 de produtos (limit=50)...
+2026-11-26 20:12:37 | INFO     | Página 1/6 carregada (50/275 produtos acumulados).
+2026-11-26 20:12:37 | INFO     | Buscando página 2 de produtos (limit=50)...
+2026-11-26 20:12:38 | INFO     | Página 2/6 carregada (100/275 produtos acumulados).
+2026-11-26 20:12:38 | INFO     | Buscando página 3 de produtos (limit=50)...
+2026-11-26 20:12:40 | INFO     | Página 3/6 carregada (150/275 produtos acumulados).
+2026-11-26 20:12:40 | INFO     | Buscando página 4 de produtos (limit=50)...
+2026-11-26 20:12:44 | INFO     | Página 4/6 carregada (200/275 produtos acumulados).
+2026-11-26 20:12:44 | INFO     | Buscando página 5 de produtos (limit=50)...
+2026-11-26 20:12:44 | INFO     | Página 5/6 carregada (250/275 produtos acumulados).
+2026-11-26 20:12:44 | INFO     | Buscando página 6 de produtos (limit=50)...
+2026-11-26 20:12:47 | INFO     | Página 6/6 carregada (275/275 produtos acumulados).
+2026-11-26 20:12:47 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (275 produtos).
+2026-11-26 20:12:47 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608832 - Relógio Tommy Hilfiger Tyson
+2026-11-26 20:12:52 | INFO     | Modelos Gemini candidatos: ['gemini-3.8-flash', 'gemini-3-flash-preview', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3.1-flash-lite-preview', 'gemini-3.1-flash-lite', 'gemini-3.5-flash-lite']
+2026-11-26 20:12:52 | WARNING  | Gemini gemini-3.8-flash -> HTTP 429 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:12:58 | WARNING  | Gemini gemini-3.8-flash -> HTTP 429 (tentativa 2/2). Aguardando 12s...
+2026-11-26 20:13:13 | INFO     | Modelo gemini-3-flash-preview promovido para principal.
+2026-11-26 20:13:13 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608833 - Relógio Tommy Hilfiger Tyson
+2026-11-26 20:13:20 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608834 - Relógio Tommy Hilfiger Tyson
+2026-11-26 20:13:27 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608843 - Relógio Tissot PRX
+2026-11-26 20:13:34 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608847 - Relógio Tissot PRX
+2026-11-26 20:13:41 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608861 - Relógio Tag Carrera GMT
+2026-11-26 20:13:48 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608866 - Relógio Tag Porsche
+2026-11-26 20:13:52 | WARNING  | Gemini gemini-3-flash-preview -> HTTP 429 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:13:58 | WARNING  | Gemini gemini-3-flash-preview -> HTTP 429 (tentativa 2/2). Aguardando 12s...
+2026-11-26 20:14:10 | WARNING  | Gemini gemini-3.8-flash -> HTTP 429 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:14:19 | WARNING  | Gemini gemini-3.8-flash -> HTTP 503 (tentativa 2/2). Aguardando 12s...
+2026-11-26 20:15:01 | WARNING  | Gemini gemini-3.7-flash timeout/erro (The read operation timed out), tentativa 1/2.
+2026-11-26 20:15:05 | WARNING  | Gemini gemini-3.7-flash -> HTTP 429 (tentativa 2/2). Aguardando 12s...
+2026-11-26 20:15:47 | WARNING  | Gemini gemini-3.6-flash timeout/erro (The read operation timed out), tentativa 1/2.
+2026-11-26 20:16:06 | WARNING  | Gemini gemini-3.6-flash -> HTTP 503 (tentativa 2/2). Aguardando 12s...
+2026-11-26 20:16:19 | WARNING  | Gemini gemini-3.5-flash -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:16:55 | WARNING  | Gemini gemini-3.5-flash timeout/erro (The read operation timed out), tentativa 2/2.
+2026-11-26 20:17:03 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:17:11 | INFO     | Modelo gemini-3.1-flash-lite-preview promovido para principal.
+2026-11-26 20:17:11 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608870 - Relógio Tag Carrera Quartz
+2026-11-26 20:17:17 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608872 - Relógio Tag Carrera Quartz
+2026-11-26 20:17:25 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:17:34 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608874 - Relógio Tag Carrera Extreme Sport GMT
+2026-11-26 20:17:40 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608877 - Relógio Tag Porsche
+2026-11-26 20:17:47 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608909 - Relógio Tag Carrera Quartz
+2026-11-26 20:17:54 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608910 - Relógio Tag Carrera Quartz
+2026-11-26 20:18:01 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608957 - Relógio Panerai Luminor Luna Rosa
+2026-11-26 20:18:08 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608959 - Relógio Panerai Luminor Luna Rosa
+2026-11-26 20:18:14 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608969 - Relógio Montblanc Star Legacy
+2026-11-26 20:18:21 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608971 - Relógio Montblanc Star Legacy
+2026-11-26 20:18:26 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:18:34 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608978 - Relógio Montblanc 4810
+2026-11-26 20:18:45 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:18:53 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608982 - Relógio Montblanc Star Legacy
+2026-11-26 20:18:59 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608991 - Relógio Hublot Big Bang
+2026-11-26 20:19:05 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46608998 - Relógio Hublot Big Bang
+2026-11-26 20:19:11 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46609002 - Design sofisticado e contemporâneo
+2026-11-26 20:19:17 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46609021 - Relógio Diesel 10 Bar
+2026-11-26 20:19:23 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46609032 - Relógio Bvlgari Octo Dourado
+2026-11-26 20:19:29 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46609035 - Relógio Bvlgari Octo
+2026-11-26 20:19:35 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46609081 - Relógio Audemars Piguet Royal Oak Chrono
+2026-11-26 20:19:41 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:19:48 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757780 - Relógio Omega Snoopy
+2026-11-26 20:19:54 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757781 - Relógio Omega Snoopy
+2026-11-26 20:20:04 | WARNING  | Gemini gemini-3.1-flash-lite-preview -> HTTP 503 (tentativa 1/2). Aguardando 6s...
+2026-11-26 20:20:12 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757782 - Relógio Tommy Hilfiger Tyson
+2026-11-26 20:20:24 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757783 - Relógio Tommy Hilfiger Tyson
+2026-11-26 20:20:50 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757784 - Relógio Panerai Officine
+2026-11-26 20:20:56 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757785 - Relógio Rolex Sky-Dweller
+2026-11-26 20:21:02 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757786 - Relógio Rolex Sky-Dweller
+2026-11-26 20:21:09 | INFO     | Enriquecendo com Gemini (gemini-3.8-flash): ID 46757789 - Relógio Rolex Sky-Dweller
+2026-11-26 20:21:15 | INFO     | Transformação concluída: 34 produtos enriquecidos e marcados com `update_ready: true` em 'data/staging/yampi_catalog_staging.json'.
+2026-11-26 20:21:15 | INFO     | Backup de rollback salvo em 'backups_yampi/yampi_rollback_backup_20261126_202115.json' (34 produtos).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 1/34] PUT /catalog/products/46608832 (SKU: TH-1020 | Nome: Relógio Tommy Hilfiger Tyson) -> Payload validado (3985 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 2/34] PUT /catalog/products/46608833 (SKU: TH-1010 | Nome: Relógio Tommy Hilfiger Tyson) -> Payload validado (3903 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 3/34] PUT /catalog/products/46608834 (SKU: TH-1000 | Nome: Relógio Tommy Hilfiger Tyson) -> Payload validado (3749 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 4/34] PUT /catalog/products/46608843 (SKU: TS-1070 | Nome: Relógio Tissot PRX) -> Payload validado (3747 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 5/34] PUT /catalog/products/46608847 (SKU: TS-1050 | Nome: Relógio Tissot PRX) -> Payload validado (3863 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 6/34] PUT /catalog/products/46608861 (SKU: TG-2210 | Nome: Relógio Tag Carrera GMT) -> Payload validado (3462 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 7/34] PUT /catalog/products/46608866 (SKU: TG-8010 | Nome: Relógio Tag Porsche) -> Payload validado (3590 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 8/34] PUT /catalog/products/46608870 (SKU: TG-2110 | Nome: Relógio Tag Carrera Quartz) -> Payload validado (3783 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 9/34] PUT /catalog/products/46608872 (SKU: TG-2090 | Nome: Relógio Tag Carrera Quartz) -> Payload validado (3637 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 10/34] PUT /catalog/products/46608874 (SKU: TG-2200 | Nome: Relógio Tag Carrera Extreme Sport GMT) -> Payload validado (3702 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 11/34] PUT /catalog/products/46608877 (SKU: TG-8000 | Nome: Relógio Tag Porsche) -> Payload validado (3199 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 12/34] PUT /catalog/products/46608909 (SKU: TG-2120 | Nome: Relógio Tag Carrera Quartz) -> Payload validado (3717 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 13/34] PUT /catalog/products/46608910 (SKU: TG-2130 | Nome: Relógio Tag Carrera Quartz) -> Payload validado (3387 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 14/34] PUT /catalog/products/46608957 (SKU: PN-1000 | Nome: Relógio Panerai Luminor Luna Rosa) -> Payload validado (3722 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 15/34] PUT /catalog/products/46608959 (SKU: PN-1010 | Nome: Relógio Panerai Luminor Luna Rosa) -> Payload validado (3800 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 16/34] PUT /catalog/products/46608969 (SKU: MB-1030 | Nome: Relógio Montblanc Star Legacy) -> Payload validado (3624 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 17/34] PUT /catalog/products/46608971 (SKU: MB-1040 | Nome: Relógio Montblanc Star Legacy) -> Payload validado (3184 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 18/34] PUT /catalog/products/46608978 (SKU: MB-3020 | Nome: Relógio Montblanc 4810) -> Payload validado (3165 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 19/34] PUT /catalog/products/46608982 (SKU: MB-1010 | Nome: Relógio Montblanc Star Legacy) -> Payload validado (3600 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 20/34] PUT /catalog/products/46608991 (SKU: HB-1010 | Nome: Relógio Hublot Big Bang) -> Payload validado (3950 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 21/34] PUT /catalog/products/46608998 (SKU: HB-1090 | Nome: Relógio Hublot Big Bang) -> Payload validado (3696 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 22/34] PUT /catalog/products/46609002 (SKU: HB-1070 | Nome: Design sofisticado e contemporâneo) -> Payload validado (3081 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 23/34] PUT /catalog/products/46609021 (SKU: DS-1010 | Nome: Relógio Diesel 10 Bar) -> Payload validado (3228 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 24/34] PUT /catalog/products/46609032 (SKU: BV-6020 | Nome: Relógio Bvlgari Octo Dourado) -> Payload validado (3202 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 25/34] PUT /catalog/products/46609035 (SKU: BV-6010 | Nome: Relógio Bvlgari Octo) -> Payload validado (3222 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 26/34] PUT /catalog/products/46609081 (SKU: AP-1050 | Nome: Relógio Audemars Piguet Royal Oak Chrono) -> Payload validado (3278 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 27/34] PUT /catalog/products/46757780 (SKU: OG-3050 | Nome: Relógio Omega Snoopy) -> Payload validado (3603 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 28/34] PUT /catalog/products/46757781 (SKU: OG-4010 | Nome: Relógio Omega Snoopy) -> Payload validado (3727 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 29/34] PUT /catalog/products/46757782 (SKU: TH-1040 | Nome: Relógio Tommy Hilfiger Tyson) -> Payload validado (3725 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 30/34] PUT /catalog/products/46757783 (SKU: TH-1030 | Nome: Relógio Tommy Hilfiger Tyson) -> Payload validado (3839 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 31/34] PUT /catalog/products/46757784 (SKU: PN-2000 | Nome: Relógio Panerai Officine) -> Payload validado (4167 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 32/34] PUT /catalog/products/46757785 (SKU: RX-3000 | Nome: Relógio Rolex Sky-Dweller) -> Payload validado (3950 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 33/34] PUT /catalog/products/46757786 (SKU: RX-3010 | Nome: Relógio Rolex Sky-Dweller) -> Payload validado (3770 bytes).
+2026-11-26 20:21:15 | INFO     | [DRY-RUN 34/34] PUT /catalog/products/46757789 (SKU: RX-3040 | Nome: Relógio Rolex Sky-Dweller) -> Payload validado (4146 bytes).
+2026-11-26 20:21:15 | INFO     | Resumo do envio: candidatos=34 | atualizados=0 | falhas=0 | dry_run=True
