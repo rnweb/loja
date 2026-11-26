@@ -924,6 +924,94 @@ def cmd_push(
     return summary
 
 
+
+def extract_product_name_from_description(description_html: str) -> Optional[str]:
+    """Extrai o nome completo após 'Produto:' na descrição original vinda do Bling."""
+    plain = re.sub(r"<[^>]+>", "\n", description_html or "")
+    match = re.search(r"Produto:\s*([^\n\r]+)", plain, flags=re.IGNORECASE)
+    if not match:
+        return None
+    extracted = re.sub(r"\s+", " ", match.group(1)).strip(" -|:\t")
+    return extracted or None
+
+
+def cmd_apply_basic_rules(
+    staging_file: Path,
+    watch_category_id: int = 8245303,
+    min_active_stock: int = 4,
+) -> int:
+    """
+    Aplica as regras básicas em lote preservando descrição original, SEO e vínculo Bling:
+    1. Produtos com 'Relógio'/'Relogio' no nome recebem a categoria `watch_category_id` (Relógios Masculinos).
+    2. Produtos com estoque total < `min_active_stock` (4) ficam inativos (`active = False`); >= 4 ficam ativos.
+    3. Atualiza o nome do produto para o valor extraído de 'Produto: ...' na descrição original.
+    """
+    if not staging_file.exists():
+        raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+
+    staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
+    snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
+
+    changed_count = 0
+    for snap in snapshots:
+        raw = snap.get("raw_product") or {}
+        bling = snap.get("bling_link_readonly") or {}
+        editable = snap.get("editable_content") or {}
+
+        # Preserva textos e SEO originais vindos da Yampi para não sobrescrever nesta etapa básica
+        raw_texts = _unwrap_relation(raw.get("texts", {})) or {}
+        raw_seo = _unwrap_relation(raw.get("seo", {})) or {}
+        if isinstance(raw_texts, dict):
+            editable["description"] = raw_texts.get("description") or ""
+            editable["specifications"] = raw_texts.get("specifications") or ""
+            editable["measures"] = raw_texts.get("measures") or ""
+            editable["search_terms"] = raw_texts.get("search_terms") or ""
+        if isinstance(raw_seo, dict):
+            editable["seo_title"] = raw_seo.get("title") or raw_seo.get("seo_title") or ""
+            editable["seo_description"] = raw_seo.get("description") or raw_seo.get("seo_description") or ""
+            editable["seo_keywords"] = raw_seo.get("keywords") or raw_seo.get("seo_keywords") or ""
+
+        orig_name = (raw.get("name") or snap.get("name") or "").strip()
+        is_watch = "relógio" in orig_name.lower() or "relogio" in orig_name.lower()
+
+        # Regra 1: Categoria Relógios Masculinos (8245303) para todos os relógios
+        cat_ids = list(bling.get("category_ids") or [])
+        if is_watch and watch_category_id not in cat_ids:
+            cat_ids.append(watch_category_id)
+            bling["category_ids"] = cat_ids
+
+        # Regra 2: Estoque < 4 -> Inativo
+        skus = bling.get("skus") or []
+        total_stock = raw.get("total_in_stock")
+        if total_stock is None:
+            total_stock = sum(int(s.get("total_in_stock") or 0) for s in skus)
+        new_active = int(total_stock) >= min_active_stock
+        raw["active"] = new_active
+        snap["active"] = new_active
+
+        # Regra 3: Nomenclatura extraída de 'Produto: ...' na descrição
+        new_name = orig_name
+        if is_watch:
+            extracted_name = extract_product_name_from_description(editable.get("description", ""))
+            if extracted_name:
+                new_name = extracted_name
+        editable["name"] = new_name
+        snap["name"] = new_name
+
+        snap["update_ready"] = True
+        changed_count += 1
+
+    staging_data["basic_rules_applied_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    staging_data["ready_to_push_count"] = changed_count
+    staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    logger.info(
+        "Regras básicas aplicadas em %d produtos em '%s'.",
+        changed_count,
+        staging_file,
+    )
+    return changed_count
+
+
 # ---------------------------------------------------------------------------
 # Autoteste Offline (Valida o Pipeline e a Proteção de Vínculo com o Bling)
 # ---------------------------------------------------------------------------
@@ -1077,6 +1165,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Lista opcional de IDs de produtos específicos para transformar.",
     )
 
+    # Subcomando: apply-basic-rules
+    rules_parser = subparsers.add_parser(
+        "apply-basic-rules",
+        help="Aplica categoria Relógios Masculinos, inativa estoque < 4 e extrai nome da descrição.",
+    )
+    rules_parser.add_argument("--watch-category-id", type=int, default=8245303)
+    rules_parser.add_argument("--min-stock", type=int, default=4)
+
     # Subcomando: push
     push_parser = subparsers.add_parser(
         "push",
@@ -1106,6 +1202,23 @@ def main(argv: Optional[List[str]] = None) -> int:
         run_self_test()
         return 0
 
+    if args.command == "transform":
+        cmd_transform(
+            staging_file=staging_path,
+            overwrite_existing=args.overwrite,
+            store_name=args.store_name,
+            filter_Ids=args.ids,
+        )
+        return 0
+
+    if args.command == "apply-basic-rules":
+        cmd_apply_basic_rules(
+            staging_file=staging_path,
+            watch_category_id=args.watch_category_id,
+            min_active_stock=args.min_stock,
+        )
+        return 0
+
     config = YampiConfig.from_env(alias_override=args.alias)
     client = YampiClient(config)
 
@@ -1123,6 +1236,12 @@ def main(argv: Optional[List[str]] = None) -> int:
             overwrite_existing=args.overwrite,
             store_name=args.store_name,
             filter_Ids=args.ids,
+        )
+    elif args.command == "apply-basic-rules":
+        cmd_apply_basic_rules(
+            staging_file=staging_path,
+            watch_category_id=args.watch_category_id,
+            min_active_stock=args.min_stock,
         )
     elif args.command == "push":
         cmd_push(
