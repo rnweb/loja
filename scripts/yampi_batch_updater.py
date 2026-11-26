@@ -641,6 +641,116 @@ def build_seo_metadata(snapshot: Dict[str, Any], store_name: str = "") -> Dict[s
     }
 
 
+
+def call_gemini_enrichment(
+    snapshot: Dict[str, Any],
+    api_key: str,
+    model: str = "gemini-2.5-flash",
+    store_name: str = "",
+) -> Dict[str, str]:
+    """
+    Chama a API REST do Gemini (`generativelanguage.googleapis.com`) usando apenas
+    `urllib.request` (zero dependências externas) com saída JSON estruturada para
+    gerar descrição HTML, ficha técnica (`specifications`), medidas e SEO.
+    """
+    raw = snapshot.get("raw_product") or {}
+    bling = snapshot.get("bling_link_readonly") or {}
+    raw_texts = _unwrap_relation(raw.get("texts", {})) or {}
+    orig_desc = (
+        raw_texts.get("description")
+        if isinstance(raw_texts, dict) and raw_texts.get("description")
+        else snapshot.get("editable_content", {}).get("description", "")
+    ) or ""
+    plain_orig = strip_html_tags(orig_desc)
+    name = snapshot.get("name") or raw.get("name") or "Relógio"
+    sku = bling.get("root_sku") or ""
+    skus = bling.get("skus") or []
+    price_sale = skus[0].get("price_sale") if skus else None
+
+    store_suffix_rule = f" (termine com ' | {store_name}' se couber)" if store_name else ""
+    prompt = (
+        "Você é um especialista em e-commerce de alta relojoaria e SEO no Brasil.\n"
+        "Com base EXCLUSIVAMENTE nos dados reais do produto abaixo, gere um JSON estruturado.\n"
+        "REGRAS ESTRITAS:\n"
+        "1. NÃO invente características, materiais, resistência à água ou medidas que não estejam no texto original.\n"
+        "2. `description_html`: HTML limpo e persuasivo dentro de `<div class='yampi-custom-description'>` contendo:\n"
+        "   - `<h2>` com o nome do produto\n"
+        "   - `<p>` de abertura elegante destacando estilo, acabamento e presença no pulso\n"
+        "   - `<h3>Principais Destaques</h3>` com `<ul><li>` de 3 a 4 benefícios reais\n"
+        "   - `<h3>Ficha Técnica</h3>` com `<ul><li>` listando os atributos reais extraídos\n"
+        "3. `specifications`: string no formato exato `Chave: Valor; Chave2: Valor2` (ex: `Material da caixa: Aço inoxidável; Pulseira: Silicone preto; Movimento: Quartzo; Vidro: Mineral`) com os atributos técnicos (sem repetir medidas se já forem para `measures`).\n"
+        "4. `measures`: string concisa com diâmetro da caixa, comprimento total, espessura e peso (ex: `Diâmetro da caixa: 45 mm | Espessura: 15 mm | Peso: 90 g`), ou vazio se não constar.\n"
+        f"5. `seo_title`: máximo 60 caracteres{store_suffix_rule}.\n"
+        "6. `seo_description`: máximo 160 caracteres, persuasiva para clique no Google.\n"
+        "7. `seo_keywords`: 5 a 8 termos relevantes separados por `; `.\n\n"
+        f"DADOS DO PRODUTO:\n"
+        f"- Nome: {name}\n"
+        f"- SKU: {sku}\n"
+        f"- Preço: R$ {price_sale}\n"
+        f"- Descrição original: {plain_orig}\n"
+    )
+
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.4,
+            "responseMimeType": "application/json",
+            "responseSchema": {
+                "type": "OBJECT",
+                "properties": {
+                    "description_html": {"type": "STRING"},
+                    "specifications": {"type": "STRING"},
+                    "measures": {"type": "STRING"},
+                    "seo_title": {"type": "STRING"},
+                    "seo_description": {"type": "STRING"},
+                    "seo_keywords": {"type": "STRING"},
+                },
+                "required": [
+                    "description_html",
+                    "specifications",
+                    "measures",
+                    "seo_title",
+                    "seo_description",
+                    "seo_keywords",
+                ],
+            },
+        },
+    }
+
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={urllib.parse.quote(api_key)}"
+    payload_bytes = json.dumps(body, ensure_ascii=False).encode("utf-8")
+
+    for attempt in range(1, 5):
+        req = urllib.request.Request(
+            endpoint,
+            data=payload_bytes,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                resp_json = json.loads(resp.read().decode("utf-8"))
+            text_out = resp_json["candidates"][0]["content"]["parts"][0]["text"]
+            parsed = json.loads(text_out)
+            return {
+                "description": parsed.get("description_html", "").strip(),
+                "specifications": parsed.get("specifications", "").strip(),
+                "measures": parsed.get("measures", "").strip(),
+                "seo_title": parsed.get("seo_title", "").strip()[:60],
+                "seo_description": parsed.get("seo_description", "").strip()[:160],
+                "seo_keywords": parsed.get("seo_keywords", "").strip(),
+            }
+        except urllib.error.HTTPError as exc:
+            if exc.code in (429, 500, 502, 503, 504) and attempt < 4:
+                wait_s = 3.0 * attempt
+                logger.warning("Gemini HTTP %s (tentativa %d/4). Aguardando %.1fs...", exc.code, attempt, wait_s)
+                time.sleep(wait_s)
+                continue
+            err_msg = exc.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"Erro HTTP {exc.code} na API do Gemini: {err_msg[:400]}") from exc
+    raise RuntimeError("Falha ao obter resposta da API do Gemini.")
+
+
 def enrich_snapshot_in_place(
     snapshot: Dict[str, Any],
     overwrite_existing: bool = False,
@@ -791,6 +901,9 @@ def cmd_transform(
     overwrite_existing: bool = False,
     store_name: str = "",
     filter_Ids: Optional[List[int]] = None,
+    use_gemini: bool = False,
+    only_active_watches: bool = False,
+    gemini_model: str = "gemini-2.5-flash",
 ) -> int:
     """
     Etapa 2: Lê o arquivo de staging, enriquece descrição HTML, especificações, medidas e SEO
@@ -798,6 +911,10 @@ def cmd_transform(
     """
     if not staging_file.exists():
         raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+
+    gemini_key = os.getenv("GEMINI_API_KEY", "").strip() if use_gemini else ""
+    if use_gemini and not gemini_key:
+        raise ValueError("GEMINI_API_KEY não definida no ambiente para usar --use-gemini.")
 
     staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
     snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
@@ -807,10 +924,27 @@ def cmd_transform(
         pid = snap.get("product_id")
         if filter_Ids and pid not in filter_Ids:
             continue
+
+        if only_active_watches:
+            is_active = bool(snap.get("active"))
+            cats = snap.get("bling_link_readonly", {}).get("category_ids", [])
+            name_l = (snap.get("name") or "").lower()
+            is_watch = (8245303 in cats) or ("relógio" in name_l) or ("relogio" in name_l)
+            if not (is_active and is_watch):
+                snap["update_ready"] = False
+                continue
+
+        ai_fn = None
+        if use_gemini:
+            logger.info("Enriquecendo com Gemini (%s): ID %s - %s", gemini_model, pid, snap.get("name"))
+            ai_fn = lambda s: call_gemini_enrichment(s, api_key=gemini_key, model=gemini_model, store_name=store_name)
+            time.sleep(0.5)
+
         if enrich_snapshot_in_place(
             snap,
-            overwrite_existing=overwrite_existing,
+            overwrite_existing=overwrite_existing or use_gemini,
             store_name=store_name,
+            custom_ai_fn=ai_fn,
         ):
             updated_count += 1
 
@@ -1316,6 +1450,21 @@ def build_arg_parser() -> argparse.ArgumentParser:
         type=int,
         help="Lista opcional de IDs de produtos específicos para transformar.",
     )
+    transform_parser.add_argument(
+        "--use-gemini",
+        action="store_true",
+        help="Usa a API do Gemini (GEMINI_API_KEY) para gerar descrição HTML, ficha técnica e SEO.",
+    )
+    transform_parser.add_argument(
+        "--only-active-watches",
+        action="store_true",
+        help="Processa apenas relógios ativos na loja (active=True).",
+    )
+    transform_parser.add_argument(
+        "--gemini-model",
+        default="gemini-2.5-flash",
+        help="Modelo Gemini a utilizar (padrão: gemini-2.5-flash).",
+    )
 
     # Subcomando: apply-basic-rules
     rules_parser = subparsers.add_parser(
@@ -1367,6 +1516,9 @@ def main(argv: Optional[List[str]] = None) -> int:
             overwrite_existing=args.overwrite,
             store_name=args.store_name,
             filter_Ids=args.ids,
+            use_gemini=args.use_gemini,
+            only_active_watches=args.only_active_watches,
+            gemini_model=args.gemini_model,
         )
         return 0
 

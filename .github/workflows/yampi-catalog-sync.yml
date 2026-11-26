@@ -10,14 +10,18 @@ on:
       - 'price-rules-test-*'
       - 'price-rules-live-*'
       - 'fashion-brands-live-*'
+      - 'ai-enrich-test-*'
+      - 'ai-enrich-live-*'
   workflow_dispatch:
     inputs:
       mode:
         description: 'Modo de operação'
         required: true
-        default: 'price-rules-test'
+        default: 'ai-enrich-test'
         type: choice
         options:
+          - ai-enrich-test
+          - ai-enrich-live
           - fetch-and-transform
           - dry-run-push
           - live-push
@@ -50,6 +54,7 @@ jobs:
       YAMPI_ALIAS: ${{ secrets.YAMPI_ALIAS }}
       YAMPI_USER_TOKEN: ${{ secrets.YAMPI_USER_TOKEN }}
       YAMPI_USER_SECRET_KEY: ${{ secrets.YAMPI_USER_SECRET_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
     steps:
       - name: Checkout do Repositório
@@ -78,7 +83,11 @@ jobs:
         if: ${{ startsWith(github.ref, 'refs/tags/fashion-brands-') || inputs.mode == 'fashion-brands-live' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules --only-fashion-brands
 
-      - name: Transformar Conteúdo Rico (HTML + Specs + SEO)
+      - name: Enriquecer Relógios Ativos com Gemini API (HTML + Specs + SEO)
+        if: ${{ startsWith(github.ref, 'refs/tags/ai-enrich-') || inputs.mode == 'ai-enrich-test' || inputs.mode == 'ai-enrich-live' }}
+        run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform --use-gemini --only-active-watches --store-name "${{ inputs.store_name }}"
+
+      - name: Transformar Conteúdo Rico (Template Local)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-') || inputs.mode == 'fetch-and-transform' || inputs.mode == 'live-push' }}
         run: |
           OVERWRITE_FLAG=""
@@ -88,7 +97,7 @@ jobs:
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}"
 
       - name: Validar Envio em Lote (Dry-Run Push)
-        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' }}
+        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || startsWith(github.ref, 'refs/tags/ai-enrich-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' || inputs.mode == 'ai-enrich-test' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push
 
       - name: Validar Envio de Preços (Dry-Run Push Prices)
@@ -96,7 +105,7 @@ jobs:
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices
 
       - name: Executar Atualização Real na Yampi (Live Push)
-        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' }}
+        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || startsWith(github.ref, 'refs/tags/ai-enrich-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' || inputs.mode == 'ai-enrich-live' }}
         run: python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute
 
       - name: Executar Atualização Real de Preços na Yampi (Live Push Prices)
