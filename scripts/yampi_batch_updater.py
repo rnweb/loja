@@ -694,6 +694,7 @@ def call_gemini_enrichment(
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
             "temperature": 0.4,
+            "thinkingConfig": {"thinkingBudget": 0},
             "responseMimeType": "application/json",
             "responseSchema": {
                 "type": "OBJECT",
@@ -728,7 +729,7 @@ def call_gemini_enrichment(
             method="POST",
         )
         try:
-            with urllib.request.urlopen(req, timeout=45) as resp:
+            with urllib.request.urlopen(req, timeout=90) as resp:
                 resp_json = json.loads(resp.read().decode("utf-8"))
             text_out = resp_json["candidates"][0]["content"]["parts"][0]["text"]
             parsed = json.loads(text_out)
@@ -748,6 +749,11 @@ def call_gemini_enrichment(
                 continue
             err_msg = exc.read().decode("utf-8", errors="replace")
             raise RuntimeError(f"Erro HTTP {exc.code} na API do Gemini: {err_msg[:400]}") from exc
+        except (TimeoutError, urllib.error.URLError, json.JSONDecodeError) as exc:
+            if attempt < 4:
+                time.sleep(5.0 * attempt)
+                continue
+            raise
     raise RuntimeError("Falha ao obter resposta da API do Gemini.")
 
 
@@ -1573,4 +1579,5 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
 
