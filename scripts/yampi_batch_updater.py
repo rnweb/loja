@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Yampi Catalog Batch Updater (Bling-Safe Pipeline)
 =================================================
@@ -645,7 +645,7 @@ def build_seo_metadata(snapshot: Dict[str, Any], store_name: str = "") -> Dict[s
 def call_gemini_enrichment(
     snapshot: Dict[str, Any],
     api_key: str,
-    model: str = "gemini-2.5-flash",
+    model: str = "gemini-3.8-flash",
     store_name: str = "",
 ) -> Dict[str, str]:
     """
@@ -903,7 +903,7 @@ def cmd_transform(
     filter_Ids: Optional[List[int]] = None,
     use_gemini: bool = False,
     only_active_watches: bool = False,
-    gemini_model: str = "gemini-2.5-flash",
+    gemini_model: str = "gemini-3.8-flash",
 ) -> int:
     """
     Etapa 2: Lê o arquivo de staging, enriquece descrição HTML, especificações, medidas e SEO
@@ -1462,8 +1462,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     transform_parser.add_argument(
         "--gemini-model",
-        default="gemini-2.5-flash",
-        help="Modelo Gemini a utilizar (padrão: gemini-2.5-flash).",
+        default="gemini-3.8-flash",
+        help="Modelo Gemini a utilizar (padrão: gemini-3.8-flash).",
     )
 
     # Subcomando: apply-basic-rules
