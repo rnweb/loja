@@ -68,42 +68,42 @@ jobs:
       - name: Preparar diretório de logs
         run: |
           mkdir -p data/logs
-          rm -f data/logs/last_run.log
-          touch data/logs/last_run.log
+          rm -f data/logs/last_run.txt
+          touch data/logs/last_run.txt
 
       - name: Validar Integridade Bling-Safe (Self-Test)
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py self-test 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py self-test 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Buscar Catálogo da Yampi (Fetch)
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Aplicar Regras Básicas (Categoria + Estoque < 4 + Nome da Descrição)
         if: ${{ startsWith(github.ref, 'refs/tags/basic-rules-') || inputs.mode == 'basic-rules-test' || inputs.mode == 'basic-rules-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-basic-rules 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-basic-rules 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Aplicar Regras de Preço (Catálogo Completo)
         if: ${{ startsWith(github.ref, 'refs/tags/price-rules-') || inputs.mode == 'price-rules-test' || inputs.mode == 'price-rules-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Aplicar Regras de Preço (Fashion Brands R$ 329,00)
         if: ${{ startsWith(github.ref, 'refs/tags/fashion-brands-') || inputs.mode == 'fashion-brands-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules --only-fashion-brands 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json apply-price-rules --only-fashion-brands 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Enriquecer Relógios Ativos com Gemini API (HTML + Specs + SEO)
         if: ${{ startsWith(github.ref, 'refs/tags/ai-enrich-') || inputs.mode == 'ai-enrich-test' || inputs.mode == 'ai-enrich-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform --use-gemini --only-active-watches --store-name "${{ inputs.store_name }}" 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform --use-gemini --only-active-watches --store-name "${{ inputs.store_name }}" 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Transformar Conteúdo Rico (Template Local)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-') || inputs.mode == 'fetch-and-transform' || inputs.mode == 'live-push' }}
@@ -113,31 +113,31 @@ jobs:
           if [ "${{ inputs.overwrite }}" = "true" ]; then
             OVERWRITE_FLAG="--overwrite"
           fi
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}" 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}" 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Validar Envio em Lote (Dry-Run Push)
         if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || startsWith(github.ref, 'refs/tags/ai-enrich-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' || inputs.mode == 'ai-enrich-test' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Validar Envio de Preços (Dry-Run Push Prices)
         if: ${{ startsWith(github.ref, 'refs/tags/price-rules-test-') || inputs.mode == 'price-rules-test' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Executar Atualização Real na Yampi (Live Push)
         if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || startsWith(github.ref, 'refs/tags/ai-enrich-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' || inputs.mode == 'ai-enrich-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Executar Atualização Real de Preços na Yampi (Live Push Prices)
         if: ${{ startsWith(github.ref, 'refs/tags/price-rules-live-') || startsWith(github.ref, 'refs/tags/fashion-brands-live-') || inputs.mode == 'price-rules-live' || inputs.mode == 'fashion-brands-live' }}
         run: |
           set -o pipefail
-          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices --execute 2>&1 | tee -a data/logs/last_run.log
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices --execute 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Commitar Catálogo de Staging e Log no Repositório
         if: always()
@@ -149,3 +149,4 @@ jobs:
           git add data/staging/ data/logs/
           git diff --staged --quiet || git commit -m "chore(catalog): sync staging snapshot and execution log"
           git push origin HEAD:main
+
