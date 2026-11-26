@@ -1023,6 +1023,7 @@ def compute_target_sale_price(snapshot: Dict[str, Any], sku_entry: Dict[str, Any
     Calcula o novo `price_sale` conforme as regras de precificação:
     - Relógios Rolex, Hublot, Audemars Piguet (AP), Patek: R$ 499,00
     - Relógios Omega, Bvlgari/Bulgari, Montblanc: R$ 429,00
+    - Relógios Fashion Brands (Tommy, Armani Exchange / AX, Diesel): R$ 329,00
     - Demais relógios: R$ 399,00
     - Outros produtos (perfumes, pulseiras, colares): +150% sobre o `price_cost` (cost * 2.50)
     """
@@ -1037,6 +1038,8 @@ def compute_target_sale_price(snapshot: Dict[str, Any], sku_entry: Dict[str, Any
             return 499.00
         if any(k in name for k in ("omega", "bvlgari", "bulgari", "montblanc")) or root_sku.startswith(("OG-", "BV-", "MB-")):
             return 429.00
+        if any(k in name for k in ("tommy", "armani", "diesel")) or root_sku.startswith(("TH-", "AX-", "DS-")):
+            return 329.00
         return 399.00
 
     cost = float(sku_entry.get("price_cost") or 0.0)
@@ -1045,7 +1048,7 @@ def compute_target_sale_price(snapshot: Dict[str, Any], sku_entry: Dict[str, Any
     return float(sku_entry.get("price_sale") or 0.0)
 
 
-def cmd_apply_price_rules(staging_file: Path) -> int:
+def cmd_apply_price_rules(staging_file: Path, only_fashion_brands: bool = False) -> int:
     """
     Calcula os novos preços de venda em lote para todos os SKUs do manifesto local
     e marca `price_update_ready = True` preservando `price_cost` e vínculo Bling.
@@ -1060,6 +1063,14 @@ def cmd_apply_price_rules(staging_file: Path) -> int:
     for snap in snapshots:
         bling = snap.get("bling_link_readonly") or {}
         skus = bling.get("skus") or []
+        name_l = (snap.get("name") or "").lower()
+        root_sku = (bling.get("root_sku") or "").upper()
+        is_fashion = any(k in name_l for k in ("tommy", "armani", "diesel")) or root_sku.startswith(("TH-", "AX-", "DS-"))
+
+        if only_fashion_brands and not is_fashion:
+            snap["price_update_ready"] = False
+            continue
+
         for s in skus:
             new_sale = compute_target_sale_price(snap, s)
             s["target_price_sale"] = new_sale
@@ -1315,7 +1326,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     rules_parser.add_argument("--min-stock", type=int, default=4)
 
     # Subcomando: apply-price-rules
-    subparsers.add_parser("apply-price-rules", help="Calcula novos preços em lote para relógios e demais itens.")
+    apr_parser = subparsers.add_parser("apply-price-rules", help="Calcula novos preços em lote para relógios e demais itens.")
+    apr_parser.add_argument("--only-fashion-brands", action="store_true", help="Atualiza apenas Tommy, AX e Diesel para R$ 329,00.")
     # Subcomando: push-prices
     pp_parser = subparsers.add_parser("push-prices", help="Envia atualização de preços via PUT /catalog/skus/{id}.")
     pp_parser.add_argument("--execute", action="store_true", help="Executa o PUT real nos SKUs.")
@@ -1359,7 +1371,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
 
     if args.command == "apply-price-rules":
-        cmd_apply_price_rules(staging_file=staging_path)
+        cmd_apply_price_rules(staging_file=staging_path, only_fashion_brands=args.only_fashion_brands)
         return 0
 
     if args.command == "apply-basic-rules":
