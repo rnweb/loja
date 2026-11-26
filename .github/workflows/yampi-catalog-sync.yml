@@ -146,7 +146,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f data/logs/last_run.txt || true
           git diff --staged --quiet || git commit -m "chore(logs): update last_run.txt"
-          git push -f origin HEAD:logs
+          git push -f origin HEAD:refs/heads/logs
 
       - name: Commitar Catálogo de Staging na main
         if: success()
@@ -156,5 +156,6 @@ jobs:
           git add data/staging/
           git diff --staged --quiet || git commit -m "chore(catalog): sync staging snapshot with Yampi API v2"
           git push origin HEAD:main
+
 
 

@@ -718,43 +718,48 @@ def call_gemini_enrichment(
         },
     }
 
-    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={urllib.parse.quote(api_key)}"
     payload_bytes = json.dumps(body, ensure_ascii=False).encode("utf-8")
+    candidate_models = list(dict.fromkeys([model, "gemini-2.5-flash-lite", "gemini-2.0-flash"]))
 
-    for attempt in range(1, 5):
-        req = urllib.request.Request(
-            endpoint,
-            data=payload_bytes,
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=90) as resp:
-                resp_json = json.loads(resp.read().decode("utf-8"))
-            text_out = resp_json["candidates"][0]["content"]["parts"][0]["text"]
-            parsed = json.loads(text_out)
-            return {
-                "description": parsed.get("description_html", "").strip(),
-                "specifications": parsed.get("specifications", "").strip(),
-                "measures": parsed.get("measures", "").strip(),
-                "seo_title": parsed.get("seo_title", "").strip()[:60],
-                "seo_description": parsed.get("seo_description", "").strip()[:160],
-                "seo_keywords": parsed.get("seo_keywords", "").strip(),
-            }
-        except urllib.error.HTTPError as exc:
-            if exc.code in (429, 500, 502, 503, 504) and attempt < 4:
-                wait_s = 15.0 * attempt
-                logger.warning("Gemini HTTP %s (tentativa %d/4). Aguardando %.1fs...", exc.code, attempt, wait_s)
-                time.sleep(wait_s)
-                continue
-            err_msg = exc.read().decode("utf-8", errors="replace")
-            raise RuntimeError(f"Erro HTTP {exc.code} na API do Gemini: {err_msg[:400]}") from exc
-        except (TimeoutError, urllib.error.URLError, json.JSONDecodeError) as exc:
-            if attempt < 4:
-                time.sleep(5.0 * attempt)
-                continue
-            raise
-    raise RuntimeError("Falha ao obter resposta da API do Gemini.")
+    last_err = None
+    for current_model in candidate_models:
+        endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={urllib.parse.quote(api_key)}"
+        for attempt in range(1, 3):
+            req = urllib.request.Request(
+                endpoint,
+                data=payload_bytes,
+                headers={"Content-Type": "application/json"},
+                method="POST",
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    resp_json = json.loads(resp.read().decode("utf-8"))
+                text_out = resp_json["candidates"][0]["content"]["parts"][0]["text"]
+                parsed = json.loads(text_out)
+                return {
+                    "description": parsed.get("description_html", "").strip(),
+                    "specifications": parsed.get("specifications", "").strip(),
+                    "measures": parsed.get("measures", "").strip(),
+                    "seo_title": parsed.get("seo_title", "").strip()[:60],
+                    "seo_description": parsed.get("seo_description", "").strip()[:160],
+                    "seo_keywords": parsed.get("seo_keywords", "").strip(),
+                }
+            except urllib.error.HTTPError as exc:
+                err_msg = exc.read().decode("utf-8", errors="replace")
+                last_err = f"HTTP {exc.code} ({current_model}): {err_msg[:300]}"
+                if exc.code in (429, 500, 502, 503, 504):
+                    logger.warning("Gemini %s -> HTTP %s (tentativa %d/2).", current_model, exc.code, attempt)
+                    time.sleep(6.0 * attempt)
+                    continue
+                if exc.code == 404:
+                    logger.warning("Modelo %s indisponível (404), tentando próximo fallback...", current_model)
+                    break
+                raise RuntimeError(last_err) from exc
+            except (TimeoutError, urllib.error.URLError, json.JSONDecodeError) as exc:
+                last_err = str(exc)
+                logger.warning("Gemini %s timeout/erro (%s), tentativa %d/2.", current_model, exc, attempt)
+                time.sleep(4.0 * attempt)
+    raise RuntimeError(f"Falha em todos os modelos Gemini: {last_err}")
 
 
 def enrich_snapshot_in_place(
@@ -1579,5 +1584,6 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
 
 
