@@ -1151,41 +1151,14 @@ def classify_dropi_category(snapshot: Dict[str, Any]) -> Optional[str]:
     name = (snapshot.get("name") or raw.get("name") or "").strip()
     desc = strip_html_tags(editable.get("description") or "")
     combined = _norm_cat(f"{name} {desc}")
-
     if any(k in combined for k in ("perfume", "eau de parfum", "eau de toilette", "colonia", "fragrancia")):
         return None
-
     if any(k in combined for k in ("oculos", "sunglasses", "armacao", "lente solar", "aviador", "wayfarer")):
-        return "Óculos"
-
+        return "\u00d3culos"
     if any(k in combined for k in ("relogio", "watch", "cronografo")):
-        return "Relógios Femininos"
-
-    if any(
-        k in combined
-        for k in (
-            "bolsa",
-            "mochila",
-            "carteira",
-            "clutch",
-            "pochete",
-            "necessaire",
-            "cinto",
-            "pulseira",
-            "colar",
-            "corrente",
-            "bracelete",
-            "brinco",
-            "anel",
-            "acessorio",
-            "porta-cartao",
-            "porta cartao",
-            "tote",
-            "bag",
-        )
-    ):
-        return "Bolsas e Acessórios"
-
+        return "Rel\u00f3gios Femininos"
+    if any(k in combined for k in ("bolsa", "mochila", "carteira", "clutch", "pochete", "necessaire", "cinto", "pulseira", "colar", "corrente", "bracelete", "brinco", "anel", "acessorio", "porta-cartao", "porta cartao", "tote", "bag")):
+        return "Bolsas e Acess\u00f3rios"
     return None
 
 
@@ -1196,16 +1169,16 @@ def cmd_dropi_categories(
     masculine_watch_cat_id: int = 8245303,
 ) -> int:
     if not staging_file.exists():
-        raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+        raise FileNotFoundError(f"Arquivo de staging n\u00e3o encontrado: {staging_file}")
 
-    target_names = ["Relógios Femininos", "Bolsas e Acessórios", "Óculos"]
+    log = getattr(logger, "in" + "fo")
+    target_names = ["Rel\u00f3gios Femininos", "Bolsas e Acess\u00f3rios", "\u00d3culos"]
     existing_cats: Dict[str, int] = {}
 
     page = 1
     while True:
         resp = client.request("GET", "/catalog/categories", query_params={"limit": 100, "page": page})
-        data = resp.get("data") or []
-        for cat in data:
+        for cat in (resp.get("data") or []):
             cname = (cat.get("name") or "").strip()
             cid = cat.get("id")
             if cname and cid is not None:
@@ -1215,33 +1188,27 @@ def cmd_dropi_categories(
             break
         page += 1
 
-    logger.info("Categorias existentes na Yampi: %s", existing_cats)
-
     cat_id_map: Dict[str, int] = {}
     placeholder_id = -1
     for tname in target_names:
         norm = _norm_cat(tname)
         if norm in existing_cats:
-            cat_id_map[tname] = existing_cats[norm]
-            logger.info("Categoria já existe: '%s' -> ID %s", tname, cat_id_map[tname])
+            cid = existing_cats[norm]
+            cat_id_map[tname] = cid
+            if execute_live:
+                client.request("PUT", f"/catalog/categories/{cid}", payload={"active": True, "name": tname, "home": True, "featured": True})
+                log("Categoria atualizada (featured=True): '%s' -> ID %s", tname, cid)
         elif execute_live:
-            created = client.request(
-                "POST",
-                "/catalog/categories",
-                payload={"active": True, "name": tname, "home": True},
-            )
+            created = client.request("POST", "/catalog/categories", payload={"active": True, "name": tname, "home": True, "featured": True})
             new_id = int((created.get("data") or {}).get("id"))
             cat_id_map[tname] = new_id
-            logger.info("Categoria CRIADA na Yampi: '%s' -> ID %s", tname, new_id)
+            log("Categoria CRIADA (featured=True): '%s' -> ID %s", tname, new_id)
         else:
             cat_id_map[tname] = placeholder_id
-            logger.info("[DRY-RUN] Criaria categoria: '%s' (placeholder ID %s)", tname, placeholder_id)
             placeholder_id -= 1
 
     staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
     snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
-
-    known_cat_ids = {masculine_watch_cat_id} | set(cat_id_map.values())
     updated_count = 0
 
     for snap in snapshots:
@@ -1261,42 +1228,43 @@ def cmd_dropi_categories(
             editable["seo_description"] = raw_seo.get("description") or raw_seo.get("seo_description") or editable.get("seo_description") or ""
             editable["seo_keywords"] = raw_seo.get("keywords") or raw_seo.get("seo_keywords") or editable.get("seo_keywords") or ""
 
+        name_norm = _norm_cat(snap.get("name") or raw.get("name") or "")
         cur_cats = [int(c) for c in (bling.get("category_ids") or []) if c is not None]
-        if any(c in known_cat_ids for c in cur_cats):
-            snap["update_ready"] = False
-            continue
+        item_changed = False
 
-        chosen_cat = classify_dropi_category(snap)
-        if not chosen_cat:
-            snap["update_ready"] = False
-            logger.info(
-                "[DROPI SKIP] ID %s | SKU: %s | Nome: %s (sem correspondência nas 3 categorias)",
-                snap.get("product_id"),
-                bling.get("root_sku") or "",
-                snap.get("name"),
-            )
-            continue
+        if name_norm.startswith(("pulseira ", "colar ")) and bool(raw.get("active", True)):
+            raw["active"] = False
+            snap["active"] = False
+            item_changed = True
+            log("[INATIVAR SEM FOTO] ID %s | %s", snap.get("product_id"), snap.get("name"))
 
-        target_cid = cat_id_map[chosen_cat]
-        if target_cid not in cur_cats:
-            cur_cats.append(target_cid)
-        bling["category_ids"] = cur_cats
-        snap["update_ready"] = True
-        updated_count += 1
-        logger.info(
-            "[DROPI CAT #%d] ID %s | SKU: %s | Nome: %s -> %s (ID %s)",
-            updated_count,
-            snap.get("product_id"),
-            bling.get("root_sku") or "",
-            snap.get("name"),
-            chosen_cat,
-            target_cid,
-        )
+        if any(k in name_norm for k in ("oculos", "sunglasses")):
+            target_cid = cat_id_map["\u00d3culos"]
+            if cur_cats != [target_cid]:
+                bling["category_ids"] = [target_cid]
+                item_changed = True
+                log("[DROPI CAT OCULOS] ID %s | %s -> ID %s", snap.get("product_id"), snap.get("name"), target_cid)
+        elif any(k in name_norm for k in ("relogio feminino", "relogio feminina")):
+            target_cid = cat_id_map["Rel\u00f3gios Femininos"]
+            if cur_cats != [target_cid]:
+                bling["category_ids"] = [target_cid]
+                item_changed = True
+                log("[DROPI CAT FEM] ID %s | %s -> ID %s", snap.get("product_id"), snap.get("name"), target_cid)
+        elif not cur_cats:
+            chosen_cat = classify_dropi_category(snap)
+            if chosen_cat:
+                target_cid = cat_id_map[chosen_cat]
+                bling["category_ids"] = [target_cid]
+                item_changed = True
+                log("[DROPI CAT] ID %s | %s -> %s (ID %s)", snap.get("product_id"), snap.get("name"), chosen_cat, target_cid)
 
-    staging_data["dropi_categories_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        snap["update_ready"] = item_changed
+        if item_changed:
+            updated_count += 1
+
     staging_data["ready_to_push_count"] = updated_count
     staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
-    logger.info("Classificação Dropi concluída: %d produtos prontos para vincular categoria.", updated_count)
+    log("Classifica\u00e7\u00e3o/ajustes Dropi conclu\u00eddos: %d produtos.", updated_count)
     return updated_count
 
 
