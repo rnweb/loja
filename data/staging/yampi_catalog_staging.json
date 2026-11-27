@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T22:53:30.922702+00:00",
+  "fetched_at": "2026-11-27T22:55:30.526282+00:00",
   "merchant_alias": "boutique-br",
   "total_products": 284,
   "products": [
@@ -20182,7 +20182,7 @@
       "product_id": 46608934,
       "name": "PULSEIRA SJ-150",
       "slug": "pulseira-sj-150",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871364",
@@ -20233,7 +20233,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -20360,7 +20360,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:38.175906+00:00"
     },
     {
       "product_id": 46608935,
@@ -20550,7 +20551,7 @@
       "product_id": 46608936,
       "name": "PULSEIRA SJ-110",
       "slug": "pulseira-sj-110",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871356",
@@ -20601,7 +20602,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -20728,7 +20729,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:40.398346+00:00"
     },
     {
       "product_id": 46608937,
@@ -20918,7 +20920,7 @@
       "product_id": 46608938,
       "name": "PULSEIRA SJ-080",
       "slug": "pulseira-sj-080",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871351",
@@ -20969,7 +20971,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -21096,7 +21098,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:42.620483+00:00"
     },
     {
       "product_id": 46608939,
@@ -21470,7 +21473,7 @@
       "product_id": 46608941,
       "name": "PULSEIRA SJ-030",
       "slug": "pulseira-sj-030",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871344",
@@ -21521,7 +21524,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -21648,13 +21651,14 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:44.827360+00:00"
     },
     {
       "product_id": 46608942,
       "name": "PULSEIRA SJ-020",
       "slug": "pulseira-sj-020",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871342",
@@ -21705,7 +21709,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -21832,7 +21836,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:47.076048+00:00"
     },
     {
       "product_id": 46608943,
@@ -22206,7 +22211,7 @@
       "product_id": 46608945,
       "name": "PULSEIRA SJ-070",
       "slug": "pulseira-sj-070",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709871331",
@@ -22257,7 +22262,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -22384,7 +22389,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:49.340120+00:00"
     },
     {
       "product_id": 46608946,
@@ -34902,7 +34908,7 @@
       "product_id": 46609022,
       "name": "COLAR SJ-140",
       "slug": "colar-sj-140",
-      "active": true,
+      "active": false,
       "searchable": true,
       "bling_link_readonly": {
         "erp_id": "16709870965",
@@ -34953,7 +34959,7 @@
         "merchant_id": 1485051,
         "seller_id": null,
         "affiliation_id": null,
-        "active": true,
+        "active": false,
         "gift_value": null,
         "searchable": true,
         "simple": true,
@@ -35080,7 +35086,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:51.610275+00:00"
     },
     {
       "product_id": 46609023,
@@ -50553,7 +50560,7 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          8245303
+          8485288
         ],
         "category_names": [
           "Relógios Masculinos"
@@ -50893,7 +50900,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:53.731920+00:00"
     },
     {
       "product_id": 46841059,
@@ -50910,7 +50918,7 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          8245303
+          8485288
         ],
         "category_names": [
           "Relógios Masculinos"
@@ -51250,7 +51258,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:55.994601+00:00"
     },
     {
       "product_id": 46841060,
@@ -51267,7 +51276,7 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          8245303
+          8485288
         ],
         "category_names": [
           "Relógios Masculinos"
@@ -51533,7 +51542,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T22:55:58.193568+00:00"
     },
     {
       "product_id": 46841063,
@@ -54704,6 +54714,5 @@
       }
     }
   ],
-  "dropi_categories_at": "2026-11-27T22:53:31.364203+00:00",
-  "ready_to_push_count": 0
+  "ready_to_push_count": 10
 }
