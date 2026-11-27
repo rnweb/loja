@@ -1,5 +1,5 @@
-2026-11-27 21:36:20 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
-2026-11-27 21:36:20 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
+2026-11-27 22:50:59 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
+2026-11-27 22:50:59 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
 {
   "name": "Camiseta Oversized Algodão Egípcio",
   "slug": "camiseta-oversized-algodao-egipcio",
@@ -33,27 +33,27 @@
     19
   ]
 }
-2026-11-27 21:36:20 | INFO     | Buscando página 1 de produtos (limit=50)...
-2026-11-27 21:36:22 | INFO     | Página 1/6 carregada (50/284 produtos acumulados).
-2026-11-27 21:36:22 | INFO     | Buscando página 2 de produtos (limit=50)...
-2026-11-27 21:36:23 | INFO     | Página 2/6 carregada (100/284 produtos acumulados).
-2026-11-27 21:36:23 | INFO     | Buscando página 3 de produtos (limit=50)...
-2026-11-27 21:36:26 | INFO     | Página 3/6 carregada (150/284 produtos acumulados).
-2026-11-27 21:36:26 | INFO     | Buscando página 4 de produtos (limit=50)...
-2026-11-27 21:36:27 | INFO     | Página 4/6 carregada (200/284 produtos acumulados).
-2026-11-27 21:36:27 | INFO     | Buscando página 5 de produtos (limit=50)...
-2026-11-27 21:36:29 | INFO     | Página 5/6 carregada (250/284 produtos acumulados).
-2026-11-27 21:36:29 | INFO     | Buscando página 6 de produtos (limit=50)...
-2026-11-27 21:36:33 | INFO     | Página 6/6 carregada (284/284 produtos acumulados).
-2026-11-27 21:36:33 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (284 produtos).
-2026-11-27 21:36:33 | INFO     | Categorias existentes na Yampi: {'relogios masculinos': 8245303, 'relogios femininos': 8485286, 'bolsas e acessorios': 8485287, 'oculos': 8485288}
-2026-11-27 21:36:33 | INFO     | Categoria já existe: 'Relógios Femininos' -> ID 8485286
-2026-11-27 21:36:33 | INFO     | Categoria já existe: 'Bolsas e Acessórios' -> ID 8485287
-2026-11-27 21:36:33 | INFO     | Categoria já existe: 'Óculos' -> ID 8485288
-2026-11-27 21:36:33 | INFO     | [DROPI SKIP] ID 46608827 | SKU: A038 | Nome: PERFUME ARABIC COLLECTION A038 (sem correspondência nas 3 categorias)
-2026-11-27 21:36:33 | INFO     | [DROPI SKIP] ID 46608828 | SKU: A019 | Nome: PERFUME ARABIC COLLECTION A019 (sem correspondência nas 3 categorias)
-2026-11-27 21:36:33 | INFO     | [DROPI SKIP] ID 46608829 | SKU: BD-286 | Nome: PERFUME BRAND COLLECTION BD-286 (sem correspondência nas 3 categorias)
-2026-11-27 21:36:33 | INFO     | [DROPI SKIP] ID 46608830 | SKU: BD-190 | Nome: PERFUME BRAND COLLECTION BD-190 (sem correspondência nas 3 categorias)
-2026-11-27 21:36:33 | INFO     | [DROPI SKIP] ID 46608831 | SKU: BD-005 | Nome: PERFUME BRAND COLLECTION BD-005 (sem correspondência nas 3 categorias)
-2026-11-27 21:36:33 | INFO     | Classificação Dropi concluída: 0 produtos prontos para vincular categoria.
-2026-11-27 21:36:33 | INFO     | Nenhum produto marcado com `update_ready: true` para atualizar.
+2026-11-27 22:50:59 | INFO     | Buscando página 1 de produtos (limit=50)...
+2026-11-27 22:51:01 | INFO     | Página 1/6 carregada (50/284 produtos acumulados).
+2026-11-27 22:51:01 | INFO     | Buscando página 2 de produtos (limit=50)...
+2026-11-27 22:51:03 | INFO     | Página 2/6 carregada (100/284 produtos acumulados).
+2026-11-27 22:51:03 | INFO     | Buscando página 3 de produtos (limit=50)...
+2026-11-27 22:51:04 | INFO     | Página 3/6 carregada (150/284 produtos acumulados).
+2026-11-27 22:51:04 | INFO     | Buscando página 4 de produtos (limit=50)...
+2026-11-27 22:51:08 | INFO     | Página 4/6 carregada (200/284 produtos acumulados).
+2026-11-27 22:51:08 | INFO     | Buscando página 5 de produtos (limit=50)...
+2026-11-27 22:51:09 | INFO     | Página 5/6 carregada (250/284 produtos acumulados).
+2026-11-27 22:51:09 | INFO     | Buscando página 6 de produtos (limit=50)...
+2026-11-27 22:51:12 | INFO     | Página 6/6 carregada (284/284 produtos acumulados).
+2026-11-27 22:51:12 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (284 produtos).
+2026-11-27 22:51:12 | INFO     | Categorias existentes na Yampi: {'relogios masculinos': 8245303, 'relogios femininos': 8485286, 'bolsas e acessorios': 8485287, 'oculos': 8485288}
+2026-11-27 22:51:12 | INFO     | Categoria já existe: 'Relógios Femininos' -> ID 8485286
+2026-11-27 22:51:12 | INFO     | Categoria já existe: 'Bolsas e Acessórios' -> ID 8485287
+2026-11-27 22:51:12 | INFO     | Categoria já existe: 'Óculos' -> ID 8485288
+2026-11-27 22:51:12 | INFO     | [DROPI SKIP] ID 46608827 | SKU: A038 | Nome: PERFUME ARABIC COLLECTION A038 (sem correspondência nas 3 categorias)
+2026-11-27 22:51:12 | INFO     | [DROPI SKIP] ID 46608828 | SKU: A019 | Nome: PERFUME ARABIC COLLECTION A019 (sem correspondência nas 3 categorias)
+2026-11-27 22:51:12 | INFO     | [DROPI SKIP] ID 46608829 | SKU: BD-286 | Nome: PERFUME BRAND COLLECTION BD-286 (sem correspondência nas 3 categorias)
+2026-11-27 22:51:12 | INFO     | [DROPI SKIP] ID 46608830 | SKU: BD-190 | Nome: PERFUME BRAND COLLECTION BD-190 (sem correspondência nas 3 categorias)
+2026-11-27 22:51:12 | INFO     | [DROPI SKIP] ID 46608831 | SKU: BD-005 | Nome: PERFUME BRAND COLLECTION BD-005 (sem correspondência nas 3 categorias)
+2026-11-27 22:51:12 | INFO     | Classificação Dropi concluída: 0 produtos prontos para vincular categoria.
+2026-11-27 22:51:12 | INFO     | Nenhum produto marcado com `update_ready: true` para atualizar.
