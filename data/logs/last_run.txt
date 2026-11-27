@@ -1,5 +1,5 @@
-2026-11-27 21:22:11 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
-2026-11-27 21:22:11 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
+2026-11-27 21:26:28 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
+2026-11-27 21:26:28 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
 {
   "name": "Camiseta Oversized Algodão Egípcio",
   "slug": "camiseta-oversized-algodao-egipcio",
@@ -33,62 +33,62 @@
     19
   ]
 }
-2026-11-27 21:22:11 | INFO     | Buscando página 1 de produtos (limit=50)...
-2026-11-27 21:22:12 | INFO     | Página 1/6 carregada (50/284 produtos acumulados).
-2026-11-27 21:22:12 | INFO     | Buscando página 2 de produtos (limit=50)...
-2026-11-27 21:22:15 | INFO     | Página 2/6 carregada (100/284 produtos acumulados).
-2026-11-27 21:22:15 | INFO     | Buscando página 3 de produtos (limit=50)...
-2026-11-27 21:22:16 | INFO     | Página 3/6 carregada (150/284 produtos acumulados).
-2026-11-27 21:22:16 | INFO     | Buscando página 4 de produtos (limit=50)...
-2026-11-27 21:22:19 | INFO     | Página 4/6 carregada (200/284 produtos acumulados).
-2026-11-27 21:22:19 | INFO     | Buscando página 5 de produtos (limit=50)...
-2026-11-27 21:22:21 | INFO     | Página 5/6 carregada (250/284 produtos acumulados).
-2026-11-27 21:22:21 | INFO     | Buscando página 6 de produtos (limit=50)...
-2026-11-27 21:22:23 | INFO     | Página 6/6 carregada (284/284 produtos acumulados).
-2026-11-27 21:22:23 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (284 produtos).
-2026-11-27 21:22:23 | INFO     | Categorias existentes na Yampi: {'relogios masculinos': 8245303}
-2026-11-27 21:22:23 | INFO     | [DRY-RUN] Criaria categoria: 'Relógios Femininos' (placeholder ID -1)
-2026-11-27 21:22:23 | INFO     | [DRY-RUN] Criaria categoria: 'Bolsas e Acessórios' (placeholder ID -2)
-2026-11-27 21:22:23 | INFO     | [DRY-RUN] Criaria categoria: 'Óculos' (placeholder ID -3)
-2026-11-27 21:22:23 | INFO     | [DROPI SKIP] ID 46608827 | SKU: A038 | Nome: PERFUME ARABIC COLLECTION A038 (sem correspondência nas 3 categorias)
-2026-11-27 21:22:23 | INFO     | [DROPI SKIP] ID 46608828 | SKU: A019 | Nome: PERFUME ARABIC COLLECTION A019 (sem correspondência nas 3 categorias)
-2026-11-27 21:22:23 | INFO     | [DROPI SKIP] ID 46608829 | SKU: BD-286 | Nome: PERFUME BRAND COLLECTION BD-286 (sem correspondência nas 3 categorias)
-2026-11-27 21:22:23 | INFO     | [DROPI SKIP] ID 46608830 | SKU: BD-190 | Nome: PERFUME BRAND COLLECTION BD-190 (sem correspondência nas 3 categorias)
-2026-11-27 21:22:23 | INFO     | [DROPI SKIP] ID 46608831 | SKU: BD-005 | Nome: PERFUME BRAND COLLECTION BD-005 (sem correspondência nas 3 categorias)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #1] ID 46608934 | SKU: SJ-150 | Nome: PULSEIRA SJ-150 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #2] ID 46608935 | SKU: SJ-120 | Nome: PULSEIRA SJ-120 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #3] ID 46608936 | SKU: SJ-110 | Nome: PULSEIRA SJ-110 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #4] ID 46608937 | SKU: SJ-090 | Nome: PULSEIRA SJ-090 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #5] ID 46608938 | SKU: SJ-080 | Nome: PULSEIRA SJ-080 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #6] ID 46608939 | SKU: SJ-060 | Nome: PULSEIRA SJ-060 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #7] ID 46608940 | SKU: SJ-050 | Nome: PULSEIRA SJ-050 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #8] ID 46608941 | SKU: SJ-030 | Nome: PULSEIRA SJ-030 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #9] ID 46608942 | SKU: SJ-020 | Nome: PULSEIRA SJ-020 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #10] ID 46608943 | SKU: SJ-010 | Nome: PULSEIRA SJ-010 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #11] ID 46608944 | SKU: SJ-130 | Nome: PULSEIRA SJ-130 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #12] ID 46608945 | SKU: SJ-070 | Nome: PULSEIRA SJ-070 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #13] ID 46608946 | SKU: SJ-040 | Nome: PULSEIRA SJ-040 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #14] ID 46609022 | SKU: SJ-140 | Nome: COLAR SJ-140 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #15] ID 46609023 | SKU: SJ-100 | Nome: COLAR SJ-100 -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #16] ID 46841063 | SKU: 8219129140,2618929951,6912843302,3553490703,9280365414,6586653695,9702600826 | Nome: Bolsa de Ombro Feminina Elegance -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | [DROPI CAT #17] ID 46841064 | SKU: 4421692440,3694595381,4841495652,9106458473,8119317784,8594397355,3888525826,5570185677,460629418 | Nome: Bolsa Tote Grand Heritage - Canvas Edition -> Bolsas e Acessórios (ID -2)
-2026-11-27 21:22:23 | INFO     | Classificação Dropi concluída: 17 produtos prontos para vincular categoria.
-2026-11-27 21:22:23 | INFO     | Backup de rollback salvo em 'backups_yampi/yampi_rollback_backup_20261127_212223.json' (17 produtos).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 1/17] PUT /catalog/products/46608934 (SKU: SJ-150 | Nome: PULSEIRA SJ-150) -> Payload validado (2017 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 2/17] PUT /catalog/products/46608935 (SKU: SJ-120 | Nome: PULSEIRA SJ-120) -> Payload validado (1317 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 3/17] PUT /catalog/products/46608936 (SKU: SJ-110 | Nome: PULSEIRA SJ-110) -> Payload validado (2039 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 4/17] PUT /catalog/products/46608937 (SKU: SJ-090 | Nome: PULSEIRA SJ-090) -> Payload validado (1317 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 5/17] PUT /catalog/products/46608938 (SKU: SJ-080 | Nome: PULSEIRA SJ-080) -> Payload validado (1287 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 6/17] PUT /catalog/products/46608939 (SKU: SJ-060 | Nome: PULSEIRA SJ-060) -> Payload validado (1404 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 7/17] PUT /catalog/products/46608940 (SKU: SJ-050 | Nome: PULSEIRA SJ-050) -> Payload validado (1992 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 8/17] PUT /catalog/products/46608941 (SKU: SJ-030 | Nome: PULSEIRA SJ-030) -> Payload validado (1269 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 9/17] PUT /catalog/products/46608942 (SKU: SJ-020 | Nome: PULSEIRA SJ-020) -> Payload validado (1379 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 10/17] PUT /catalog/products/46608943 (SKU: SJ-010 | Nome: PULSEIRA SJ-010) -> Payload validado (1568 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 11/17] PUT /catalog/products/46608944 (SKU: SJ-130 | Nome: PULSEIRA SJ-130) -> Payload validado (1301 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 12/17] PUT /catalog/products/46608945 (SKU: SJ-070 | Nome: PULSEIRA SJ-070) -> Payload validado (1316 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 13/17] PUT /catalog/products/46608946 (SKU: SJ-040 | Nome: PULSEIRA SJ-040) -> Payload validado (1450 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 14/17] PUT /catalog/products/46609022 (SKU: SJ-140 | Nome: COLAR SJ-140) -> Payload validado (1966 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 15/17] PUT /catalog/products/46609023 (SKU: SJ-100 | Nome: COLAR SJ-100) -> Payload validado (1302 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 16/17] PUT /catalog/products/46841063 (SKU: 8219129140,2618929951,6912843302,3553490703,9280365414,6586653695,9702600826 | Nome: Bolsa de Ombro Feminina Elegance) -> Payload validado (19638 bytes).
-2026-11-27 21:22:23 | INFO     | [DRY-RUN 17/17] PUT /catalog/products/46841064 (SKU: 4421692440,3694595381,4841495652,9106458473,8119317784,8594397355,3888525826,5570185677,460629418 | Nome: Bolsa Tote Grand Heritage - Canvas Edition) -> Payload validado (13380 bytes).
-2026-11-27 21:22:23 | INFO     | Resumo do envio: candidatos=17 | atualizados=0 | falhas=0 | dry_run=True
+2026-11-27 21:26:28 | INFO     | Buscando página 1 de produtos (limit=50)...
+2026-11-27 21:26:30 | INFO     | Página 1/6 carregada (50/284 produtos acumulados).
+2026-11-27 21:26:30 | INFO     | Buscando página 2 de produtos (limit=50)...
+2026-11-27 21:26:33 | INFO     | Página 2/6 carregada (100/284 produtos acumulados).
+2026-11-27 21:26:33 | INFO     | Buscando página 3 de produtos (limit=50)...
+2026-11-27 21:26:36 | INFO     | Página 3/6 carregada (150/284 produtos acumulados).
+2026-11-27 21:26:36 | INFO     | Buscando página 4 de produtos (limit=50)...
+2026-11-27 21:26:37 | INFO     | Página 4/6 carregada (200/284 produtos acumulados).
+2026-11-27 21:26:37 | INFO     | Buscando página 5 de produtos (limit=50)...
+2026-11-27 21:26:40 | INFO     | Página 5/6 carregada (250/284 produtos acumulados).
+2026-11-27 21:26:40 | INFO     | Buscando página 6 de produtos (limit=50)...
+2026-11-27 21:26:41 | INFO     | Página 6/6 carregada (284/284 produtos acumulados).
+2026-11-27 21:26:41 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (284 produtos).
+2026-11-27 21:26:41 | INFO     | Categorias existentes na Yampi: {'relogios masculinos': 8245303, 'relogios femininos': 8485286, 'bolsas e acessorios': 8485287, 'oculos': 8485288}
+2026-11-27 21:26:41 | INFO     | Categoria já existe: 'Relógios Femininos' -> ID 8485286
+2026-11-27 21:26:41 | INFO     | Categoria já existe: 'Bolsas e Acessórios' -> ID 8485287
+2026-11-27 21:26:41 | INFO     | Categoria já existe: 'Óculos' -> ID 8485288
+2026-11-27 21:26:41 | INFO     | [DROPI SKIP] ID 46608827 | SKU: A038 | Nome: PERFUME ARABIC COLLECTION A038 (sem correspondência nas 3 categorias)
+2026-11-27 21:26:41 | INFO     | [DROPI SKIP] ID 46608828 | SKU: A019 | Nome: PERFUME ARABIC COLLECTION A019 (sem correspondência nas 3 categorias)
+2026-11-27 21:26:41 | INFO     | [DROPI SKIP] ID 46608829 | SKU: BD-286 | Nome: PERFUME BRAND COLLECTION BD-286 (sem correspondência nas 3 categorias)
+2026-11-27 21:26:41 | INFO     | [DROPI SKIP] ID 46608830 | SKU: BD-190 | Nome: PERFUME BRAND COLLECTION BD-190 (sem correspondência nas 3 categorias)
+2026-11-27 21:26:41 | INFO     | [DROPI SKIP] ID 46608831 | SKU: BD-005 | Nome: PERFUME BRAND COLLECTION BD-005 (sem correspondência nas 3 categorias)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #1] ID 46608934 | SKU: SJ-150 | Nome: PULSEIRA SJ-150 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #2] ID 46608935 | SKU: SJ-120 | Nome: PULSEIRA SJ-120 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #3] ID 46608936 | SKU: SJ-110 | Nome: PULSEIRA SJ-110 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #4] ID 46608937 | SKU: SJ-090 | Nome: PULSEIRA SJ-090 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #5] ID 46608938 | SKU: SJ-080 | Nome: PULSEIRA SJ-080 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #6] ID 46608939 | SKU: SJ-060 | Nome: PULSEIRA SJ-060 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #7] ID 46608940 | SKU: SJ-050 | Nome: PULSEIRA SJ-050 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #8] ID 46608941 | SKU: SJ-030 | Nome: PULSEIRA SJ-030 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #9] ID 46608942 | SKU: SJ-020 | Nome: PULSEIRA SJ-020 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #10] ID 46608943 | SKU: SJ-010 | Nome: PULSEIRA SJ-010 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #11] ID 46608944 | SKU: SJ-130 | Nome: PULSEIRA SJ-130 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #12] ID 46608945 | SKU: SJ-070 | Nome: PULSEIRA SJ-070 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #13] ID 46608946 | SKU: SJ-040 | Nome: PULSEIRA SJ-040 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #14] ID 46609022 | SKU: SJ-140 | Nome: COLAR SJ-140 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #15] ID 46609023 | SKU: SJ-100 | Nome: COLAR SJ-100 -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #16] ID 46841063 | SKU: 8219129140,2618929951,6912843302,3553490703,9280365414,6586653695,9702600826 | Nome: Bolsa de Ombro Feminina Elegance -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | [DROPI CAT #17] ID 46841064 | SKU: 4421692440,3694595381,4841495652,9106458473,8119317784,8594397355,3888525826,5570185677,460629418 | Nome: Bolsa Tote Grand Heritage - Canvas Edition -> Bolsas e Acessórios (ID 8485287)
+2026-11-27 21:26:41 | INFO     | Classificação Dropi concluída: 17 produtos prontos para vincular categoria.
+2026-11-27 21:26:41 | INFO     | Backup de rollback salvo em 'backups_yampi/yampi_rollback_backup_20261127_212641.json' (17 produtos).
+2026-11-27 21:26:41 | INFO     | [LIVE 1/17] Atualizando produto ID 46608934 (SKU: SJ-150 | PULSEIRA SJ-150)...
+2026-11-27 21:26:42 | INFO     | [LIVE 2/17] Atualizando produto ID 46608935 (SKU: SJ-120 | PULSEIRA SJ-120)...
+2026-11-27 21:26:44 | INFO     | [LIVE 3/17] Atualizando produto ID 46608936 (SKU: SJ-110 | PULSEIRA SJ-110)...
+2026-11-27 21:26:46 | INFO     | [LIVE 4/17] Atualizando produto ID 46608937 (SKU: SJ-090 | PULSEIRA SJ-090)...
+2026-11-27 21:26:48 | INFO     | [LIVE 5/17] Atualizando produto ID 46608938 (SKU: SJ-080 | PULSEIRA SJ-080)...
+2026-11-27 21:26:51 | INFO     | [LIVE 6/17] Atualizando produto ID 46608939 (SKU: SJ-060 | PULSEIRA SJ-060)...
+2026-11-27 21:26:53 | INFO     | [LIVE 7/17] Atualizando produto ID 46608940 (SKU: SJ-050 | PULSEIRA SJ-050)...
+2026-11-27 21:26:55 | INFO     | [LIVE 8/17] Atualizando produto ID 46608941 (SKU: SJ-030 | PULSEIRA SJ-030)...
+2026-11-27 21:26:57 | INFO     | [LIVE 9/17] Atualizando produto ID 46608942 (SKU: SJ-020 | PULSEIRA SJ-020)...
+2026-11-27 21:26:59 | INFO     | [LIVE 10/17] Atualizando produto ID 46608943 (SKU: SJ-010 | PULSEIRA SJ-010)...
+2026-11-27 21:27:02 | INFO     | [LIVE 11/17] Atualizando produto ID 46608944 (SKU: SJ-130 | PULSEIRA SJ-130)...
+2026-11-27 21:27:04 | INFO     | [LIVE 12/17] Atualizando produto ID 46608945 (SKU: SJ-070 | PULSEIRA SJ-070)...
+2026-11-27 21:27:06 | INFO     | [LIVE 13/17] Atualizando produto ID 46608946 (SKU: SJ-040 | PULSEIRA SJ-040)...
+2026-11-27 21:27:08 | INFO     | [LIVE 14/17] Atualizando produto ID 46609022 (SKU: SJ-140 | COLAR SJ-140)...
+2026-11-27 21:27:11 | INFO     | [LIVE 15/17] Atualizando produto ID 46609023 (SKU: SJ-100 | COLAR SJ-100)...
+2026-11-27 21:27:13 | INFO     | [LIVE 16/17] Atualizando produto ID 46841063 (SKU: 8219129140,2618929951,6912843302,3553490703,9280365414,6586653695,9702600826 | Bolsa de Ombro Feminina Elegance)...
+2026-11-27 21:27:15 | INFO     | [LIVE 17/17] Atualizando produto ID 46841064 (SKU: 4421692440,3694595381,4841495652,9106458473,8119317784,8594397355,3888525826,5570185677,460629418 | Bolsa Tote Grand Heritage - Canvas Edition)...
+2026-11-27 21:27:17 | INFO     | Resumo do envio: candidatos=17 | atualizados=17 | falhas=0 | dry_run=False

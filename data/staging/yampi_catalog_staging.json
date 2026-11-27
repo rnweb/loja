@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T21:22:23.234502+00:00",
+  "fetched_at": "2026-11-27T21:26:41.258357+00:00",
   "merchant_alias": "boutique-br",
   "total_products": 284,
   "products": [
@@ -20193,7 +20193,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -20224,7 +20224,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608934,
@@ -20349,7 +20349,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:42.196988+00:00"
     },
     {
       "product_id": 46608935,
@@ -20366,7 +20367,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -20397,7 +20398,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608935,
@@ -20522,7 +20523,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:44.416125+00:00"
     },
     {
       "product_id": 46608936,
@@ -20539,7 +20541,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -20570,7 +20572,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608936,
@@ -20695,7 +20697,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:46.639181+00:00"
     },
     {
       "product_id": 46608937,
@@ -20712,7 +20715,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -20743,7 +20746,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608937,
@@ -20868,7 +20871,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:48.939681+00:00"
     },
     {
       "product_id": 46608938,
@@ -20885,7 +20889,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -20916,7 +20920,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608938,
@@ -21041,7 +21045,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:51.146810+00:00"
     },
     {
       "product_id": 46608939,
@@ -21058,7 +21063,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21089,7 +21094,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608939,
@@ -21214,7 +21219,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:53.296208+00:00"
     },
     {
       "product_id": 46608940,
@@ -21231,7 +21237,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21262,7 +21268,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608940,
@@ -21387,7 +21393,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:55.664427+00:00"
     },
     {
       "product_id": 46608941,
@@ -21404,7 +21411,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21435,7 +21442,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608941,
@@ -21560,7 +21567,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:57.739484+00:00"
     },
     {
       "product_id": 46608942,
@@ -21577,7 +21585,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21608,7 +21616,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608942,
@@ -21733,7 +21741,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:26:59.977882+00:00"
     },
     {
       "product_id": 46608943,
@@ -21750,7 +21759,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21781,7 +21790,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608943,
@@ -21906,7 +21915,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:02.191810+00:00"
     },
     {
       "product_id": 46608944,
@@ -21923,7 +21933,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -21954,7 +21964,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608944,
@@ -22079,7 +22089,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:04.675723+00:00"
     },
     {
       "product_id": 46608945,
@@ -22096,7 +22107,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -22127,7 +22138,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608945,
@@ -22252,7 +22263,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:06.713782+00:00"
     },
     {
       "product_id": 46608946,
@@ -22269,7 +22281,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -22300,7 +22312,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46608946,
@@ -22425,7 +22437,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:08.863959+00:00"
     },
     {
       "product_id": 46608947,
@@ -34770,7 +34783,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -34801,7 +34814,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46609022,
@@ -34926,7 +34939,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:11.133773+00:00"
     },
     {
       "product_id": 46609023,
@@ -34943,7 +34957,7 @@
         "brand_id": 46347945,
         "brand_name": "ondrop",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -34974,7 +34988,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46609023,
@@ -35099,7 +35113,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:13.360571+00:00"
     },
     {
       "product_id": 46609024,
@@ -50421,7 +50436,7 @@
             "height": 7,
             "width": 11,
             "length": 18,
-            "total_in_stock": 448,
+            "total_in_stock": 197,
             "variations": [
               "Cor:Cinza e Vermelho"
             ]
@@ -50437,7 +50452,7 @@
             "height": 7,
             "width": 11,
             "length": 18,
-            "total_in_stock": 67,
+            "total_in_stock": 257,
             "variations": [
               "Cor:Cinza e Preto"
             ]
@@ -50652,7 +50667,7 @@
               ],
               "combinations": "64831654",
               "order": 0,
-              "total_in_stock": 448,
+              "total_in_stock": 197,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -50703,7 +50718,7 @@
               ],
               "combinations": "64831655",
               "order": 0,
-              "total_in_stock": 67,
+              "total_in_stock": 257,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -50762,7 +50777,7 @@
             "height": 6,
             "width": 8,
             "length": 18,
-            "total_in_stock": 13,
+            "total_in_stock": 9,
             "variations": [
               "Cor:Prata Cinza"
             ]
@@ -50778,7 +50793,7 @@
             "height": 6,
             "width": 8,
             "length": 18,
-            "total_in_stock": 15,
+            "total_in_stock": 43,
             "variations": [
               "Cor:Preto Cinza"
             ]
@@ -50794,7 +50809,7 @@
             "height": 6,
             "width": 8,
             "length": 18,
-            "total_in_stock": 79,
+            "total_in_stock": 4,
             "variations": [
               "Cor:Dourado Cinza"
             ]
@@ -50958,7 +50973,7 @@
               ],
               "combinations": "64832734",
               "order": 0,
-              "total_in_stock": 13,
+              "total_in_stock": 9,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51009,7 +51024,7 @@
               ],
               "combinations": "64832735",
               "order": 0,
-              "total_in_stock": 15,
+              "total_in_stock": 43,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51060,7 +51075,7 @@
               ],
               "combinations": "64832736",
               "order": 0,
-              "total_in_stock": 79,
+              "total_in_stock": 4,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51119,7 +51134,7 @@
             "height": 7,
             "width": 10,
             "length": 18,
-            "total_in_stock": 3,
+            "total_in_stock": 0,
             "variations": [
               "Cor das lentes:Preto Cinza"
             ]
@@ -51135,7 +51150,7 @@
             "height": 7,
             "width": 10,
             "length": 18,
-            "total_in_stock": 25,
+            "total_in_stock": 22,
             "variations": [
               "Cor das lentes:Laranja"
             ]
@@ -51231,7 +51246,7 @@
                   {
                     "id": 64815356,
                     "value": "Preto Cinza",
-                    "blocked_sale": 0,
+                    "blocked_sale": 1,
                     "color": null,
                     "image_url": null
                   },
@@ -51268,7 +51283,7 @@
               "sku": "8472268310",
               "token": "GELESL6X7S",
               "erp_id": null,
-              "blocked_sale": false,
+              "blocked_sale": true,
               "barcode": null,
               "title": "Óculos Barcur Aero-Mag Executive Preto Cinza",
               "availability": 0,
@@ -51292,8 +51307,8 @@
               ],
               "combinations": "64815356",
               "order": 0,
-              "total_in_stock": 3,
-              "stock_status": "in_stock",
+              "total_in_stock": 0,
+              "stock_status": "out_of_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
               "image_reference_sku_id": null,
@@ -51304,7 +51319,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:10:44.000000",
+                "date": "2026-11-27 18:23:09.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -51343,7 +51358,7 @@
               ],
               "combinations": "64815357",
               "order": 0,
-              "total_in_stock": 25,
+              "total_in_stock": 22,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51385,7 +51400,7 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -51400,7 +51415,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 189,
+            "total_in_stock": 184,
             "variations": [
               "Cor:Roxo",
               "Tamanho:30x13x22cm"
@@ -51417,7 +51432,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 6,
+            "total_in_stock": 4,
             "variations": [
               "Cor:Azul Escuro",
               "Tamanho:30x13x22cm"
@@ -51434,7 +51449,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 24,
+            "total_in_stock": 5,
             "variations": [
               "Cor:Preto",
               "Tamanho:30x13x22cm"
@@ -51451,7 +51466,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 2,
+            "total_in_stock": 220,
             "variations": [
               "Cor:Bege",
               "Tamanho:30x13x22cm"
@@ -51485,7 +51500,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 241,
+            "total_in_stock": 2,
             "variations": [
               "Cor:Cinza claro",
               "Tamanho:30x13x22cm"
@@ -51502,7 +51517,7 @@
             "height": 13,
             "width": 32,
             "length": 34,
-            "total_in_stock": 282,
+            "total_in_stock": 272,
             "variations": [
               "Cor:Vermelho",
               "Tamanho:30x13x22cm"
@@ -51521,7 +51536,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46841063,
@@ -51707,7 +51722,7 @@
               ],
               "combinations": "64783743-64783749",
               "order": 0,
-              "total_in_stock": 189,
+              "total_in_stock": 184,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51764,7 +51779,7 @@
               ],
               "combinations": "64783744-64783749",
               "order": 0,
-              "total_in_stock": 6,
+              "total_in_stock": 4,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51821,7 +51836,7 @@
               ],
               "combinations": "64757681-64783749",
               "order": 0,
-              "total_in_stock": 24,
+              "total_in_stock": 5,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51878,7 +51893,7 @@
               ],
               "combinations": "64783745-64783749",
               "order": 0,
-              "total_in_stock": 2,
+              "total_in_stock": 220,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -51992,7 +52007,7 @@
               ],
               "combinations": "64783747-64783749",
               "order": 0,
-              "total_in_stock": 241,
+              "total_in_stock": 2,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -52049,7 +52064,7 @@
               ],
               "combinations": "64783748-64783749",
               "order": 0,
-              "total_in_stock": 282,
+              "total_in_stock": 272,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -52074,7 +52089,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:15.534408+00:00"
     },
     {
       "product_id": 46841064,
@@ -52091,7 +52107,7 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          -2
+          8485287
         ],
         "category_names": [],
         "skus": [
@@ -52252,7 +52268,7 @@
         "canonical_url": "",
         "search_terms": ""
       },
-      "update_ready": true,
+      "update_ready": false,
       "raw_product": {
         "relevance": null,
         "id": 46841064,
@@ -52864,7 +52880,8 @@
         "metadata": {
           "data": []
         }
-      }
+      },
+      "last_pushed_at": "2026-11-27T21:27:17.889062+00:00"
     },
     {
       "product_id": 46841065,
@@ -53403,7 +53420,7 @@
             "height": 8,
             "width": 10,
             "length": 13,
-            "total_in_stock": 16,
+            "total_in_stock": 12,
             "variations": [
               "Cor:Fundo Preto"
             ]
@@ -53419,7 +53436,7 @@
             "height": 8,
             "width": 10,
             "length": 13,
-            "total_in_stock": 7,
+            "total_in_stock": 3,
             "variations": [
               "Cor:Fundo Branco"
             ]
@@ -53576,7 +53593,7 @@
               ],
               "combinations": "64815221",
               "order": 0,
-              "total_in_stock": 16,
+              "total_in_stock": 12,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -53627,7 +53644,7 @@
               ],
               "combinations": "64815222",
               "order": 0,
-              "total_in_stock": 7,
+              "total_in_stock": 3,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -53686,7 +53703,7 @@
             "height": 8,
             "width": 8,
             "length": 12,
-            "total_in_stock": 100,
+            "total_in_stock": 99,
             "variations": [
               "Cor:Rose Gold Preto"
             ]
@@ -53718,7 +53735,7 @@
             "height": 8,
             "width": 8,
             "length": 12,
-            "total_in_stock": 97,
+            "total_in_stock": 96,
             "variations": [
               "Cor:Rose Gold Branco"
             ]
@@ -53905,7 +53922,7 @@
               ],
               "combinations": "64865159",
               "order": 0,
-              "total_in_stock": 100,
+              "total_in_stock": 99,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -54007,7 +54024,7 @@
               ],
               "combinations": "64865161",
               "order": 0,
-              "total_in_stock": 97,
+              "total_in_stock": 96,
               "stock_status": "in_stock",
               "total_orders": null,
               "allow_sell_without_customization": false,
@@ -54517,6 +54534,6 @@
       }
     }
   ],
-  "dropi_categories_at": "2026-11-27T21:22:23.729984+00:00",
+  "dropi_categories_at": "2026-11-27T21:26:41.701714+00:00",
   "ready_to_push_count": 17
 }
