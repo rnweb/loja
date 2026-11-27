@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T21:26:41.258357+00:00",
+  "fetched_at": "2026-11-27T21:36:33.222334+00:00",
   "merchant_alias": "boutique-br",
   "total_products": 284,
   "products": [
@@ -20195,7 +20195,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407508,
@@ -20296,7 +20298,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -20349,8 +20360,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:42.196988+00:00"
+      }
     },
     {
       "product_id": 46608935,
@@ -20369,7 +20379,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407509,
@@ -20470,7 +20482,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -20523,8 +20544,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:44.416125+00:00"
+      }
     },
     {
       "product_id": 46608936,
@@ -20543,7 +20563,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407510,
@@ -20644,7 +20666,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -20697,8 +20728,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:46.639181+00:00"
+      }
     },
     {
       "product_id": 46608937,
@@ -20717,7 +20747,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407511,
@@ -20818,7 +20850,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -20871,8 +20912,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:48.939681+00:00"
+      }
     },
     {
       "product_id": 46608938,
@@ -20891,7 +20931,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407512,
@@ -20992,7 +21034,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21045,8 +21096,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:51.146810+00:00"
+      }
     },
     {
       "product_id": 46608939,
@@ -21065,7 +21115,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407513,
@@ -21166,7 +21218,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21219,8 +21280,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:53.296208+00:00"
+      }
     },
     {
       "product_id": 46608940,
@@ -21239,7 +21299,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407514,
@@ -21340,7 +21402,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21393,8 +21464,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:55.664427+00:00"
+      }
     },
     {
       "product_id": 46608941,
@@ -21413,7 +21483,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407515,
@@ -21514,7 +21586,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21567,8 +21648,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:57.739484+00:00"
+      }
     },
     {
       "product_id": 46608942,
@@ -21587,7 +21667,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407516,
@@ -21688,7 +21770,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21741,8 +21832,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:26:59.977882+00:00"
+      }
     },
     {
       "product_id": 46608943,
@@ -21761,7 +21851,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407517,
@@ -21862,7 +21954,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -21915,8 +22016,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:02.191810+00:00"
+      }
     },
     {
       "product_id": 46608944,
@@ -21935,7 +22035,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407518,
@@ -22036,7 +22138,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -22089,8 +22200,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:04.675723+00:00"
+      }
     },
     {
       "product_id": 46608945,
@@ -22109,7 +22219,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407519,
@@ -22210,7 +22322,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -22263,8 +22384,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:06.713782+00:00"
+      }
     },
     {
       "product_id": 46608946,
@@ -22283,7 +22403,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407520,
@@ -22384,7 +22506,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -22437,8 +22568,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:08.863959+00:00"
+      }
     },
     {
       "product_id": 46608947,
@@ -34785,7 +34915,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407633,
@@ -34886,7 +35018,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -34939,8 +35080,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:11.133773+00:00"
+      }
     },
     {
       "product_id": 46609023,
@@ -34959,7 +35099,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 307407634,
@@ -35060,7 +35202,16 @@
           "data": []
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -35113,8 +35264,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:13.360571+00:00"
+      }
     },
     {
       "product_id": 46609024,
@@ -51402,7 +51552,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 308690437,
@@ -51681,7 +51833,16 @@
           ]
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -52089,8 +52250,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:15.534408+00:00"
+      }
     },
     {
       "product_id": 46841064,
@@ -52109,7 +52269,9 @@
         "category_ids": [
           8485287
         ],
-        "category_names": [],
+        "category_names": [
+          "Bolsas e Acessórios"
+        ],
         "skus": [
           {
             "id": 308690444,
@@ -52412,7 +52574,16 @@
           ]
         },
         "categories": {
-          "data": []
+          "data": [
+            {
+              "id": 8485287,
+              "name": "Bolsas e Acessórios",
+              "parent_id": null,
+              "slug": "bolsas-e-acessorios",
+              "active": true,
+              "url_path": "/bolsas-e-acessorios"
+            }
+          ]
         },
         "skus": {
           "data": [
@@ -52880,8 +53051,7 @@
         "metadata": {
           "data": []
         }
-      },
-      "last_pushed_at": "2026-11-27T21:27:17.889062+00:00"
+      }
     },
     {
       "product_id": 46841065,
@@ -52898,10 +53068,10 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          8245303
+          8485286
         ],
         "category_names": [
-          "Relógios Masculinos"
+          "Relógios Femininos"
         ],
         "skus": [
           {
@@ -53012,7 +53182,7 @@
         "ncm": null,
         "has_variations": true,
         "is_digital": false,
-        "warranty": null,
+        "warranty": 0,
         "custom_shipping": false,
         "shipping_price": "0.00",
         "name": "Relógio LIGE Diamond Octagon",
@@ -53115,12 +53285,12 @@
         "categories": {
           "data": [
             {
-              "id": 8245303,
-              "name": "Relógios Masculinos",
+              "id": 8485286,
+              "name": "Relógios Femininos",
               "parent_id": null,
-              "slug": "relogiosmasculinos",
+              "slug": "relogios-femininos",
               "active": true,
-              "url_path": "/relogiosmasculinos"
+              "url_path": "/relogios-femininos"
             }
           ]
         },
@@ -53169,7 +53339,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:12:00.000000",
+                "date": "2026-11-27 18:29:01.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -53207,7 +53377,7 @@
                 }
               ],
               "combinations": "64824748",
-              "order": 0,
+              "order": 1,
               "total_in_stock": 636,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -53220,7 +53390,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:12:00.000000",
+                "date": "2026-11-27 18:29:02.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -53258,7 +53428,7 @@
                 }
               ],
               "combinations": "64828624",
-              "order": 0,
+              "order": 2,
               "total_in_stock": 636,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -53271,7 +53441,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:12:01.000000",
+                "date": "2026-11-27 18:29:02.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -53309,7 +53479,7 @@
                 }
               ],
               "combinations": "64824753",
-              "order": 0,
+              "order": 3,
               "total_in_stock": 635,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -53322,7 +53492,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:12:01.000000",
+                "date": "2026-11-27 18:29:02.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -53360,7 +53530,7 @@
                 }
               ],
               "combinations": "64757681",
-              "order": 0,
+              "order": 4,
               "total_in_stock": 636,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -53373,7 +53543,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:12:01.000000",
+                "date": "2026-11-27 18:29:02.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -54117,10 +54287,10 @@
         "brand_id": 45411645,
         "brand_name": "Boutique-br",
         "category_ids": [
-          8245303
+          8485286
         ],
         "category_names": [
-          "Relógios Masculinos"
+          "Relógios Femininos"
         ],
         "skus": [
           {
@@ -54215,7 +54385,7 @@
         "ncm": null,
         "has_variations": true,
         "is_digital": false,
-        "warranty": null,
+        "warranty": 0,
         "custom_shipping": false,
         "shipping_price": "0.00",
         "name": "Relógio Feminino Infinite Ceramic Edition",
@@ -54311,12 +54481,12 @@
         "categories": {
           "data": [
             {
-              "id": 8245303,
-              "name": "Relógios Masculinos",
+              "id": 8485286,
+              "name": "Relógios Femininos",
               "parent_id": null,
-              "slug": "relogiosmasculinos",
+              "slug": "relogios-femininos",
               "active": true,
-              "url_path": "/relogiosmasculinos"
+              "url_path": "/relogios-femininos"
             }
           ]
         },
@@ -54365,7 +54535,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:18:06.000000",
+                "date": "2026-11-27 18:29:39.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -54403,7 +54573,7 @@
                 }
               ],
               "combinations": "64816879",
-              "order": 0,
+              "order": 1,
               "total_in_stock": 5,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -54416,7 +54586,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:18:07.000000",
+                "date": "2026-11-27 18:29:40.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -54454,7 +54624,7 @@
                 }
               ],
               "combinations": "64816880",
-              "order": 0,
+              "order": 2,
               "total_in_stock": 5,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -54467,7 +54637,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:18:07.000000",
+                "date": "2026-11-27 18:29:40.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -54505,7 +54675,7 @@
                 }
               ],
               "combinations": "64816881",
-              "order": 0,
+              "order": 3,
               "total_in_stock": 5,
               "stock_status": "in_stock",
               "total_orders": null,
@@ -54518,7 +54688,7 @@
                 "timezone": "America/Sao_Paulo"
               },
               "updated_at": {
-                "date": "2026-11-27 18:18:07.000000",
+                "date": "2026-11-27 18:29:41.000000",
                 "timezone_type": 3,
                 "timezone": "America/Sao_Paulo"
               },
@@ -54534,6 +54704,6 @@
       }
     }
   ],
-  "dropi_categories_at": "2026-11-27T21:26:41.701714+00:00",
-  "ready_to_push_count": 17
+  "dropi_categories_at": "2026-11-27T21:36:33.732850+00:00",
+  "ready_to_push_count": 0
 }
