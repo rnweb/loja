@@ -662,6 +662,7 @@ def call_gemini_enrichment(
         else snapshot.get("editable_content", {}).get("description", "")
     ) or ""
     plain_orig = strip_html_tags(orig_desc)
+    cur_specs = snapshot.get("editable_content", {}).get("specifications") or ""
     name = snapshot.get("name") or raw.get("name") or "Relógio"
     sku = bling.get("root_sku") or ""
     skus = bling.get("skus") or []
@@ -673,32 +674,38 @@ def call_gemini_enrichment(
         "Com base EXCLUSIVAMENTE nos dados reais do produto abaixo, gere um JSON estruturado.\n"
         "REGRAS ESTRITAS:\n"
         "1. NÃO invente características, materiais, resistência à água ou medidas que não estejam no texto original.\n"
-        "2. `description_html`: HTML limpo e persuasivo dentro de `<div class='yampi-custom-description'>` contendo:\n"
-        "   - `<h2>` com o nome do produto\n"
+        "2. `product_name`: nome comercial único, claro e padronizado em português (máximo 70 caracteres) para diferenciar variações do mesmo modelo na vitrine.\n"
+        "   - Inclua: `Relógio [Marca] [Modelo] [Cor principal / Mostrador] [Material da caixa ou pulseira se diferenciar]` (ex: `Relógio Tommy Hilfiger Tyson Grafite Aço Inox`, `Relógio Tag Carrera Quartz Azul Couro`, `Relógio Hublot Big Bang Preto Borracha`).\n"
+        "   - Se o nome atual estiver genérico ou errado (ex: `Design sofisticado...`), corrija identificando marca/modelo pela descrição e SKU.\n"
+        "   - Use APENAS cor e material presentes na descrição/ficha técnica.\n"
+        "3. `description_html`: HTML limpo e persuasivo dentro de `<div class='yampi-custom-description'>` contendo:\n"
+        "   - `<h2>` com o novo `product_name`\n"
         "   - `<p>` de abertura elegante destacando estilo, acabamento e presença no pulso\n"
         "   - `<h3>Principais Destaques</h3>` com `<ul><li>` de 3 a 4 benefícios reais\n"
         "   - `<h3>Ficha Técnica</h3>` com `<ul><li>` listando os atributos reais extraídos\n"
-        "3. `specifications`: string no formato exato `Chave: Valor; Chave2: Valor2` (ex: `Material da caixa: Aço inoxidável; Pulseira: Silicone preto; Movimento: Quartzo; Vidro: Mineral`) com os atributos técnicos (sem repetir medidas se já forem para `measures`).\n"
-        "4. `measures`: string concisa com diâmetro da caixa, comprimento total, espessura e peso (ex: `Diâmetro da caixa: 45 mm | Espessura: 15 mm | Peso: 90 g`), ou vazio se não constar.\n"
-        f"5. `seo_title`: máximo 60 caracteres{store_suffix_rule}.\n"
-        "6. `seo_description`: máximo 160 caracteres, persuasiva para clique no Google.\n"
-        "7. `seo_keywords`: 5 a 8 termos relevantes separados por `; `.\n\n"
+        "4. `specifications`: string no formato exato `Chave: Valor; Chave2: Valor2` (ex: `Material da caixa: Aço inoxidável; Pulseira: Silicone preto; Movimento: Quartzo; Vidro: Mineral`) com os atributos técnicos (sem repetir medidas se já forem para `measures`).\n"
+        "5. `measures`: string concisa com diâmetro da caixa, comprimento total, espessura e peso (ex: `Diâmetro da caixa: 45 mm | Espessura: 15 mm | Peso: 90 g`), ou vazio se não constar.\n"
+        f"6. `seo_title`: máximo 60 caracteres, baseado no `product_name`{store_suffix_rule}.\n"
+        "7. `seo_description`: máximo 160 caracteres, persuasiva para clique no Google.\n"
+        "8. `seo_keywords`: 5 a 8 termos relevantes separados por `; `.\n\n"
         f"DADOS DO PRODUTO:\n"
-        f"- Nome: {name}\n"
+        f"- Nome atual: {name}\n"
         f"- SKU: {sku}\n"
         f"- Preço: R$ {price_sale}\n"
-        f"- Descrição original: {plain_orig}\n"
+        f"- Ficha técnica atual: {cur_specs}\n"
+        f"- Descrição: {plain_orig}\n"
     )
 
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.4,
+            "temperature": 0.35,
             "thinkingConfig": {"thinkingBudget": 0},
             "responseMimeType": "application/json",
             "responseSchema": {
                 "type": "OBJECT",
                 "properties": {
+                    "product_name": {"type": "STRING"},
                     "description_html": {"type": "STRING"},
                     "specifications": {"type": "STRING"},
                     "measures": {"type": "STRING"},
@@ -707,6 +714,7 @@ def call_gemini_enrichment(
                     "seo_keywords": {"type": "STRING"},
                 },
                 "required": [
+                    "product_name",
                     "description_html",
                     "specifications",
                     "measures",
@@ -761,12 +769,14 @@ def call_gemini_enrichment(
                     cache.insert(0, current_model)
                     logger.info("Modelo %s promovido para principal.", current_model)
                 return {
+                    "name": parsed.get("product_name", "").strip()[:70],
                     "description": parsed.get("description_html", "").strip(),
                     "specifications": parsed.get("specifications", "").strip(),
                     "measures": parsed.get("measures", "").strip(),
                     "seo_title": parsed.get("seo_title", "").strip()[:60],
                     "seo_description": parsed.get("seo_description", "").strip()[:160],
                     "seo_keywords": parsed.get("seo_keywords", "").strip(),
+                    "_model_used": current_model,
                 }
             except urllib.error.HTTPError as exc:
                 err_msg = exc.read().decode("utf-8", errors="replace")
@@ -807,10 +817,16 @@ def enrich_snapshot_in_place(
     # Se houver função de IA customizada (ex.: Gemini API), delega a geração textual a ela
     if custom_ai_fn is not None:
         ai_result = custom_ai_fn(snapshot)
+        if ai_result.get("name"):
+            editable["name"] = ai_result["name"]
+            snapshot["name"] = ai_result["name"]
+            changed = True
         for key in ("description", "specifications", "measures", "seo_title", "seo_description", "seo_keywords"):
             if ai_result.get(key):
                 editable[key] = ai_result[key]
                 changed = True
+        if changed:
+            snapshot["_last_ai_model"] = ai_result.get("_model_used", "")
     else:
         current_plain = strip_html_tags(editable.get("description") or "")
         if overwrite_existing or len(current_plain) < 120:
@@ -986,6 +1002,13 @@ def cmd_transform(
         ):
             updated_count += 1
             if use_gemini:
+                logger.info(
+                    "[ITEM OK #%d] ID %s | modelo=%s | Novo nome: %s",
+                    updated_count,
+                    pid,
+                    snap.pop("_last_ai_model", gemini_model),
+                    snap.get("name"),
+                )
                 staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
             if use_gemini:
                 staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
