@@ -36,6 +36,7 @@ import re
 import sys
 import time
 import urllib.error
+import unicodedata
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
@@ -1138,6 +1139,167 @@ def extract_product_name_from_description(description_html: str) -> Optional[str
     return extracted or None
 
 
+
+def _norm_cat(s: str) -> str:
+    nfkd = unicodedata.normalize("NFKD", (s or "").strip().lower())
+    return "".join(ch for ch in nfkd if not unicodedata.combining(ch))
+
+
+def classify_dropi_category(snapshot: Dict[str, Any]) -> Optional[str]:
+    raw = snapshot.get("raw_product") or {}
+    editable = snapshot.get("editable_content") or {}
+    name = (snapshot.get("name") or raw.get("name") or "").strip()
+    desc = strip_html_tags(editable.get("description") or "")
+    combined = _norm_cat(f"{name} {desc}")
+
+    if any(k in combined for k in ("perfume", "eau de parfum", "eau de toilette", "colonia", "fragrancia")):
+        return None
+
+    if any(k in combined for k in ("oculos", "sunglasses", "armacao", "lente solar", "aviador", "wayfarer")):
+        return "Óculos"
+
+    if any(k in combined for k in ("relogio", "watch", "cronografo")):
+        return "Relógios Femininos"
+
+    if any(
+        k in combined
+        for k in (
+            "bolsa",
+            "mochila",
+            "carteira",
+            "clutch",
+            "pochete",
+            "necessaire",
+            "cinto",
+            "pulseira",
+            "colar",
+            "corrente",
+            "bracelete",
+            "brinco",
+            "anel",
+            "acessorio",
+            "porta-cartao",
+            "porta cartao",
+            "tote",
+            "bag",
+        )
+    ):
+        return "Bolsas e Acessórios"
+
+    return None
+
+
+def cmd_dropi_categories(
+    client: YampiClient,
+    staging_file: Path,
+    execute_live: bool = False,
+    masculine_watch_cat_id: int = 8245303,
+) -> int:
+    if not staging_file.exists():
+        raise FileNotFoundError(f"Arquivo de staging não encontrado: {staging_file}")
+
+    target_names = ["Relógios Femininos", "Bolsas e Acessórios", "Óculos"]
+    existing_cats: Dict[str, int] = {}
+
+    page = 1
+    while True:
+        resp = client.request("GET", "/catalog/categories", query_params={"limit": 100, "page": page})
+        data = resp.get("data") or []
+        for cat in data:
+            cname = (cat.get("name") or "").strip()
+            cid = cat.get("id")
+            if cname and cid is not None:
+                existing_cats[_norm_cat(cname)] = int(cid)
+        meta = (resp.get("meta") or {}).get("pagination") or {}
+        if page >= int(meta.get("total_pages") or 1):
+            break
+        page += 1
+
+    logger.info("Categorias existentes na Yampi: %s", existing_cats)
+
+    cat_id_map: Dict[str, int] = {}
+    placeholder_id = -1
+    for tname in target_names:
+        norm = _norm_cat(tname)
+        if norm in existing_cats:
+            cat_id_map[tname] = existing_cats[norm]
+            logger.info("Categoria já existe: '%s' -> ID %s", tname, cat_id_map[tname])
+        elif execute_live:
+            created = client.request(
+                "POST",
+                "/catalog/categories",
+                payload={"active": True, "name": tname, "home": True},
+            )
+            new_id = int((created.get("data") or {}).get("id"))
+            cat_id_map[tname] = new_id
+            logger.info("Categoria CRIADA na Yampi: '%s' -> ID %s", tname, new_id)
+        else:
+            cat_id_map[tname] = placeholder_id
+            logger.info("[DRY-RUN] Criaria categoria: '%s' (placeholder ID %s)", tname, placeholder_id)
+            placeholder_id -= 1
+
+    staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
+    snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
+
+    known_cat_ids = {masculine_watch_cat_id} | set(cat_id_map.values())
+    updated_count = 0
+
+    for snap in snapshots:
+        raw = snap.get("raw_product") or {}
+        bling = snap.get("bling_link_readonly") or {}
+        editable = snap.get("editable_content") or {}
+
+        raw_texts = _unwrap_relation(raw.get("texts", {})) or {}
+        raw_seo = _unwrap_relation(raw.get("seo", {})) or {}
+        if isinstance(raw_texts, dict):
+            editable["description"] = raw_texts.get("description") or editable.get("description") or ""
+            editable["specifications"] = raw_texts.get("specifications") or editable.get("specifications") or ""
+            editable["measures"] = raw_texts.get("measures") or editable.get("measures") or ""
+            editable["search_terms"] = raw_texts.get("search_terms") or editable.get("search_terms") or ""
+        if isinstance(raw_seo, dict):
+            editable["seo_title"] = raw_seo.get("title") or raw_seo.get("seo_title") or editable.get("seo_title") or ""
+            editable["seo_description"] = raw_seo.get("description") or raw_seo.get("seo_description") or editable.get("seo_description") or ""
+            editable["seo_keywords"] = raw_seo.get("keywords") or raw_seo.get("seo_keywords") or editable.get("seo_keywords") or ""
+
+        cur_cats = [int(c) for c in (bling.get("category_ids") or []) if c is not None]
+        if any(c in known_cat_ids for c in cur_cats):
+            snap["update_ready"] = False
+            continue
+
+        chosen_cat = classify_dropi_category(snap)
+        if not chosen_cat:
+            snap["update_ready"] = False
+            logger.info(
+                "[DROPI SKIP] ID %s | SKU: %s | Nome: %s (sem correspondência nas 3 categorias)",
+                snap.get("product_id"),
+                bling.get("root_sku") or "",
+                snap.get("name"),
+            )
+            continue
+
+        target_cid = cat_id_map[chosen_cat]
+        if target_cid not in cur_cats:
+            cur_cats.append(target_cid)
+        bling["category_ids"] = cur_cats
+        snap["update_ready"] = True
+        updated_count += 1
+        logger.info(
+            "[DROPI CAT #%d] ID %s | SKU: %s | Nome: %s -> %s (ID %s)",
+            updated_count,
+            snap.get("product_id"),
+            bling.get("root_sku") or "",
+            snap.get("name"),
+            chosen_cat,
+            target_cid,
+        )
+
+    staging_data["dropi_categories_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    staging_data["ready_to_push_count"] = updated_count
+    staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    logger.info("Classificação Dropi concluída: %d produtos prontos para vincular categoria.", updated_count)
+    return updated_count
+
+
 def cmd_apply_basic_rules(
     staging_file: Path,
     watch_category_id: int = 8245303,
@@ -1539,6 +1701,13 @@ def build_arg_parser() -> argparse.ArgumentParser:
     rules_parser.add_argument("--watch-category-id", type=int, default=8245303)
     rules_parser.add_argument("--min-stock", type=int, default=4)
 
+    # Subcomando: dropi-categories
+    dc_parser = subparsers.add_parser(
+        "dropi-categories",
+        help="Cria categorias (Relógios Femininos, Bolsas e Acessórios, Óculos) e vincula novos produtos.",
+    )
+    dc_parser.add_argument("--execute", action="store_true", help="Cria categorias faltantes na Yampi.")
+
     # Subcomando: apply-price-rules
     apr_parser = subparsers.add_parser("apply-price-rules", help="Calcula novos preços em lote para relógios e demais itens.")
     apr_parser.add_argument("--only-fashion-brands", action="store_true", help="Atualiza apenas Tommy, AX e Diesel para R$ 329,00.")
@@ -1623,6 +1792,8 @@ def main(argv: Optional[List[str]] = None) -> int:
             watch_category_id=args.watch_category_id,
             min_active_stock=args.min_stock,
         )
+    elif args.command == "dropi-categories":
+        cmd_dropi_categories(client=client, staging_file=staging_path, execute_live=args.execute)
     elif args.command == "push-prices":
         cmd_push_prices(client=client, staging_file=staging_path, execute_live=args.execute)
     elif args.command == "push":
