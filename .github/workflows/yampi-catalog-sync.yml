@@ -96,7 +96,7 @@ jobs:
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json mask-brands 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Criar Categorias e Classificar Produtos Dropi
-        if: ${{ startsWith(github.ref, 'refs/tags/dropi-cats-') || inputs.mode == 'dropi-cats-test' || startsWith(github.ref, 'refs/tags/mask-brands-live-') || inputs.mode == 'dropi-cats-live' || inputs.mode == 'mask-brands-live' }}
+        if: ${{ startsWith(github.ref, 'refs/tags/dropi-cats-') || inputs.mode == 'dropi-cats-test' || inputs.mode == 'dropi-cats-live' }}
         run: |
           set -o pipefail
           EXEC_FLAG=""
@@ -152,7 +152,7 @@ jobs:
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push-prices 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Executar Atualização Real na Yampi (Live Push)
-        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || startsWith(github.ref, 'refs/tags/ai-enrich-live-') || startsWith(github.ref, 'refs/tags/dropi-cats-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' || inputs.mode == 'ai-enrich-live' || inputs.mode == 'dropi-cats-live' }}
+        if: ${{ github.event_name == 'schedule' || startsWith(github.ref, 'refs/tags/sync-live-') || startsWith(github.ref, 'refs/tags/basic-rules-live-') || startsWith(github.ref, 'refs/tags/ai-enrich-live-') || startsWith(github.ref, 'refs/tags/dropi-cats-live-') || startsWith(github.ref, 'refs/tags/mask-brands-live-') || inputs.mode == 'live-push' || inputs.mode == 'basic-rules-live' || inputs.mode == 'ai-enrich-live' || inputs.mode == 'dropi-cats-live' || inputs.mode == 'mask-brands-live' }}
         run: |
           set -o pipefail
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push --execute 2>&1 | tee -a data/logs/last_run.txt
