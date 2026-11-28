@@ -1,5 +1,5 @@
-2026-11-28 17:52:40 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
-2026-11-28 17:52:40 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
+2026-11-28 17:54:09 | INFO     | Iniciando autoteste offline do pipeline Yampi (Bling-Safe)...
+2026-11-28 17:54:09 | INFO     | Autoteste concluído com SUCESSO! Vínculo Bling preservado e payload validado.
 {
   "name": "Camiseta Oversized Algodão Egípcio",
   "slug": "camiseta-oversized-algodao-egipcio",
@@ -33,537 +33,283 @@
     19
   ]
 }
-2026-11-28 17:52:40 | INFO     | Buscando página 1 de produtos (limit=50)...
-2026-11-28 17:52:41 | INFO     | Página 1/6 carregada (50/290 produtos acumulados).
-2026-11-28 17:52:41 | INFO     | Buscando página 2 de produtos (limit=50)...
-2026-11-28 17:52:43 | INFO     | Página 2/6 carregada (100/290 produtos acumulados).
-2026-11-28 17:52:43 | INFO     | Buscando página 3 de produtos (limit=50)...
-2026-11-28 17:52:46 | INFO     | Página 3/6 carregada (150/290 produtos acumulados).
-2026-11-28 17:52:46 | INFO     | Buscando página 4 de produtos (limit=50)...
-2026-11-28 17:52:49 | INFO     | Página 4/6 carregada (200/290 produtos acumulados).
-2026-11-28 17:52:49 | INFO     | Buscando página 5 de produtos (limit=50)...
-2026-11-28 17:52:51 | INFO     | Página 5/6 carregada (250/290 produtos acumulados).
-2026-11-28 17:52:51 | INFO     | Buscando página 6 de produtos (limit=50)...
-2026-11-28 17:52:53 | INFO     | Página 6/6 carregada (290/290 produtos acumulados).
-2026-11-28 17:52:53 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (290 produtos).
-2026-11-28 17:52:53 | INFO     | [MASK #1] ID 46608816 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #2] ID 46608817 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #3] ID 46608818 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #4] ID 46608819 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #5] ID 46608820 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #6] ID 46608821 | Relógio Hublot Orlinski -> Relógio HB Orlinski
-2026-11-28 17:52:53 | INFO     | [MASK #7] ID 46608822 | Relógio Armani Exchange Classic -> Relógio AX Classic
-2026-11-28 17:52:53 | INFO     | [MASK #8] ID 46608823 | Relógio Armani Exchange Classic -> Relógio AX Classic
-2026-11-28 17:52:53 | INFO     | [MASK #9] ID 46608824 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #10] ID 46608826 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #11] ID 46608832 | Relógio Tommy Hilfiger Tyson Grafite Aço Inoxidável -> Relógio TH Tyson Grafite Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #12] ID 46608833 | Relógio Tommy Hilfiger Tyson Preto Aço Inoxidável -> Relógio TH Tyson Preto Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #13] ID 46608834 | Relógio Tommy Hilfiger Tyson Prata Aço Inoxidável -> Relógio TH Tyson Prata Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #14] ID 46608835 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #15] ID 46608836 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #16] ID 46608837 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #17] ID 46608838 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #18] ID 46608839 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #19] ID 46608840 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #20] ID 46608841 | Relógio Breitling Superocean -> Relógio BT Superocean
-2026-11-28 17:52:53 | INFO     | [MASK #21] ID 46608842 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #22] ID 46608843 | Relógio Tissot PRX Mostrador Preto Pulseira Silicone -> Relógio TS PRX Mostrador Preto Pulseira Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #23] ID 46608844 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #24] ID 46608845 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
-2026-11-28 17:52:53 | INFO     | [MASK #25] ID 46608846 | Relógio Tissot T-Sport -> Relógio TS T-Sport
-2026-11-28 17:52:53 | INFO     | [MASK #26] ID 46608847 | Relógio Tissot PRX All Black Aço e Silicone -> Relógio TS PRX All Black Aço e Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #27] ID 46608848 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #28] ID 46608849 | Relógio Tissot T-Sport -> Relógio TS T-Sport
-2026-11-28 17:52:53 | INFO     | [MASK #29] ID 46608850 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #30] ID 46608851 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #31] ID 46608852 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
-2026-11-28 17:52:53 | INFO     | [MASK #32] ID 46608854 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #33] ID 46608855 | Relógio Tissot T-Sport -> Relógio TS T-Sport
-2026-11-28 17:52:53 | INFO     | [MASK #34] ID 46608856 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #35] ID 46608857 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
-2026-11-28 17:52:53 | INFO     | [MASK #36] ID 46608858 | Relógio Tissot T-Sport -> Relógio TS T-Sport
-2026-11-28 17:52:53 | INFO     | [MASK #37] ID 46608859 | Relógio Tissot PRX -> Relógio TS PRX
-2026-11-28 17:52:53 | INFO     | [MASK #38] ID 46608860 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #39] ID 46608861 | Relógio Tag Carrera GMT Preto Silicone -> Relógio TG Carrera GMT Preto Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #40] ID 46608862 | Relógio Tag Aquaracer Calibre 16 -> Relógio TG Aquaracer Calibre 16
-2026-11-28 17:52:53 | INFO     | [MASK #41] ID 46608863 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #42] ID 46608864 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #43] ID 46608865 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #44] ID 46608866 | Relógio Tag Porsche Azul Aço Inox Silicone -> Relógio TG Porsche Azul Aço Inox Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #45] ID 46608867 | Relógio Tag Mercedes Benz calibre 16 -> Relógio TG Mercedes Benz calibre 16
-2026-11-28 17:52:53 | INFO     | [MASK #46] ID 46608868 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #47] ID 46608869 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #48] ID 46608870 | Relógio Tag Carrera Quartz Preto Silicone -> Relógio TG Carrera Quartz Preto Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #49] ID 46608871 | Relógio Tag Ayrton Senna F1 -> Relógio TG Ayrton Senna F1
-2026-11-28 17:52:53 | INFO     | [MASK #50] ID 46608872 | Relógio Tag Carrera Quartz Prata Silicone Cinza -> Relógio TG Carrera Quartz Prata Silicone Cinza
-2026-11-28 17:52:53 | INFO     | [MASK #51] ID 46608873 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #52] ID 46608874 | Relógio Tag Carrera Extreme Sport GMT Preto Silicone Cinza -> Relógio TG Carrera Extreme Sport GMT Preto Silicone Cinza
-2026-11-28 17:52:53 | INFO     | [MASK #53] ID 46608875 | Relógio Tag Carrera Eiffel Tower Edition -> Relógio TG Carrera Eiffel Tower Edition
-2026-11-28 17:52:53 | INFO     | [MASK #54] ID 46608877 | Relógio TAG Heuer Porsche Special Edition -> Relógio TG Porsche Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #55] ID 46608879 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #56] ID 46608880 | Relógio Tag Aquaracer -> Relógio TG Aquaracer
-2026-11-28 17:52:53 | INFO     | [MASK #57] ID 46608881 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #58] ID 46608882 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
-2026-11-28 17:52:53 | INFO     | [MASK #59] ID 46608883 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #60] ID 46608884 | Relógio Tag Mercedes Benz calibre 16 -> Relógio TG Mercedes Benz calibre 16
-2026-11-28 17:52:53 | INFO     | [MASK #61] ID 46608885 | Relógio Tag Monaco Gulf -> Relógio TG Monaco Gulf
-2026-11-28 17:52:53 | INFO     | [MASK #62] ID 46608886 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #63] ID 46608887 | Relógio Tag Monaco Gulf -> Relógio TG Monaco Gulf
-2026-11-28 17:52:53 | INFO     | [MASK #64] ID 46608888 | Relógio Tag Formula 1 Racing -> Relógio TG Formula 1 Racing
-2026-11-28 17:52:53 | INFO     | [MASK #65] ID 46608889 | Relógio Tag Carrera Extreme Sport GMT -> Relógio TG Carrera Extreme Sport GMT
-2026-11-28 17:52:53 | INFO     | [MASK #66] ID 46608890 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #67] ID 46608891 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
-2026-11-28 17:52:53 | INFO     | [MASK #68] ID 46608892 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #69] ID 46608893 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #70] ID 46608894 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #71] ID 46608895 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
-2026-11-28 17:52:53 | INFO     | [MASK #72] ID 46608896 | Relógio Tag Formula 1 Chronograph Edição Especial -> Relógio TG Formula 1 Chronograph Edição Especial
-2026-11-28 17:52:53 | INFO     | [MASK #73] ID 46608897 | Relógio Tag Carrera Eiffel Tower Edition -> Relógio TG Carrera Eiffel Tower Edition
-2026-11-28 17:52:53 | INFO     | [MASK #74] ID 46608898 | Relógio Tag Formula 1 -> Relógio TG Formula 1
-2026-11-28 17:52:53 | INFO     | [MASK #75] ID 46608899 | Relógio Tag Formula 1 Chronograph Edição Especial -> Relógio TG Formula 1 Chronograph Edição Especial
-2026-11-28 17:52:53 | INFO     | [MASK #76] ID 46608900 | Relógio Tag Formula 1 -> Relógio TG Formula 1
-2026-11-28 17:52:53 | INFO     | [MASK #77] ID 46608901 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #78] ID 46608902 | Relógio Tag Aquaracer Calibre 16 -> Relógio TG Aquaracer Calibre 16
-2026-11-28 17:52:53 | INFO     | [MASK #79] ID 46608904 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
-2026-11-28 17:52:53 | INFO     | [MASK #80] ID 46608905 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #81] ID 46608906 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #82] ID 46608907 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #83] ID 46608908 | Relógio Tag Carrera Quartz -> Relógio TG Carrera Quartz
-2026-11-28 17:52:53 | INFO     | [MASK #84] ID 46608909 | Relógio Tag Carrera Quartz Preto Silicone -> Relógio TG Carrera Quartz Preto Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #85] ID 46608910 | Relógio Tag Carrera Quartz Prata Aço Dourado Silicone Preto -> Relógio TG Carrera Quartz Prata Aço Dourado Silicone Preto
-2026-11-28 17:52:53 | INFO     | [MASK #86] ID 46608911 | Relógio Tag Carrera Quartz -> Relógio TG Carrera Quartz
-2026-11-28 17:52:53 | INFO     | [MASK #87] ID 46608912 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #88] ID 46608913 | Relógio Tag Formula 1 -> Relógio TG Formula 1
-2026-11-28 17:52:53 | INFO     | [MASK #89] ID 46608914 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
-2026-11-28 17:52:53 | INFO     | [MASK #90] ID 46608915 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
-2026-11-28 17:52:53 | INFO     | [MASK #91] ID 46608916 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #92] ID 46608917 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #93] ID 46608918 | Relógio Rolex Oyster GMT-Master II Submariner -> Relógio RX Oyster GMT-Master II Submariner
-2026-11-28 17:52:53 | INFO     | [MASK #94] ID 46608920 | Relógio Rolex Oyster GMT-Master II Submariner Yacht-Master -> Relógio RX Oyster GMT-Master II Submariner Yacht-Master
-2026-11-28 17:52:53 | INFO     | [MASK #95] ID 46608921 | Relógio Rolex Daytona -> Relógio RX Daytona
-2026-11-28 17:52:53 | INFO     | [MASK #96] ID 46608922 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #97] ID 46608923 | Relógio Rolex Oyster GMT-Master II Submariner Batman -> Relógio RX Oyster GMT-Master II Submariner Batman
-2026-11-28 17:52:53 | INFO     | [MASK #98] ID 46608924 | Relógio Rolex Perpetual 1908 -> Relógio RX Perpetual 1908
-2026-11-28 17:52:53 | INFO     | [MASK #99] ID 46608925 | Relógio Rolex Daytona -> Relógio RX Daytona
-2026-11-28 17:52:53 | INFO     | [MASK #100] ID 46608926 | Relógio Rolex Oyster GMT-Master II Submariner Sprite -> Relógio RX Oyster GMT-Master II Submariner Sprite
-2026-11-28 17:52:53 | INFO     | [MASK #101] ID 46608927 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #102] ID 46608928 | Relógio Rolex Perpetual 1908 -> Relógio RX Perpetual 1908
-2026-11-28 17:52:53 | INFO     | [MASK #103] ID 46608929 | Relógio Rolex Oyster Datejust -> Relógio RX Oyster Datejust
-2026-11-28 17:52:53 | INFO     | [MASK #104] ID 46608931 | Relógio Rolex Daytona -> Relógio RX Daytona
-2026-11-28 17:52:53 | INFO     | [MASK #105] ID 46608933 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #106] ID 46608947 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
-2026-11-28 17:52:53 | INFO     | [MASK #107] ID 46608949 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
-2026-11-28 17:52:53 | INFO     | [MASK #108] ID 46608950 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
-2026-11-28 17:52:53 | INFO     | [MASK #109] ID 46608951 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
-2026-11-28 17:52:53 | INFO     | [MASK #110] ID 46608952 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
-2026-11-28 17:52:53 | INFO     | [MASK #111] ID 46608953 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
-2026-11-28 17:52:53 | INFO     | [MASK #112] ID 46608954 | Relógio Patek Philippe Gran -> Relógio PP Gran
-2026-11-28 17:52:53 | INFO     | [MASK #113] ID 46608955 | Relógio Patek Philippe Gran -> Relógio PP Gran
-2026-11-28 17:52:53 | INFO     | [MASK #114] ID 46608956 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
-2026-11-28 17:52:53 | INFO     | [MASK #115] ID 46608957 | Relógio Panerai Luminor Luna Rosa Grafite Lona e Couro -> Relógio PN Luminor Luna Rosa Grafite Lona e Couro
-2026-11-28 17:52:53 | INFO     | [MASK #116] ID 46608959 | Relógio Panerai Luminor Luna Rosa Grafite Aço Inox -> Relógio PN Luminor Luna Rosa Grafite Aço Inox
-2026-11-28 17:52:53 | INFO     | [MASK #117] ID 46608960 | Relógio Omega Swatch -> Relógio OG Swatch
-2026-11-28 17:52:53 | INFO     | [MASK #118] ID 46608961 | Relógio Omega Snoopy -> Relógio OG Snoopy
-2026-11-28 17:52:53 | INFO     | [MASK #119] ID 46608962 | Relógio Omega Snoopy -> Relógio OG Snoopy
-2026-11-28 17:52:53 | INFO     | [MASK #120] ID 46608963 | Relógio Omega Snoopy -> Relógio OG Snoopy
-2026-11-28 17:52:53 | INFO     | [MASK #121] ID 46608964 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
-2026-11-28 17:52:53 | INFO     | [MASK #122] ID 46608965 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
-2026-11-28 17:52:53 | INFO     | [MASK #123] ID 46608966 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
-2026-11-28 17:52:53 | INFO     | [MASK #124] ID 46608967 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
-2026-11-28 17:52:53 | INFO     | [MASK #125] ID 46608969 | Relógio Montblanc Star Legacy Rosé Couro Marrom -> Relógio MB Star Legacy Rosé Couro Marrom
-2026-11-28 17:52:53 | INFO     | [MASK #126] ID 46608971 | Relógio Montblanc Star Legacy Clássico Premium -> Relógio MB Star Legacy Clássico Premium
-2026-11-28 17:52:53 | INFO     | [MASK #127] ID 46608972 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
-2026-11-28 17:52:53 | INFO     | [MASK #128] ID 46608973 | Relógio Montblanc Edition 4810 -> Relógio MB Edition 4810
-2026-11-28 17:52:53 | INFO     | [MASK #129] ID 46608974 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
-2026-11-28 17:52:53 | INFO     | [MASK #130] ID 46608975 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
-2026-11-28 17:52:53 | INFO     | [MASK #131] ID 46608976 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
-2026-11-28 17:52:53 | INFO     | [MASK #132] ID 46608977 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
-2026-11-28 17:52:53 | INFO     | [MASK #133] ID 46608978 | Relógio Montblanc 4810 Clássico -> Relógio MB 4810 Clássico
-2026-11-28 17:52:53 | INFO     | [MASK #134] ID 46608980 | Relógio Montblanc Edition 4810 -> Relógio MB Edition 4810
-2026-11-28 17:52:53 | INFO     | [MASK #135] ID 46608981 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
-2026-11-28 17:52:53 | INFO     | [MASK #136] ID 46608982 | Relógio Montblanc Star Legacy Preto Aço Inox Couro -> Relógio MB Star Legacy Preto Aço Inox Couro
-2026-11-28 17:52:53 | INFO     | [MASK #137] ID 46608983 | Relógio Lamborghini Tonino Spyder -> Relógio LB Tonino Spyder
-2026-11-28 17:52:53 | INFO     | [MASK #138] ID 46608984 | Relógio Lamborghini Tonino Spyder -> Relógio LB Tonino Spyder
-2026-11-28 17:52:53 | INFO     | [MASK #139] ID 46608985 | Relógio Jacob Cassino -> Relógio JB Cassino
-2026-11-28 17:52:53 | INFO     | [MASK #140] ID 46608986 | Relógio Jacob Cassino -> Relógio JB Cassino
-2026-11-28 17:52:53 | INFO     | [MASK #141] ID 46608987 | Relógio Jacob Cassino -> Relógio JB Cassino
-2026-11-28 17:52:53 | INFO     | [MASK #142] ID 46608988 | Relógio Jacob Cassino -> Relógio JB Cassino
-2026-11-28 17:52:53 | INFO     | [MASK #143] ID 46608989 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #144] ID 46608990 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #145] ID 46608991 | Relógio Hublot Big Bang Preto Aço Inox Couro e Silicone -> Relógio HB Big Bang Preto Aço Inox Couro e Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #146] ID 46608993 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #147] ID 46608994 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #148] ID 46608995 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #149] ID 46608997 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #150] ID 46608998 | Relógio Hublot Big Bang Branco Aço Inox Cinza -> Relógio HB Big Bang Branco Aço Inox Cinza
-2026-11-28 17:52:53 | INFO     | [MASK #151] ID 46608999 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #152] ID 46609000 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #153] ID 46609001 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #154] ID 46609002 | Relógio Hublot Black 1070 Preto -> Relógio HB Black 1070 Preto
-2026-11-28 17:52:53 | INFO     | [MASK #155] ID 46609003 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #156] ID 46609004 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #157] ID 46609005 | Relógio Hermes Heure H -> Relógio HM Heure H
-2026-11-28 17:52:53 | INFO     | [MASK #158] ID 46609006 | Relógio Hermes Heure H -> Relógio HM Heure H
-2026-11-28 17:52:53 | INFO     | [MASK #159] ID 46609007 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #160] ID 46609008 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #161] ID 46609009 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #162] ID 46609010 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #163] ID 46609011 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #164] ID 46609012 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #165] ID 46609014 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #166] ID 46609015 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #167] ID 46609016 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #168] ID 46609017 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #169] ID 46609018 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #170] ID 46609019 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #171] ID 46609020 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
-2026-11-28 17:52:53 | INFO     | [MASK #172] ID 46609021 | Relógio Diesel 10 Bar Robusto Urbano -> Relógio DS 10 Bar Robusto Urbano
-2026-11-28 17:52:53 | INFO     | [MASK #173] ID 46609024 | Relógio Cartier Tank -> Relógio CT Tank
-2026-11-28 17:52:53 | INFO     | [MASK #174] ID 46609025 | Relógio Cartier Tank -> Relógio CT Tank
-2026-11-28 17:52:53 | INFO     | [MASK #175] ID 46609026 | Relógio Cartier Panthere -> Relógio CT Panthere
-2026-11-28 17:52:53 | INFO     | [MASK #176] ID 46609027 | Relógio Cartier Panthere -> Relógio CT Panthere
-2026-11-28 17:52:53 | INFO     | [MASK #177] ID 46609028 | Relógio Cartier Tank -> Relógio CT Tank
-2026-11-28 17:52:53 | INFO     | [MASK #178] ID 46609029 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
-2026-11-28 17:52:53 | INFO     | [MASK #179] ID 46609030 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
-2026-11-28 17:52:53 | INFO     | [MASK #180] ID 46609031 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
-2026-11-28 17:52:53 | INFO     | [MASK #181] ID 46609032 | Relógio Bvlgari Octo Dourado -> Relógio BV Octo Dourado
-2026-11-28 17:52:53 | INFO     | [MASK #182] ID 46609033 | Relógio Bvlgari Octo -> Relógio BV Octo
-2026-11-28 17:52:53 | INFO     | [MASK #183] ID 46609034 | Relógio Bvlgari Octo -> Relógio BV Octo
-2026-11-28 17:52:53 | INFO     | [MASK #184] ID 46609035 | Relógio Bvlgari Octo Design Arquitetônico -> Relógio BV Octo Design Arquitetônico
-2026-11-28 17:52:53 | INFO     | [MASK #185] ID 46609036 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #186] ID 46609037 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #187] ID 46609038 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #188] ID 46609040 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #189] ID 46609041 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #190] ID 46609042 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
-2026-11-28 17:52:53 | INFO     | [MASK #191] ID 46609043 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
-2026-11-28 17:52:53 | INFO     | [MASK #192] ID 46609045 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
-2026-11-28 17:52:53 | INFO     | [MASK #193] ID 46609046 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
-2026-11-28 17:52:53 | INFO     | [MASK #194] ID 46609047 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
-2026-11-28 17:52:53 | INFO     | [MASK #195] ID 46609048 | Relógio Tissot Couturier -> Relógio TS Couturier
-2026-11-28 17:52:53 | INFO     | [MASK #196] ID 46609049 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #197] ID 46609050 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #198] ID 46609051 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #199] ID 46609052 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
-2026-11-28 17:52:53 | INFO     | [MASK #200] ID 46609053 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
-2026-11-28 17:52:53 | INFO     | [MASK #201] ID 46609054 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
-2026-11-28 17:52:53 | INFO     | [MASK #202] ID 46609055 | Relógio Tag Carrera CR7 -> Relógio TG Carrera CR7
-2026-11-28 17:52:53 | INFO     | [MASK #203] ID 46609056 | Relógio Tag Indy 500 Special Edition -> Relógio TG Indy 500 Special Edition
-2026-11-28 17:52:53 | INFO     | [MASK #204] ID 46609057 | Relógio Rolex GMT-Master II -> Relógio RX GMT-Master II
-2026-11-28 17:52:53 | INFO     | [MASK #205] ID 46609058 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #206] ID 46609059 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #207] ID 46609060 | Relógio Patek Cubitus -> Relógio PP Cubitus
-2026-11-28 17:52:53 | INFO     | [MASK #208] ID 46609062 | Relógio Patek Cubitus -> Relógio PP Cubitus
-2026-11-28 17:52:53 | INFO     | [MASK #209] ID 46609063 | Relógio Patek Cubitus -> Relógio PP Cubitus
-2026-11-28 17:52:53 | INFO     | [MASK #210] ID 46609064 | Relógio Omega Seamaster -> Relógio OG Seamaster
-2026-11-28 17:52:53 | INFO     | [MASK #211] ID 46609065 | Relógio Omega Seamaster -> Relógio OG Seamaster
-2026-11-28 17:52:53 | INFO     | [MASK #212] ID 46609066 | Relógio Omega Snoopy -> Relógio OG Snoopy
-2026-11-28 17:52:53 | INFO     | [MASK #213] ID 46609067 | Relógio Hublot Big Bang -> Relógio HB Big Bang
-2026-11-28 17:52:53 | INFO     | [MASK #214] ID 46609069 | Relógio Diesel Grand Daddy Limited Edition -> Relógio DS Grand Daddy Limited Edition
-2026-11-28 17:52:53 | INFO     | [MASK #215] ID 46609070 | Relógio Diesel Grand Daddy Limited Edition -> Relógio DS Grand Daddy Limited Edition
-2026-11-28 17:52:53 | INFO     | [MASK #216] ID 46609071 | Relógio Casio Vintage -> Relógio CS Vintage
-2026-11-28 17:52:53 | INFO     | [MASK #217] ID 46609072 | Relógio Casio Vintage -> Relógio CS Vintage
-2026-11-28 17:52:53 | INFO     | [MASK #218] ID 46609073 | Relógio Casio Vintage -> Relógio CS Vintage
-2026-11-28 17:52:53 | INFO     | [MASK #219] ID 46609074 | Relógio Casio Vintage -> Relógio CS Vintage
-2026-11-28 17:52:53 | INFO     | [MASK #220] ID 46609075 | Relógio Breitling Navitime -> Relógio BT Navitime
-2026-11-28 17:52:53 | INFO     | [MASK #221] ID 46609076 | Relógio Breitling Navitime -> Relógio BT Navitime
-2026-11-28 17:52:53 | INFO     | [MASK #222] ID 46609077 | Relógio Breitling Navitime -> Relógio BT Navitime
-2026-11-28 17:52:53 | INFO     | [MASK #223] ID 46609078 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #224] ID 46609079 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #225] ID 46609080 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #226] ID 46609081 | Relógio Audemars Piguet Royal Oak Chronograph -> Relógio AP Royal Oak Chronograph
-2026-11-28 17:52:53 | INFO     | [MASK #227] ID 46609082 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #228] ID 46609083 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #229] ID 46609084 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #230] ID 46609085 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
-2026-11-28 17:52:53 | INFO     | [MASK #231] ID 46609086 | Relógio Armani Exchange Outerbanks -> Relógio AX Outerbanks
-2026-11-28 17:52:53 | INFO     | [MASK #232] ID 46609087 | Relógio Armani Exchange Outerbanks -> Relógio AX Outerbanks
-2026-11-28 17:52:53 | INFO     | [MASK #233] ID 46757765 | Relógio Bvlgari Octo -> Relógio BV Octo
-2026-11-28 17:52:53 | INFO     | [MASK #234] ID 46757766 | Relógio Bvlgari Octo -> Relógio BV Octo
-2026-11-28 17:52:53 | INFO     | [MASK #235] ID 46757767 | Relógio Bvlgari Octo -> Relógio BV Octo
-2026-11-28 17:52:53 | INFO     | [MASK #236] ID 46757768 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
-2026-11-28 17:52:53 | INFO     | [MASK #237] ID 46757769 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
-2026-11-28 17:52:53 | INFO     | [MASK #238] ID 46757771 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
-2026-11-28 17:52:53 | INFO     | [MASK #239] ID 46757772 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
-2026-11-28 17:52:53 | INFO     | [MASK #240] ID 46757773 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #241] ID 46757774 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #242] ID 46757775 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #243] ID 46757776 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #244] ID 46757778 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #245] ID 46757779 | Relógio Gucci Timeless -> Relógio GC Timeless
-2026-11-28 17:52:53 | INFO     | [MASK #246] ID 46757780 | Relógio Omega Snoopy Branco Azul -> Relógio OG Snoopy Branco Azul
-2026-11-28 17:52:53 | INFO     | [MASK #247] ID 46757781 | Relógio Omega Snoopy Branco Aço Inoxidável -> Relógio OG Snoopy Branco Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #248] ID 46757782 | Relógio Tommy Hilfiger Tyson Azul Aço Inoxidável -> Relógio TH Tyson Azul Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #249] ID 46757783 | Relógio Tommy Hilfiger Tyson Preto Aço Inoxidável -> Relógio TH Tyson Preto Aço Inoxidável
-2026-11-28 17:52:53 | INFO     | [MASK #250] ID 46757784 | Relógio Panerai Officine Preto Silicone -> Relógio PN Officine Preto Silicone
-2026-11-28 17:52:53 | INFO     | [MASK #251] ID 46757785 | Relógio Rolex Sky-Dweller Dourado Mostrador Prata -> Relógio RX Sky-Dweller Dourado Mostrador Prata
-2026-11-28 17:52:53 | INFO     | [MASK #252] ID 46757786 | Relógio Rolex Sky-Dweller Prata Silicone Branco -> Relógio RX Sky-Dweller Prata Silicone Branco
-2026-11-28 17:52:53 | INFO     | [MASK #253] ID 46757787 | Relógio Rolex Sky-Dweller -> Relógio RX Sky-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #254] ID 46757788 | Relógio Rolex Sky-Dweller -> Relógio RX Sky-Dweller
-2026-11-28 17:52:53 | INFO     | [MASK #255] ID 46757789 | Relógio Rolex Sky-Dweller Dourado Mostrador Preto -> Relógio RX Sky-Dweller Dourado Mostrador Preto
-2026-11-28 17:52:53 | INFO     | [MASK #256] ID 46847806 | Relógio PR-OG-1010 -> Relógio PR-OG-1010
-2026-11-28 17:52:53 | INFO     | [MASK #257] ID 46847809 | Relógio PR-RX-1010 -> Relógio PR-RX-1010
-2026-11-28 17:52:53 | INFO     | [MASK #258] ID 46847811 | Relógio PR-RX-1020 -> Relógio PR-RX-1020
-2026-11-28 17:52:53 | INFO     | [MASK #259] ID 46847812 | Relógio PR-RX-1030 -> Relógio PR-RX-1030
-2026-11-28 17:52:53 | INFO     | Mascaramento de marcas concluído: 259 relógios atualizados.
-2026-11-28 17:52:53 | INFO     | Backup de rollback salvo em 'backups_yampi/yampi_rollback_backup_20261128_175253.json' (259 produtos).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 1/259] PUT /catalog/products/46608816 (SKU: HB-5050 | Nome: Relógio HB Orlinski) -> Payload validado (2037 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 2/259] PUT /catalog/products/46608817 (SKU: HB-5040 | Nome: Relógio HB Orlinski) -> Payload validado (2041 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 3/259] PUT /catalog/products/46608818 (SKU: HB-5030 | Nome: Relógio HB Orlinski) -> Payload validado (2053 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 4/259] PUT /catalog/products/46608819 (SKU: HB-5020 | Nome: Relógio HB Orlinski) -> Payload validado (2039 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 5/259] PUT /catalog/products/46608820 (SKU: HB-5010 | Nome: Relógio HB Orlinski) -> Payload validado (2043 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 6/259] PUT /catalog/products/46608821 (SKU: HB-5000 | Nome: Relógio HB Orlinski) -> Payload validado (2059 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 7/259] PUT /catalog/products/46608822 (SKU: AX-2010 | Nome: Relógio AX Classic) -> Payload validado (2068 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 8/259] PUT /catalog/products/46608823 (SKU: AX-2000 | Nome: Relógio AX Classic) -> Payload validado (2060 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 9/259] PUT /catalog/products/46608824 (SKU: HB-2070 | Nome: Relógio HB Big Bang) -> Payload validado (2197 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 10/259] PUT /catalog/products/46608826 (SKU: HB-2080 | Nome: Relógio HB Big Bang) -> Payload validado (2165 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 11/259] PUT /catalog/products/46608832 (SKU: TH-1020 | Nome: Relógio TH Tyson Grafite Aço Inoxidável) -> Payload validado (3660 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 12/259] PUT /catalog/products/46608833 (SKU: TH-1010 | Nome: Relógio TH Tyson Preto Aço Inoxidável) -> Payload validado (3658 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 13/259] PUT /catalog/products/46608834 (SKU: TH-1000 | Nome: Relógio TH Tyson Prata Aço Inoxidável) -> Payload validado (3984 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 14/259] PUT /catalog/products/46608835 (SKU: BT-2070 | Nome: Relógio BT Superocean) -> Payload validado (2229 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 15/259] PUT /catalog/products/46608836 (SKU: BT-2060 | Nome: Relógio BT Superocean) -> Payload validado (2183 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 16/259] PUT /catalog/products/46608837 (SKU: BT-2050 | Nome: Relógio BT Superocean) -> Payload validado (2183 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 17/259] PUT /catalog/products/46608838 (SKU: BT-2040 | Nome: Relógio BT Superocean) -> Payload validado (2181 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 18/259] PUT /catalog/products/46608839 (SKU: BT-2030 | Nome: Relógio BT Superocean) -> Payload validado (2183 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 19/259] PUT /catalog/products/46608840 (SKU: BT-2020 | Nome: Relógio BT Superocean) -> Payload validado (2217 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 20/259] PUT /catalog/products/46608841 (SKU: BT-2010 | Nome: Relógio BT Superocean) -> Payload validado (2201 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 21/259] PUT /catalog/products/46608842 (SKU: TS-1080 | Nome: Relógio TS PRX) -> Payload validado (1840 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 22/259] PUT /catalog/products/46608843 (SKU: TS-1070 | Nome: Relógio TS PRX Mostrador Preto Pulseira Silicone) -> Payload validado (3839 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 23/259] PUT /catalog/products/46608844 (SKU: TS-1020 | Nome: Relógio TS PRX) -> Payload validado (1832 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 24/259] PUT /catalog/products/46608845 (SKU: TS-8020 | Nome: Relógio TS 1853 Chrono XL Classic) -> Payload validado (1863 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 25/259] PUT /catalog/products/46608846 (SKU: TS-2010 | Nome: Relógio TS T-Sport) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 26/259] PUT /catalog/products/46608847 (SKU: TS-1050 | Nome: Relógio TS PRX All Black Aço e Silicone) -> Payload validado (3830 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 27/259] PUT /catalog/products/46608848 (SKU: TS-1100 | Nome: Relógio TS PRX) -> Payload validado (1848 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 28/259] PUT /catalog/products/46608849 (SKU: TS-2030 | Nome: Relógio TS T-Sport) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 29/259] PUT /catalog/products/46608850 (SKU: TS-1030 | Nome: Relógio TS PRX) -> Payload validado (1862 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 30/259] PUT /catalog/products/46608851 (SKU: TS-1040 | Nome: Relógio TS PRX) -> Payload validado (1854 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 31/259] PUT /catalog/products/46608852 (SKU: TS-8010 | Nome: Relógio TS 1853 Chrono XL Classic) -> Payload validado (1949 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 32/259] PUT /catalog/products/46608854 (SKU: TS-1060 | Nome: Relógio TS PRX) -> Payload validado (1870 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 33/259] PUT /catalog/products/46608855 (SKU: TS-2020 | Nome: Relógio TS T-Sport) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 34/259] PUT /catalog/products/46608856 (SKU: TS-1090 | Nome: Relógio TS PRX) -> Payload validado (1852 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 35/259] PUT /catalog/products/46608857 (SKU: TS-8030 | Nome: Relógio TS 1853 Chrono XL Classic) -> Payload validado (1957 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 36/259] PUT /catalog/products/46608858 (SKU: TS-2040 | Nome: Relógio TS T-Sport) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 37/259] PUT /catalog/products/46608859 (SKU: TS-1010 | Nome: Relógio TS PRX) -> Payload validado (1844 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 38/259] PUT /catalog/products/46608860 (SKU: TG-4010 | Nome: Relógio TG Formula 1 Chronograph) -> Payload validado (1992 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 39/259] PUT /catalog/products/46608861 (SKU: TG-2210 | Nome: Relógio TG Carrera GMT Preto Silicone) -> Payload validado (3758 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 40/259] PUT /catalog/products/46608862 (SKU: TG-3020 | Nome: Relógio TG Aquaracer Calibre 16) -> Payload validado (1985 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 41/259] PUT /catalog/products/46608863 (SKU: TG-4110 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2037 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 42/259] PUT /catalog/products/46608864 (SKU: TG-2040 | Nome: Relógio TG Carrera Chronograph) -> Payload validado (2086 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 43/259] PUT /catalog/products/46608865 (SKU: TG-2030 | Nome: Relógio TG Carrera Chronograph) -> Payload validado (2076 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 44/259] PUT /catalog/products/46608866 (SKU: TG-8010 | Nome: Relógio TG Porsche Azul Aço Inox Silicone) -> Payload validado (3932 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 45/259] PUT /catalog/products/46608867 (SKU: TG-3040 | Nome: Relógio TG Mercedes Benz calibre 16) -> Payload validado (2017 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 46/259] PUT /catalog/products/46608868 (SKU: TG-4030 | Nome: Relógio TG Formula 1 Chronograph) -> Payload validado (1996 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 47/259] PUT /catalog/products/46608869 (SKU: TG-4100 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2033 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 48/259] PUT /catalog/products/46608870 (SKU: TG-2110 | Nome: Relógio TG Carrera Quartz Preto Silicone) -> Payload validado (3443 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 49/259] PUT /catalog/products/46608871 (SKU: TG-6010 | Nome: Relógio TG Ayrton Senna F1) -> Payload validado (2094 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 50/259] PUT /catalog/products/46608872 (SKU: TG-2090 | Nome: Relógio TG Carrera Quartz Prata Silicone Cinza) -> Payload validado (3725 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 51/259] PUT /catalog/products/46608873 (SKU: TG-6020 | Nome: Relógio TG Formula 1 Chronograph x Senna Special Edition) -> Payload validado (2164 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 52/259] PUT /catalog/products/46608874 (SKU: TG-2200 | Nome: Relógio TG Carrera Extreme Sport GMT Preto Silicone Cinza) -> Payload validado (4076 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 53/259] PUT /catalog/products/46608875 (SKU: TG-2050 | Nome: Relógio TG Carrera Eiffel Tower Edition) -> Payload validado (2177 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 54/259] PUT /catalog/products/46608877 (SKU: TG-8000 | Nome: Relógio TG Porsche Special Edition) -> Payload validado (3560 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 55/259] PUT /catalog/products/46608879 (SKU: TG-4130 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2033 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 56/259] PUT /catalog/products/46608880 (SKU: TG-3030 | Nome: Relógio TG Aquaracer) -> Payload validado (2016 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 57/259] PUT /catalog/products/46608881 (SKU: TG-2060 | Nome: Relógio TG Carrera Chronograph) -> Payload validado (1916 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 58/259] PUT /catalog/products/46608882 (SKU: TG-2140 | Nome: Relógio TG Carrera Day-Date) -> Payload validado (1975 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 59/259] PUT /catalog/products/46608883 (SKU: TG-4150 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2039 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 60/259] PUT /catalog/products/46608884 (SKU: TG-3050 | Nome: Relógio TG Mercedes Benz calibre 16) -> Payload validado (2017 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 61/259] PUT /catalog/products/46608885 (SKU: TG-7020 | Nome: Relógio TG Monaco Gulf) -> Payload validado (2042 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 62/259] PUT /catalog/products/46608886 (SKU: TG-4120 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2033 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 63/259] PUT /catalog/products/46608887 (SKU: TG-7010 | Nome: Relógio TG Monaco Gulf) -> Payload validado (1962 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 64/259] PUT /catalog/products/46608888 (SKU: TG-4050 | Nome: Relógio TG Formula 1 Racing) -> Payload validado (1929 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 65/259] PUT /catalog/products/46608889 (SKU: TG-2190 | Nome: Relógio TG Carrera Extreme Sport GMT) -> Payload validado (2064 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 66/259] PUT /catalog/products/46608890 (SKU: TG-4060 | Nome: Relógio TG Formula 1 Chronograph) -> Payload validado (2026 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 67/259] PUT /catalog/products/46608891 (SKU: TG-2160 | Nome: Relógio TG Carrera Day-Date) -> Payload validado (1965 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 68/259] PUT /catalog/products/46608892 (SKU: TG-4140 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2041 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 69/259] PUT /catalog/products/46608893 (SKU: TG-4020 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2107 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 70/259] PUT /catalog/products/46608894 (SKU: TG-2010 | Nome: Relógio TG Carrera Chronograph) -> Payload validado (2090 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 71/259] PUT /catalog/products/46608895 (SKU: TG-2150 | Nome: Relógio TG Carrera Day-Date) -> Payload validado (1957 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 72/259] PUT /catalog/products/46608896 (SKU: TG-5040 | Nome: Relógio TG Formula 1 Chronograph Edição Especial) -> Payload validado (2100 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 73/259] PUT /catalog/products/46608897 (SKU: TG-2070 | Nome: Relógio TG Carrera Eiffel Tower Edition) -> Payload validado (2057 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 74/259] PUT /catalog/products/46608898 (SKU: TG-5030 | Nome: Relógio TG Formula 1) -> Payload validado (2032 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 75/259] PUT /catalog/products/46608899 (SKU: TG-5010 | Nome: Relógio TG Formula 1 Chronograph Edição Especial) -> Payload validado (2136 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 76/259] PUT /catalog/products/46608900 (SKU: TG-4040 | Nome: Relógio TG Formula 1) -> Payload validado (1996 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 77/259] PUT /catalog/products/46608901 (SKU: TG-6030 | Nome: Relógio TG Formula 1 Chronograph x Senna Special Edition) -> Payload validado (2160 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 78/259] PUT /catalog/products/46608902 (SKU: TG-3010 | Nome: Relógio TG Aquaracer Calibre 16) -> Payload validado (2005 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 79/259] PUT /catalog/products/46608904 (SKU: TG-2180 | Nome: Relógio TG Carrera Day-Date) -> Payload validado (1975 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 80/259] PUT /catalog/products/46608905 (SKU: TG-4070 | Nome: Relógio TG Formula 1 Chronograph) -> Payload validado (2038 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 81/259] PUT /catalog/products/46608906 (SKU: TG-2020 | Nome: Relógio TG Carrera Chronograph) -> Payload validado (1996 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 82/259] PUT /catalog/products/46608907 (SKU: TG-6040 | Nome: Relógio TG Formula 1 Chronograph x Senna Special Edition) -> Payload validado (2168 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 83/259] PUT /catalog/products/46608908 (SKU: TG-2100 | Nome: Relógio TG Carrera Quartz) -> Payload validado (2043 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 84/259] PUT /catalog/products/46608909 (SKU: TG-2120 | Nome: Relógio TG Carrera Quartz Preto Silicone) -> Payload validado (3801 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 85/259] PUT /catalog/products/46608910 (SKU: TG-2130 | Nome: Relógio TG Carrera Quartz Prata Aço Dourado Silicone Preto) -> Payload validado (3661 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 86/259] PUT /catalog/products/46608911 (SKU: TG-2080 | Nome: Relógio TG Carrera Quartz) -> Payload validado (2021 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 87/259] PUT /catalog/products/46608912 (SKU: TG-4090 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2037 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 88/259] PUT /catalog/products/46608913 (SKU: TG-5020 | Nome: Relógio TG Formula 1) -> Payload validado (2032 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 89/259] PUT /catalog/products/46608914 (SKU: TG-2170 | Nome: Relógio TG Carrera Day-Date) -> Payload validado (1975 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 90/259] PUT /catalog/products/46608915 (SKU: TG-4080 | Nome: Relógio TG Oracle Red Bull Racing) -> Payload validado (2041 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 91/259] PUT /catalog/products/46608916 (SKU: RX-6080 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1986 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 92/259] PUT /catalog/products/46608917 (SKU: RX-6060 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1994 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 93/259] PUT /catalog/products/46608918 (SKU: RX-6030 | Nome: Relógio RX Oyster GMT-Master II Submariner) -> Payload validado (1978 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 94/259] PUT /catalog/products/46608920 (SKU: RX-6040 | Nome: Relógio RX Oyster GMT-Master II Submariner Yacht-Master) -> Payload validado (2017 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 95/259] PUT /catalog/products/46608921 (SKU: RX-1020 | Nome: Relógio RX Daytona) -> Payload validado (1914 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 96/259] PUT /catalog/products/46608922 (SKU: RX-6070 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1996 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 97/259] PUT /catalog/products/46608923 (SKU: RX-6020 | Nome: Relógio RX Oyster GMT-Master II Submariner Batman) -> Payload validado (1983 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 98/259] PUT /catalog/products/46608924 (SKU: RX-2010 | Nome: Relógio RX Perpetual 1908) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 99/259] PUT /catalog/products/46608925 (SKU: RX-1010 | Nome: Relógio RX Daytona) -> Payload validado (1908 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 100/259] PUT /catalog/products/46608926 (SKU: RX-6010 | Nome: Relógio RX Oyster GMT-Master II Submariner Sprite) -> Payload validado (1983 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 101/259] PUT /catalog/products/46608927 (SKU: RX-6090 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1948 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 102/259] PUT /catalog/products/46608928 (SKU: RX-2000 | Nome: Relógio RX Perpetual 1908) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 103/259] PUT /catalog/products/46608929 (SKU: RX-6050 | Nome: Relógio RX Oyster Datejust) -> Payload validado (1858 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 104/259] PUT /catalog/products/46608931 (SKU: RX-1030 | Nome: Relógio RX Daytona) -> Payload validado (1904 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 105/259] PUT /catalog/products/46608933 (SKU: RX-6100 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1984 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 106/259] PUT /catalog/products/46608947 (SKU: PP-2030 | Nome: Relógio PP Aquanaut) -> Payload validado (1867 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 107/259] PUT /catalog/products/46608949 (SKU: PP-1020 | Nome: Relógio PP Nautilus) -> Payload validado (1871 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 108/259] PUT /catalog/products/46608950 (SKU: PP-2020 | Nome: Relógio PP Aquanaut) -> Payload validado (1961 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 109/259] PUT /catalog/products/46608951 (SKU: PP-1030 | Nome: Relógio PP Nautilus) -> Payload validado (1961 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 110/259] PUT /catalog/products/46608952 (SKU: PP-2010 | Nome: Relógio PP Aquanaut) -> Payload validado (2025 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 111/259] PUT /catalog/products/46608953 (SKU: PP-1010 | Nome: Relógio PP Nautilus) -> Payload validado (1965 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 112/259] PUT /catalog/products/46608954 (SKU: PP-3020 | Nome: Relógio PP Gran) -> Payload validado (1855 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 113/259] PUT /catalog/products/46608955 (SKU: PP-3010 | Nome: Relógio PP Gran) -> Payload validado (1869 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 114/259] PUT /catalog/products/46608956 (SKU: PP-2040 | Nome: Relógio PP Aquanaut) -> Payload validado (1961 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 115/259] PUT /catalog/products/46608957 (SKU: PN-1000 | Nome: Relógio PN Luminor Luna Rosa Grafite Lona e Couro) -> Payload validado (3872 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 116/259] PUT /catalog/products/46608959 (SKU: PN-1010 | Nome: Relógio PN Luminor Luna Rosa Grafite Aço Inox) -> Payload validado (3906 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 117/259] PUT /catalog/products/46608960 (SKU: OG-2010 | Nome: Relógio OG Swatch) -> Payload validado (1885 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 118/259] PUT /catalog/products/46608961 (SKU: OG-3010 | Nome: Relógio OG Snoopy) -> Payload validado (1919 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 119/259] PUT /catalog/products/46608962 (SKU: OG-3040 | Nome: Relógio OG Snoopy) -> Payload validado (1961 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 120/259] PUT /catalog/products/46608963 (SKU: OG-3020 | Nome: Relógio OG Snoopy) -> Payload validado (1955 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 121/259] PUT /catalog/products/46608964 (SKU: MB-1070 | Nome: Relógio MB Star Legacy) -> Payload validado (1956 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 122/259] PUT /catalog/products/46608965 (SKU: MB-1080 | Nome: Relógio MB Star Legacy) -> Payload validado (1966 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 123/259] PUT /catalog/products/46608966 (SKU: MB-1050 | Nome: Relógio MB Star Legacy) -> Payload validado (1936 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 124/259] PUT /catalog/products/46608967 (SKU: MB-1060 | Nome: Relógio MB Star Legacy) -> Payload validado (1936 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 125/259] PUT /catalog/products/46608969 (SKU: MB-1030 | Nome: Relógio MB Star Legacy Rosé Couro Marrom) -> Payload validado (3783 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 126/259] PUT /catalog/products/46608971 (SKU: MB-1040 | Nome: Relógio MB Star Legacy Clássico Premium) -> Payload validado (3304 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 127/259] PUT /catalog/products/46608972 (SKU: MB-2030 | Nome: Relógio MB Time Walker) -> Payload validado (1952 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 128/259] PUT /catalog/products/46608973 (SKU: MB-3010 | Nome: Relógio MB Edition 4810) -> Payload validado (3770 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 129/259] PUT /catalog/products/46608974 (SKU: MB-1020 | Nome: Relógio MB Star Legacy) -> Payload validado (2040 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 130/259] PUT /catalog/products/46608975 (SKU: MB-2050 | Nome: Relógio MB Time Walker) -> Payload validado (1928 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 131/259] PUT /catalog/products/46608976 (SKU: MB-2010 | Nome: Relógio MB Time Walker) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 132/259] PUT /catalog/products/46608977 (SKU: MB-2020 | Nome: Relógio MB Time Walker) -> Payload validado (1958 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 133/259] PUT /catalog/products/46608978 (SKU: MB-3020 | Nome: Relógio MB 4810 Clássico) -> Payload validado (3343 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 134/259] PUT /catalog/products/46608980 (SKU: MB-3030 | Nome: Relógio MB Edition 4810) -> Payload validado (1967 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 135/259] PUT /catalog/products/46608981 (SKU: MB-2040 | Nome: Relógio MB Time Walker) -> Payload validado (1964 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 136/259] PUT /catalog/products/46608982 (SKU: MB-1010 | Nome: Relógio MB Star Legacy Preto Aço Inox Couro) -> Payload validado (3962 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 137/259] PUT /catalog/products/46608983 (SKU: LB-1010 | Nome: Relógio LB Tonino Spyder) -> Payload validado (1948 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 138/259] PUT /catalog/products/46608984 (SKU: LB-1000 | Nome: Relógio LB Tonino Spyder) -> Payload validado (1950 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 139/259] PUT /catalog/products/46608985 (SKU: JB-2030 | Nome: Relógio JB Cassino) -> Payload validado (1826 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 140/259] PUT /catalog/products/46608986 (SKU: JB-2010 | Nome: Relógio JB Cassino) -> Payload validado (1920 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 141/259] PUT /catalog/products/46608987 (SKU: JB-2020 | Nome: Relógio JB Cassino) -> Payload validado (1932 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 142/259] PUT /catalog/products/46608988 (SKU: JB-2040 | Nome: Relógio JB Cassino) -> Payload validado (1924 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 143/259] PUT /catalog/products/46608989 (SKU: HB-2040 | Nome: Relógio HB Big Bang) -> Payload validado (2039 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 144/259] PUT /catalog/products/46608990 (SKU: HB-1050 | Nome: Relógio HB Big Bang) -> Payload validado (2053 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 145/259] PUT /catalog/products/46608991 (SKU: HB-1010 | Nome: Relógio HB Big Bang Preto Aço Inox Couro e Silicone) -> Payload validado (4200 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 146/259] PUT /catalog/products/46608993 (SKU: HB-2020 | Nome: Relógio HB Big Bang) -> Payload validado (2025 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 147/259] PUT /catalog/products/46608994 (SKU: HB-2000 | Nome: Relógio HB Big Bang) -> Payload validado (2027 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 148/259] PUT /catalog/products/46608995 (SKU: HB-2050 | Nome: Relógio HB Big Bang) -> Payload validado (2003 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 149/259] PUT /catalog/products/46608997 (SKU: HB-1060 | Nome: Relógio HB Big Bang) -> Payload validado (2025 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 150/259] PUT /catalog/products/46608998 (SKU: HB-1090 | Nome: Relógio HB Big Bang Branco Aço Inox Cinza) -> Payload validado (4056 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 151/259] PUT /catalog/products/46608999 (SKU: HB-1020 | Nome: Relógio HB Big Bang) -> Payload validado (2095 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 152/259] PUT /catalog/products/46609000 (SKU: HB-1080 | Nome: Relógio HB Big Bang) -> Payload validado (2063 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 153/259] PUT /catalog/products/46609001 (SKU: HB-1030 | Nome: Relógio HB Big Bang) -> Payload validado (2061 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 154/259] PUT /catalog/products/46609002 (SKU: HB-1070 | Nome: Relógio HB Black 1070 Preto) -> Payload validado (3458 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 155/259] PUT /catalog/products/46609003 (SKU: HB-2010 | Nome: Relógio HB Big Bang) -> Payload validado (2037 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 156/259] PUT /catalog/products/46609004 (SKU: HB-1040 | Nome: Relógio HB Big Bang) -> Payload validado (2051 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 157/259] PUT /catalog/products/46609005 (SKU: HM-1000 | Nome: Relógio HM Heure H) -> Payload validado (1880 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 158/259] PUT /catalog/products/46609006 (SKU: HM-1010 | Nome: Relógio HM Heure H) -> Payload validado (1850 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 159/259] PUT /catalog/products/46609007 (SKU: DS-1030 | Nome: Relógio DS 10 Bar) -> Payload validado (1925 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 160/259] PUT /catalog/products/46609008 (SKU: DS-1070 | Nome: Relógio DS 10 Bar) -> Payload validado (2045 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 161/259] PUT /catalog/products/46609009 (SKU: DS-1080 | Nome: Relógio DS 10 Bar) -> Payload validado (2055 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 162/259] PUT /catalog/products/46609010 (SKU: DS-1100 | Nome: Relógio DS 10 Bar) -> Payload validado (2033 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 163/259] PUT /catalog/products/46609011 (SKU: DS-1130 | Nome: Relógio DS 10 Bar) -> Payload validado (2013 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 164/259] PUT /catalog/products/46609012 (SKU: DS-1050 | Nome: Relógio DS 10 Bar) -> Payload validado (2077 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 165/259] PUT /catalog/products/46609014 (SKU: DS-1110 | Nome: Relógio DS 10 Bar) -> Payload validado (2019 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 166/259] PUT /catalog/products/46609015 (SKU: DS-1060 | Nome: Relógio DS 10 Bar) -> Payload validado (2079 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 167/259] PUT /catalog/products/46609016 (SKU: DS-1090 | Nome: Relógio DS 10 Bar) -> Payload validado (2035 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 168/259] PUT /catalog/products/46609017 (SKU: DS-1040 | Nome: Relógio DS 10 Bar) -> Payload validado (2037 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 169/259] PUT /catalog/products/46609018 (SKU: DS-1120 | Nome: Relógio DS 10 Bar) -> Payload validado (2017 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 170/259] PUT /catalog/products/46609019 (SKU: DS-1140 | Nome: Relógio DS 10 Bar) -> Payload validado (2085 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 171/259] PUT /catalog/products/46609020 (SKU: DS-1150 | Nome: Relógio DS 10 Bar) -> Payload validado (1987 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 172/259] PUT /catalog/products/46609021 (SKU: DS-1010 | Nome: Relógio DS 10 Bar Robusto Urbano) -> Payload validado (3291 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 173/259] PUT /catalog/products/46609024 (SKU: CT-2020 | Nome: Relógio CT Tank) -> Payload validado (1845 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 174/259] PUT /catalog/products/46609025 (SKU: CT-2010 | Nome: Relógio CT Tank) -> Payload validado (1827 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 175/259] PUT /catalog/products/46609026 (SKU: CT-1020 | Nome: Relógio CT Panthere) -> Payload validado (1853 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 176/259] PUT /catalog/products/46609027 (SKU: CT-1010 | Nome: Relógio CT Panthere) -> Payload validado (1913 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 177/259] PUT /catalog/products/46609028 (SKU: CT-2030 | Nome: Relógio CT Tank) -> Payload validado (1873 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 178/259] PUT /catalog/products/46609029 (SKU: BV-8020 | Nome: Relógio BV Serpenti Seduttori) -> Payload validado (1945 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 179/259] PUT /catalog/products/46609030 (SKU: BV-8030 | Nome: Relógio BV Serpenti Seduttori) -> Payload validado (1991 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 180/259] PUT /catalog/products/46609031 (SKU: BV-8010 | Nome: Relógio BV Serpenti Seduttori) -> Payload validado (2079 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 181/259] PUT /catalog/products/46609032 (SKU: BV-6020 | Nome: Relógio BV Octo Dourado) -> Payload validado (3469 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 182/259] PUT /catalog/products/46609033 (SKU: BV-6040 | Nome: Relógio BV Octo) -> Payload validado (1891 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 183/259] PUT /catalog/products/46609034 (SKU: BV-6030 | Nome: Relógio BV Octo) -> Payload validado (1855 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 184/259] PUT /catalog/products/46609035 (SKU: BV-6010 | Nome: Relógio BV Octo Design Arquitetônico) -> Payload validado (3534 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 185/259] PUT /catalog/products/46609036 (SKU: BV-1040 | Nome: Relógio BV Aluminium) -> Payload validado (1940 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 186/259] PUT /catalog/products/46609037 (SKU: BV-1010 | Nome: Relógio BV Aluminium) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 187/259] PUT /catalog/products/46609038 (SKU: BV-1020 | Nome: Relógio BV Aluminium) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 188/259] PUT /catalog/products/46609040 (SKU: BV-1060 | Nome: Relógio BV Aluminium) -> Payload validado (2090 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 189/259] PUT /catalog/products/46609041 (SKU: BV-1050 | Nome: Relógio BV Aluminium) -> Payload validado (2124 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 190/259] PUT /catalog/products/46609042 (SKU: BV-1030 | Nome: Relógio BV Aluminium) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 191/259] PUT /catalog/products/46609043 (SKU: BT-6020 | Nome: Relógio BT Endurance Pro) -> Payload validado (2206 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 192/259] PUT /catalog/products/46609045 (SKU: BT-6040 | Nome: Relógio BT Endurance Pro) -> Payload validado (2152 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 193/259] PUT /catalog/products/46609046 (SKU: BT-6010 | Nome: Relógio BT Endurance Pro) -> Payload validado (2164 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 194/259] PUT /catalog/products/46609047 (SKU: BT-6030 | Nome: Relógio BT Endurance Pro) -> Payload validado (2154 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 195/259] PUT /catalog/products/46609048 (SKU: TS-3010 | Nome: Relógio TS Couturier) -> Payload validado (1898 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 196/259] PUT /catalog/products/46609049 (SKU: TG-6070 | Nome: Relógio TG Senna Special Edition) -> Payload validado (2062 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 197/259] PUT /catalog/products/46609050 (SKU: TG-6060 | Nome: Relógio TG Senna Special Edition) -> Payload validado (2078 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 198/259] PUT /catalog/products/46609051 (SKU: TG-6050 | Nome: Relógio TG Senna Special Edition) -> Payload validado (2070 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 199/259] PUT /catalog/products/46609052 (SKU: TG-9030 | Nome: Relógio TG Mercedes-Benz SLS) -> Payload validado (2034 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 200/259] PUT /catalog/products/46609053 (SKU: TG-9020 | Nome: Relógio TG Mercedes-Benz SLS) -> Payload validado (2016 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 201/259] PUT /catalog/products/46609054 (SKU: TG-9010 | Nome: Relógio TG Mercedes-Benz SLS) -> Payload validado (2018 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 202/259] PUT /catalog/products/46609055 (SKU: TG-2220 | Nome: Relógio TG Carrera CR7) -> Payload validado (1952 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 203/259] PUT /catalog/products/46609056 (SKU: TG-1010 | Nome: Relógio TG Indy 500 Special Edition) -> Payload validado (2023 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 204/259] PUT /catalog/products/46609057 (SKU: RX-6130 | Nome: Relógio RX GMT-Master II) -> Payload validado (1886 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 205/259] PUT /catalog/products/46609058 (SKU: RX-6110 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1930 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 206/259] PUT /catalog/products/46609059 (SKU: RX-6120 | Nome: Relógio RX Oyster Land-Dweller) -> Payload validado (1944 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 207/259] PUT /catalog/products/46609060 (SKU: PP-4010 | Nome: Relógio PP Cubitus) -> Payload validado (1866 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 208/259] PUT /catalog/products/46609062 (SKU: PP-4030 | Nome: Relógio PP Cubitus) -> Payload validado (1868 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 209/259] PUT /catalog/products/46609063 (SKU: PP-4020 | Nome: Relógio PP Cubitus) -> Payload validado (1846 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 210/259] PUT /catalog/products/46609064 (SKU: OG-1010 | Nome: Relógio OG Seamaster) -> Payload validado (1898 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 211/259] PUT /catalog/products/46609065 (SKU: OG-1020 | Nome: Relógio OG Seamaster) -> Payload validado (1874 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 212/259] PUT /catalog/products/46609066 (SKU: OG-3030 | Nome: Relógio OG Snoopy) -> Payload validado (1959 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 213/259] PUT /catalog/products/46609067 (SKU: HB-2060 | Nome: Relógio HB Big Bang) -> Payload validado (1949 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 214/259] PUT /catalog/products/46609069 (SKU: DS-2010 | Nome: Relógio DS Grand Daddy Limited Edition) -> Payload validado (2102 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 215/259] PUT /catalog/products/46609070 (SKU: DS-2020 | Nome: Relógio DS Grand Daddy Limited Edition) -> Payload validado (2030 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 216/259] PUT /catalog/products/46609071 (SKU: CS-1030 | Nome: Relógio CS Vintage) -> Payload validado (1902 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 217/259] PUT /catalog/products/46609072 (SKU: CS-1040 | Nome: Relógio CS Vintage) -> Payload validado (1926 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 218/259] PUT /catalog/products/46609073 (SKU: CS-1020 | Nome: Relógio CS Vintage) -> Payload validado (1876 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 219/259] PUT /catalog/products/46609074 (SKU: CS-1010 | Nome: Relógio CS Vintage) -> Payload validado (1904 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 220/259] PUT /catalog/products/46609075 (SKU: BT-1030 | Nome: Relógio BT Navitime) -> Payload validado (1921 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 221/259] PUT /catalog/products/46609076 (SKU: BT-1020 | Nome: Relógio BT Navitime) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 222/259] PUT /catalog/products/46609077 (SKU: BT-1010 | Nome: Relógio BT Navitime) -> Payload validado (1887 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 223/259] PUT /catalog/products/46609078 (SKU: AP-1020 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1883 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 224/259] PUT /catalog/products/46609079 (SKU: AP-1010 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1929 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 225/259] PUT /catalog/products/46609080 (SKU: AP-1070 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 226/259] PUT /catalog/products/46609081 (SKU: AP-1050 | Nome: Relógio AP Royal Oak Chronograph) -> Payload validado (3028 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 227/259] PUT /catalog/products/46609082 (SKU: AP-1030 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1881 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 228/259] PUT /catalog/products/46609083 (SKU: AP-1060 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 229/259] PUT /catalog/products/46609084 (SKU: AP-1040 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1913 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 230/259] PUT /catalog/products/46609085 (SKU: AP-1080 | Nome: Relógio AP Royal Oak Chrono) -> Payload validado (1889 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 231/259] PUT /catalog/products/46609086 (SKU: AX-1010 | Nome: Relógio AX Outerbanks) -> Payload validado (1931 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 232/259] PUT /catalog/products/46609087 (SKU: AX-1020 | Nome: Relógio AX Outerbanks) -> Payload validado (1939 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 233/259] PUT /catalog/products/46757765 (SKU: BV-6050 | Nome: Relógio BV Octo) -> Payload validado (2165 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 234/259] PUT /catalog/products/46757766 (SKU: BV-6060 | Nome: Relógio BV Octo) -> Payload validado (2163 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 235/259] PUT /catalog/products/46757767 (SKU: BV-6070 | Nome: Relógio BV Octo) -> Payload validado (2175 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 236/259] PUT /catalog/products/46757768 (SKU: CT-3000 | Nome: Relógio CT Santos Skeleton) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 237/259] PUT /catalog/products/46757769 (SKU: CT-3010 | Nome: Relógio CT Santos Skeleton) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 238/259] PUT /catalog/products/46757771 (SKU: CT-3020 | Nome: Relógio CT Santos Skeleton) -> Payload validado (2112 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 239/259] PUT /catalog/products/46757772 (SKU: CT-3030 | Nome: Relógio CT Santos Skeleton) -> Payload validado (2106 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 240/259] PUT /catalog/products/46757773 (SKU: GC-1000 | Nome: Relógio GC Timeless) -> Payload validado (2031 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 241/259] PUT /catalog/products/46757774 (SKU: GC-1010 | Nome: Relógio GC Timeless) -> Payload validado (2013 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 242/259] PUT /catalog/products/46757775 (SKU: GC-1020 | Nome: Relógio GC Timeless) -> Payload validado (2029 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 243/259] PUT /catalog/products/46757776 (SKU: GC-1030 | Nome: Relógio GC Timeless) -> Payload validado (2031 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 244/259] PUT /catalog/products/46757778 (SKU: GC-1040 | Nome: Relógio GC Timeless) -> Payload validado (2023 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 245/259] PUT /catalog/products/46757779 (SKU: GC-1050 | Nome: Relógio GC Timeless) -> Payload validado (2023 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 246/259] PUT /catalog/products/46757780 (SKU: OG-3050 | Nome: Relógio OG Snoopy Branco Azul) -> Payload validado (4186 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 247/259] PUT /catalog/products/46757781 (SKU: OG-4010 | Nome: Relógio OG Snoopy Branco Aço Inoxidável) -> Payload validado (3990 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 248/259] PUT /catalog/products/46757782 (SKU: TH-1040 | Nome: Relógio TH Tyson Azul Aço Inoxidável) -> Payload validado (3519 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 249/259] PUT /catalog/products/46757783 (SKU: TH-1030 | Nome: Relógio TH Tyson Preto Aço Inoxidável) -> Payload validado (3816 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 250/259] PUT /catalog/products/46757784 (SKU: PN-2000 | Nome: Relógio PN Officine Preto Silicone) -> Payload validado (4467 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 251/259] PUT /catalog/products/46757785 (SKU: RX-3000 | Nome: Relógio RX Sky-Dweller Dourado Mostrador Prata) -> Payload validado (3901 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 252/259] PUT /catalog/products/46757786 (SKU: RX-3010 | Nome: Relógio RX Sky-Dweller Prata Silicone Branco) -> Payload validado (4211 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 253/259] PUT /catalog/products/46757787 (SKU: RX-3020 | Nome: Relógio RX Sky-Dweller) -> Payload validado (2116 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 254/259] PUT /catalog/products/46757788 (SKU: RX-3030 | Nome: Relógio RX Sky-Dweller) -> Payload validado (2110 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 255/259] PUT /catalog/products/46757789 (SKU: RX-3040 | Nome: Relógio RX Sky-Dweller Dourado Mostrador Preto) -> Payload validado (4101 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 256/259] PUT /catalog/products/46847806 (SKU: PR-OG-1010 | Nome: Relógio PR-OG-1010) -> Payload validado (2496 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 257/259] PUT /catalog/products/46847809 (SKU: PR-RX-1010 | Nome: Relógio PR-RX-1010) -> Payload validado (2630 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 258/259] PUT /catalog/products/46847811 (SKU: PR-RX-1020 | Nome: Relógio PR-RX-1020) -> Payload validado (2530 bytes).
-2026-11-28 17:52:53 | INFO     | [DRY-RUN 259/259] PUT /catalog/products/46847812 (SKU: PR-RX-1030 | Nome: Relógio PR-RX-1030) -> Payload validado (2542 bytes).
-2026-11-28 17:52:53 | INFO     | Resumo do envio: candidatos=259 | atualizados=0 | falhas=0 | dry_run=True
+2026-11-28 17:54:09 | INFO     | Buscando página 1 de produtos (limit=50)...
+2026-11-28 17:54:12 | INFO     | Página 1/6 carregada (50/290 produtos acumulados).
+2026-11-28 17:54:12 | INFO     | Buscando página 2 de produtos (limit=50)...
+2026-11-28 17:54:14 | INFO     | Página 2/6 carregada (100/290 produtos acumulados).
+2026-11-28 17:54:14 | INFO     | Buscando página 3 de produtos (limit=50)...
+2026-11-28 17:54:15 | INFO     | Página 3/6 carregada (150/290 produtos acumulados).
+2026-11-28 17:54:15 | INFO     | Buscando página 4 de produtos (limit=50)...
+2026-11-28 17:54:19 | INFO     | Página 4/6 carregada (200/290 produtos acumulados).
+2026-11-28 17:54:19 | INFO     | Buscando página 5 de produtos (limit=50)...
+2026-11-28 17:54:20 | INFO     | Página 5/6 carregada (250/290 produtos acumulados).
+2026-11-28 17:54:20 | INFO     | Buscando página 6 de produtos (limit=50)...
+2026-11-28 17:54:22 | INFO     | Página 6/6 carregada (290/290 produtos acumulados).
+2026-11-28 17:54:22 | INFO     | Catálogo salvo com sucesso em 'data/staging/yampi_catalog_staging.json' (290 produtos).
+2026-11-28 17:54:22 | INFO     | [MASK #1] ID 46608816 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #2] ID 46608817 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #3] ID 46608818 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #4] ID 46608819 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #5] ID 46608820 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #6] ID 46608821 | Relógio Hublot Orlinski -> Relógio HB Orlinski
+2026-11-28 17:54:22 | INFO     | [MASK #7] ID 46608822 | Relógio Armani Exchange Classic -> Relógio AX Classic
+2026-11-28 17:54:22 | INFO     | [MASK #8] ID 46608823 | Relógio Armani Exchange Classic -> Relógio AX Classic
+2026-11-28 17:54:22 | INFO     | [MASK #9] ID 46608824 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #10] ID 46608826 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #11] ID 46608832 | Relógio Tommy Hilfiger Tyson Grafite Aço Inoxidável -> Relógio TH Tyson Grafite Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #12] ID 46608833 | Relógio Tommy Hilfiger Tyson Preto Aço Inoxidável -> Relógio TH Tyson Preto Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #13] ID 46608834 | Relógio Tommy Hilfiger Tyson Prata Aço Inoxidável -> Relógio TH Tyson Prata Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #14] ID 46608835 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #15] ID 46608836 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #16] ID 46608837 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #17] ID 46608838 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #18] ID 46608839 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #19] ID 46608840 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #20] ID 46608841 | Relógio Breitling Superocean -> Relógio BT Superocean
+2026-11-28 17:54:22 | INFO     | [MASK #21] ID 46608842 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #22] ID 46608843 | Relógio Tissot PRX Mostrador Preto Pulseira Silicone -> Relógio TS PRX Mostrador Preto Pulseira Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #23] ID 46608844 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #24] ID 46608845 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
+2026-11-28 17:54:22 | INFO     | [MASK #25] ID 46608846 | Relógio Tissot T-Sport -> Relógio TS T-Sport
+2026-11-28 17:54:22 | INFO     | [MASK #26] ID 46608847 | Relógio Tissot PRX All Black Aço e Silicone -> Relógio TS PRX All Black Aço e Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #27] ID 46608848 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #28] ID 46608849 | Relógio Tissot T-Sport -> Relógio TS T-Sport
+2026-11-28 17:54:22 | INFO     | [MASK #29] ID 46608850 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #30] ID 46608851 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #31] ID 46608852 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
+2026-11-28 17:54:22 | INFO     | [MASK #32] ID 46608854 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #33] ID 46608855 | Relógio Tissot T-Sport -> Relógio TS T-Sport
+2026-11-28 17:54:22 | INFO     | [MASK #34] ID 46608856 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #35] ID 46608857 | Relógio Tissot 1853 Chrono XL Classic -> Relógio TS 1853 Chrono XL Classic
+2026-11-28 17:54:22 | INFO     | [MASK #36] ID 46608858 | Relógio Tissot T-Sport -> Relógio TS T-Sport
+2026-11-28 17:54:22 | INFO     | [MASK #37] ID 46608859 | Relógio Tissot PRX -> Relógio TS PRX
+2026-11-28 17:54:22 | INFO     | [MASK #38] ID 46608860 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #39] ID 46608861 | Relógio Tag Carrera GMT Preto Silicone -> Relógio TG Carrera GMT Preto Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #40] ID 46608862 | Relógio Tag Aquaracer Calibre 16 -> Relógio TG Aquaracer Calibre 16
+2026-11-28 17:54:22 | INFO     | [MASK #41] ID 46608863 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #42] ID 46608864 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #43] ID 46608865 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #44] ID 46608866 | Relógio Tag Porsche Azul Aço Inox Silicone -> Relógio TG Porsche Azul Aço Inox Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #45] ID 46608867 | Relógio Tag Mercedes Benz calibre 16 -> Relógio TG Mercedes Benz calibre 16
+2026-11-28 17:54:22 | INFO     | [MASK #46] ID 46608868 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #47] ID 46608869 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #48] ID 46608870 | Relógio Tag Carrera Quartz Preto Silicone -> Relógio TG Carrera Quartz Preto Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #49] ID 46608871 | Relógio Tag Ayrton Senna F1 -> Relógio TG Ayrton Senna F1
+2026-11-28 17:54:22 | INFO     | [MASK #50] ID 46608872 | Relógio Tag Carrera Quartz Prata Silicone Cinza -> Relógio TG Carrera Quartz Prata Silicone Cinza
+2026-11-28 17:54:22 | INFO     | [MASK #51] ID 46608873 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #52] ID 46608874 | Relógio Tag Carrera Extreme Sport GMT Preto Silicone Cinza -> Relógio TG Carrera Extreme Sport GMT Preto Silicone Cinza
+2026-11-28 17:54:22 | INFO     | [MASK #53] ID 46608875 | Relógio Tag Carrera Eiffel Tower Edition -> Relógio TG Carrera Eiffel Tower Edition
+2026-11-28 17:54:22 | INFO     | [MASK #54] ID 46608877 | Relógio TAG Heuer Porsche Special Edition -> Relógio TG Porsche Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #55] ID 46608879 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #56] ID 46608880 | Relógio Tag Aquaracer -> Relógio TG Aquaracer
+2026-11-28 17:54:22 | INFO     | [MASK #57] ID 46608881 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #58] ID 46608882 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
+2026-11-28 17:54:22 | INFO     | [MASK #59] ID 46608883 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #60] ID 46608884 | Relógio Tag Mercedes Benz calibre 16 -> Relógio TG Mercedes Benz calibre 16
+2026-11-28 17:54:22 | INFO     | [MASK #61] ID 46608885 | Relógio Tag Monaco Gulf -> Relógio TG Monaco Gulf
+2026-11-28 17:54:22 | INFO     | [MASK #62] ID 46608886 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #63] ID 46608887 | Relógio Tag Monaco Gulf -> Relógio TG Monaco Gulf
+2026-11-28 17:54:22 | INFO     | [MASK #64] ID 46608888 | Relógio Tag Formula 1 Racing -> Relógio TG Formula 1 Racing
+2026-11-28 17:54:22 | INFO     | [MASK #65] ID 46608889 | Relógio Tag Carrera Extreme Sport GMT -> Relógio TG Carrera Extreme Sport GMT
+2026-11-28 17:54:22 | INFO     | [MASK #66] ID 46608890 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #67] ID 46608891 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
+2026-11-28 17:54:22 | INFO     | [MASK #68] ID 46608892 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #69] ID 46608893 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #70] ID 46608894 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #71] ID 46608895 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
+2026-11-28 17:54:22 | INFO     | [MASK #72] ID 46608896 | Relógio Tag Formula 1 Chronograph Edição Especial -> Relógio TG Formula 1 Chronograph Edição Especial
+2026-11-28 17:54:22 | INFO     | [MASK #73] ID 46608897 | Relógio Tag Carrera Eiffel Tower Edition -> Relógio TG Carrera Eiffel Tower Edition
+2026-11-28 17:54:22 | INFO     | [MASK #74] ID 46608898 | Relógio Tag Formula 1 -> Relógio TG Formula 1
+2026-11-28 17:54:22 | INFO     | [MASK #75] ID 46608899 | Relógio Tag Formula 1 Chronograph Edição Especial -> Relógio TG Formula 1 Chronograph Edição Especial
+2026-11-28 17:54:22 | INFO     | [MASK #76] ID 46608900 | Relógio Tag Formula 1 -> Relógio TG Formula 1
+2026-11-28 17:54:22 | INFO     | [MASK #77] ID 46608901 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #78] ID 46608902 | Relógio Tag Aquaracer Calibre 16 -> Relógio TG Aquaracer Calibre 16
+2026-11-28 17:54:22 | INFO     | [MASK #79] ID 46608904 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
+2026-11-28 17:54:22 | INFO     | [MASK #80] ID 46608905 | Relógio Tag Formula 1 Chronograph -> Relógio TG Formula 1 Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #81] ID 46608906 | Relógio Tag Carrera Chronograph -> Relógio TG Carrera Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #82] ID 46608907 | Relógio Tag Formula 1 Chronograph x Senna Special Edition -> Relógio TG Formula 1 Chronograph x Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #83] ID 46608908 | Relógio Tag Carrera Quartz -> Relógio TG Carrera Quartz
+2026-11-28 17:54:22 | INFO     | [MASK #84] ID 46608909 | Relógio Tag Carrera Quartz Preto Silicone -> Relógio TG Carrera Quartz Preto Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #85] ID 46608910 | Relógio Tag Carrera Quartz Prata Aço Dourado Silicone Preto -> Relógio TG Carrera Quartz Prata Aço Dourado Silicone Preto
+2026-11-28 17:54:22 | INFO     | [MASK #86] ID 46608911 | Relógio Tag Carrera Quartz -> Relógio TG Carrera Quartz
+2026-11-28 17:54:22 | INFO     | [MASK #87] ID 46608912 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #88] ID 46608913 | Relógio Tag Formula 1 -> Relógio TG Formula 1
+2026-11-28 17:54:22 | INFO     | [MASK #89] ID 46608914 | Relógio Tag Carrera Day-Date -> Relógio TG Carrera Day-Date
+2026-11-28 17:54:22 | INFO     | [MASK #90] ID 46608915 | Relógio Tag Oracle Red Bull Racing -> Relógio TG Oracle Red Bull Racing
+2026-11-28 17:54:22 | INFO     | [MASK #91] ID 46608916 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #92] ID 46608917 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #93] ID 46608918 | Relógio Rolex Oyster GMT-Master II Submariner -> Relógio RX Oyster GMT-Master II Submariner
+2026-11-28 17:54:22 | INFO     | [MASK #94] ID 46608920 | Relógio Rolex Oyster GMT-Master II Submariner Yacht-Master -> Relógio RX Oyster GMT-Master II Submariner Yacht-Master
+2026-11-28 17:54:22 | INFO     | [MASK #95] ID 46608921 | Relógio Rolex Daytona -> Relógio RX Daytona
+2026-11-28 17:54:22 | INFO     | [MASK #96] ID 46608922 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #97] ID 46608923 | Relógio Rolex Oyster GMT-Master II Submariner Batman -> Relógio RX Oyster GMT-Master II Submariner Batman
+2026-11-28 17:54:22 | INFO     | [MASK #98] ID 46608924 | Relógio Rolex Perpetual 1908 -> Relógio RX Perpetual 1908
+2026-11-28 17:54:22 | INFO     | [MASK #99] ID 46608925 | Relógio Rolex Daytona -> Relógio RX Daytona
+2026-11-28 17:54:22 | INFO     | [MASK #100] ID 46608926 | Relógio Rolex Oyster GMT-Master II Submariner Sprite -> Relógio RX Oyster GMT-Master II Submariner Sprite
+2026-11-28 17:54:22 | INFO     | [MASK #101] ID 46608927 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #102] ID 46608928 | Relógio Rolex Perpetual 1908 -> Relógio RX Perpetual 1908
+2026-11-28 17:54:22 | INFO     | [MASK #103] ID 46608929 | Relógio Rolex Oyster Datejust -> Relógio RX Oyster Datejust
+2026-11-28 17:54:22 | INFO     | [MASK #104] ID 46608931 | Relógio Rolex Daytona -> Relógio RX Daytona
+2026-11-28 17:54:22 | INFO     | [MASK #105] ID 46608933 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #106] ID 46608947 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
+2026-11-28 17:54:22 | INFO     | [MASK #107] ID 46608949 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
+2026-11-28 17:54:22 | INFO     | [MASK #108] ID 46608950 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
+2026-11-28 17:54:22 | INFO     | [MASK #109] ID 46608951 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
+2026-11-28 17:54:22 | INFO     | [MASK #110] ID 46608952 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
+2026-11-28 17:54:22 | INFO     | [MASK #111] ID 46608953 | Relógio Patek Philippe Nautilus -> Relógio PP Nautilus
+2026-11-28 17:54:22 | INFO     | [MASK #112] ID 46608954 | Relógio Patek Philippe Gran -> Relógio PP Gran
+2026-11-28 17:54:22 | INFO     | [MASK #113] ID 46608955 | Relógio Patek Philippe Gran -> Relógio PP Gran
+2026-11-28 17:54:22 | INFO     | [MASK #114] ID 46608956 | Relógio Patek Philippe Aquanaut -> Relógio PP Aquanaut
+2026-11-28 17:54:22 | INFO     | [MASK #115] ID 46608957 | Relógio Panerai Luminor Luna Rosa Grafite Lona e Couro -> Relógio PN Luminor Luna Rosa Grafite Lona e Couro
+2026-11-28 17:54:22 | INFO     | [MASK #116] ID 46608959 | Relógio Panerai Luminor Luna Rosa Grafite Aço Inox -> Relógio PN Luminor Luna Rosa Grafite Aço Inox
+2026-11-28 17:54:22 | INFO     | [MASK #117] ID 46608960 | Relógio Omega Swatch -> Relógio OG Swatch
+2026-11-28 17:54:22 | INFO     | [MASK #118] ID 46608961 | Relógio Omega Snoopy -> Relógio OG Snoopy
+2026-11-28 17:54:22 | INFO     | [MASK #119] ID 46608962 | Relógio Omega Snoopy -> Relógio OG Snoopy
+2026-11-28 17:54:22 | INFO     | [MASK #120] ID 46608963 | Relógio Omega Snoopy -> Relógio OG Snoopy
+2026-11-28 17:54:22 | INFO     | [MASK #121] ID 46608964 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
+2026-11-28 17:54:22 | INFO     | [MASK #122] ID 46608965 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
+2026-11-28 17:54:22 | INFO     | [MASK #123] ID 46608966 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
+2026-11-28 17:54:22 | INFO     | [MASK #124] ID 46608967 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
+2026-11-28 17:54:22 | INFO     | [MASK #125] ID 46608969 | Relógio Montblanc Star Legacy Rosé Couro Marrom -> Relógio MB Star Legacy Rosé Couro Marrom
+2026-11-28 17:54:22 | INFO     | [MASK #126] ID 46608971 | Relógio Montblanc Star Legacy Clássico Premium -> Relógio MB Star Legacy Clássico Premium
+2026-11-28 17:54:22 | INFO     | [MASK #127] ID 46608972 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
+2026-11-28 17:54:22 | INFO     | [MASK #128] ID 46608973 | Relógio Montblanc Edition 4810 -> Relógio MB Edition 4810
+2026-11-28 17:54:22 | INFO     | [MASK #129] ID 46608974 | Relógio Montblanc Star Legacy -> Relógio MB Star Legacy
+2026-11-28 17:54:22 | INFO     | [MASK #130] ID 46608975 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
+2026-11-28 17:54:22 | INFO     | [MASK #131] ID 46608976 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
+2026-11-28 17:54:22 | INFO     | [MASK #132] ID 46608977 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
+2026-11-28 17:54:22 | INFO     | [MASK #133] ID 46608978 | Relógio Montblanc 4810 Clássico -> Relógio MB 4810 Clássico
+2026-11-28 17:54:22 | INFO     | [MASK #134] ID 46608980 | Relógio Montblanc Edition 4810 -> Relógio MB Edition 4810
+2026-11-28 17:54:22 | INFO     | [MASK #135] ID 46608981 | Relógio Montblanc Time Walker -> Relógio MB Time Walker
+2026-11-28 17:54:22 | INFO     | [MASK #136] ID 46608982 | Relógio Montblanc Star Legacy Preto Aço Inox Couro -> Relógio MB Star Legacy Preto Aço Inox Couro
+2026-11-28 17:54:22 | INFO     | [MASK #137] ID 46608983 | Relógio Lamborghini Tonino Spyder -> Relógio LB Tonino Spyder
+2026-11-28 17:54:22 | INFO     | [MASK #138] ID 46608984 | Relógio Lamborghini Tonino Spyder -> Relógio LB Tonino Spyder
+2026-11-28 17:54:22 | INFO     | [MASK #139] ID 46608985 | Relógio Jacob Cassino -> Relógio JB Cassino
+2026-11-28 17:54:22 | INFO     | [MASK #140] ID 46608986 | Relógio Jacob Cassino -> Relógio JB Cassino
+2026-11-28 17:54:22 | INFO     | [MASK #141] ID 46608987 | Relógio Jacob Cassino -> Relógio JB Cassino
+2026-11-28 17:54:22 | INFO     | [MASK #142] ID 46608988 | Relógio Jacob Cassino -> Relógio JB Cassino
+2026-11-28 17:54:22 | INFO     | [MASK #143] ID 46608989 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #144] ID 46608990 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #145] ID 46608991 | Relógio Hublot Big Bang Preto Aço Inox Couro e Silicone -> Relógio HB Big Bang Preto Aço Inox Couro e Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #146] ID 46608993 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #147] ID 46608994 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #148] ID 46608995 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #149] ID 46608997 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #150] ID 46608998 | Relógio Hublot Big Bang Branco Aço Inox Cinza -> Relógio HB Big Bang Branco Aço Inox Cinza
+2026-11-28 17:54:22 | INFO     | [MASK #151] ID 46608999 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #152] ID 46609000 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #153] ID 46609001 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #154] ID 46609002 | Relógio Hublot Black 1070 Preto -> Relógio HB Black 1070 Preto
+2026-11-28 17:54:22 | INFO     | [MASK #155] ID 46609003 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #156] ID 46609004 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #157] ID 46609005 | Relógio Hermes Heure H -> Relógio HM Heure H
+2026-11-28 17:54:22 | INFO     | [MASK #158] ID 46609006 | Relógio Hermes Heure H -> Relógio HM Heure H
+2026-11-28 17:54:22 | INFO     | [MASK #159] ID 46609007 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #160] ID 46609008 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #161] ID 46609009 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #162] ID 46609010 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #163] ID 46609011 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #164] ID 46609012 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #165] ID 46609014 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #166] ID 46609015 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #167] ID 46609016 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #168] ID 46609017 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #169] ID 46609018 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #170] ID 46609019 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #171] ID 46609020 | Relógio Diesel 10 Bar -> Relógio DS 10 Bar
+2026-11-28 17:54:22 | INFO     | [MASK #172] ID 46609021 | Relógio Diesel 10 Bar Robusto Urbano -> Relógio DS 10 Bar Robusto Urbano
+2026-11-28 17:54:22 | INFO     | [MASK #173] ID 46609024 | Relógio Cartier Tank -> Relógio CT Tank
+2026-11-28 17:54:22 | INFO     | [MASK #174] ID 46609025 | Relógio Cartier Tank -> Relógio CT Tank
+2026-11-28 17:54:22 | INFO     | [MASK #175] ID 46609026 | Relógio Cartier Panthere -> Relógio CT Panthere
+2026-11-28 17:54:22 | INFO     | [MASK #176] ID 46609027 | Relógio Cartier Panthere -> Relógio CT Panthere
+2026-11-28 17:54:22 | INFO     | [MASK #177] ID 46609028 | Relógio Cartier Tank -> Relógio CT Tank
+2026-11-28 17:54:22 | INFO     | [MASK #178] ID 46609029 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
+2026-11-28 17:54:22 | INFO     | [MASK #179] ID 46609030 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
+2026-11-28 17:54:22 | INFO     | [MASK #180] ID 46609031 | Relógio Bvlgari Serpenti Seduttori -> Relógio BV Serpenti Seduttori
+2026-11-28 17:54:22 | INFO     | [MASK #181] ID 46609032 | Relógio Bvlgari Octo Dourado -> Relógio BV Octo Dourado
+2026-11-28 17:54:22 | INFO     | [MASK #182] ID 46609033 | Relógio Bvlgari Octo -> Relógio BV Octo
+2026-11-28 17:54:22 | INFO     | [MASK #183] ID 46609034 | Relógio Bvlgari Octo -> Relógio BV Octo
+2026-11-28 17:54:22 | INFO     | [MASK #184] ID 46609035 | Relógio Bvlgari Octo Design Arquitetônico -> Relógio BV Octo Design Arquitetônico
+2026-11-28 17:54:22 | INFO     | [MASK #185] ID 46609036 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #186] ID 46609037 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #187] ID 46609038 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #188] ID 46609040 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #189] ID 46609041 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #190] ID 46609042 | Relógio Bvlgari Aluminium -> Relógio BV Aluminium
+2026-11-28 17:54:22 | INFO     | [MASK #191] ID 46609043 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
+2026-11-28 17:54:22 | INFO     | [MASK #192] ID 46609045 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
+2026-11-28 17:54:22 | INFO     | [MASK #193] ID 46609046 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
+2026-11-28 17:54:22 | INFO     | [MASK #194] ID 46609047 | Relógio Breitling Endurance Pro -> Relógio BT Endurance Pro
+2026-11-28 17:54:22 | INFO     | [MASK #195] ID 46609048 | Relógio Tissot Couturier -> Relógio TS Couturier
+2026-11-28 17:54:22 | INFO     | [MASK #196] ID 46609049 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #197] ID 46609050 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #198] ID 46609051 | Relógio Tag Senna Special Edition -> Relógio TG Senna Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #199] ID 46609052 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
+2026-11-28 17:54:22 | INFO     | [MASK #200] ID 46609053 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
+2026-11-28 17:54:22 | INFO     | [MASK #201] ID 46609054 | Relógio Tag Mercedes-Benz SLS -> Relógio TG Mercedes-Benz SLS
+2026-11-28 17:54:22 | INFO     | [MASK #202] ID 46609055 | Relógio Tag Carrera CR7 -> Relógio TG Carrera CR7
+2026-11-28 17:54:22 | INFO     | [MASK #203] ID 46609056 | Relógio Tag Indy 500 Special Edition -> Relógio TG Indy 500 Special Edition
+2026-11-28 17:54:22 | INFO     | [MASK #204] ID 46609057 | Relógio Rolex GMT-Master II -> Relógio RX GMT-Master II
+2026-11-28 17:54:22 | INFO     | [MASK #205] ID 46609058 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #206] ID 46609059 | Relógio Rolex Oyster Land-Dweller -> Relógio RX Oyster Land-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #207] ID 46609060 | Relógio Patek Cubitus -> Relógio PP Cubitus
+2026-11-28 17:54:22 | INFO     | [MASK #208] ID 46609062 | Relógio Patek Cubitus -> Relógio PP Cubitus
+2026-11-28 17:54:22 | INFO     | [MASK #209] ID 46609063 | Relógio Patek Cubitus -> Relógio PP Cubitus
+2026-11-28 17:54:22 | INFO     | [MASK #210] ID 46609064 | Relógio Omega Seamaster -> Relógio OG Seamaster
+2026-11-28 17:54:22 | INFO     | [MASK #211] ID 46609065 | Relógio Omega Seamaster -> Relógio OG Seamaster
+2026-11-28 17:54:22 | INFO     | [MASK #212] ID 46609066 | Relógio Omega Snoopy -> Relógio OG Snoopy
+2026-11-28 17:54:22 | INFO     | [MASK #213] ID 46609067 | Relógio Hublot Big Bang -> Relógio HB Big Bang
+2026-11-28 17:54:22 | INFO     | [MASK #214] ID 46609069 | Relógio Diesel Grand Daddy Limited Edition -> Relógio DS Grand Daddy Limited Edition
+2026-11-28 17:54:22 | INFO     | [MASK #215] ID 46609070 | Relógio Diesel Grand Daddy Limited Edition -> Relógio DS Grand Daddy Limited Edition
+2026-11-28 17:54:22 | INFO     | [MASK #216] ID 46609071 | Relógio Casio Vintage -> Relógio CS Vintage
+2026-11-28 17:54:22 | INFO     | [MASK #217] ID 46609072 | Relógio Casio Vintage -> Relógio CS Vintage
+2026-11-28 17:54:22 | INFO     | [MASK #218] ID 46609073 | Relógio Casio Vintage -> Relógio CS Vintage
+2026-11-28 17:54:22 | INFO     | [MASK #219] ID 46609074 | Relógio Casio Vintage -> Relógio CS Vintage
+2026-11-28 17:54:22 | INFO     | [MASK #220] ID 46609075 | Relógio Breitling Navitime -> Relógio BT Navitime
+2026-11-28 17:54:22 | INFO     | [MASK #221] ID 46609076 | Relógio Breitling Navitime -> Relógio BT Navitime
+2026-11-28 17:54:22 | INFO     | [MASK #222] ID 46609077 | Relógio Breitling Navitime -> Relógio BT Navitime
+2026-11-28 17:54:22 | INFO     | [MASK #223] ID 46609078 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #224] ID 46609079 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #225] ID 46609080 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #226] ID 46609081 | Relógio Audemars Piguet Royal Oak Chronograph -> Relógio AP Royal Oak Chronograph
+2026-11-28 17:54:22 | INFO     | [MASK #227] ID 46609082 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #228] ID 46609083 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #229] ID 46609084 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #230] ID 46609085 | Relógio Audemars Piguet Royal Oak Chrono -> Relógio AP Royal Oak Chrono
+2026-11-28 17:54:22 | INFO     | [MASK #231] ID 46609086 | Relógio Armani Exchange Outerbanks -> Relógio AX Outerbanks
+2026-11-28 17:54:22 | INFO     | [MASK #232] ID 46609087 | Relógio Armani Exchange Outerbanks -> Relógio AX Outerbanks
+2026-11-28 17:54:22 | INFO     | [MASK #233] ID 46757765 | Relógio Bvlgari Octo -> Relógio BV Octo
+2026-11-28 17:54:22 | INFO     | [MASK #234] ID 46757766 | Relógio Bvlgari Octo -> Relógio BV Octo
+2026-11-28 17:54:22 | INFO     | [MASK #235] ID 46757767 | Relógio Bvlgari Octo -> Relógio BV Octo
+2026-11-28 17:54:22 | INFO     | [MASK #236] ID 46757768 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
+2026-11-28 17:54:22 | INFO     | [MASK #237] ID 46757769 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
+2026-11-28 17:54:22 | INFO     | [MASK #238] ID 46757771 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
+2026-11-28 17:54:22 | INFO     | [MASK #239] ID 46757772 | Relógio Cartier Santos Skeleton -> Relógio CT Santos Skeleton
+2026-11-28 17:54:22 | INFO     | [MASK #240] ID 46757773 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #241] ID 46757774 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #242] ID 46757775 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #243] ID 46757776 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #244] ID 46757778 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #245] ID 46757779 | Relógio Gucci Timeless -> Relógio GC Timeless
+2026-11-28 17:54:22 | INFO     | [MASK #246] ID 46757780 | Relógio Omega Snoopy Branco Azul -> Relógio OG Snoopy Branco Azul
+2026-11-28 17:54:22 | INFO     | [MASK #247] ID 46757781 | Relógio Omega Snoopy Branco Aço Inoxidável -> Relógio OG Snoopy Branco Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #248] ID 46757782 | Relógio Tommy Hilfiger Tyson Azul Aço Inoxidável -> Relógio TH Tyson Azul Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #249] ID 46757783 | Relógio Tommy Hilfiger Tyson Preto Aço Inoxidável -> Relógio TH Tyson Preto Aço Inoxidável
+2026-11-28 17:54:22 | INFO     | [MASK #250] ID 46757784 | Relógio Panerai Officine Preto Silicone -> Relógio PN Officine Preto Silicone
+2026-11-28 17:54:22 | INFO     | [MASK #251] ID 46757785 | Relógio Rolex Sky-Dweller Dourado Mostrador Prata -> Relógio RX Sky-Dweller Dourado Mostrador Prata
+2026-11-28 17:54:22 | INFO     | [MASK #252] ID 46757786 | Relógio Rolex Sky-Dweller Prata Silicone Branco -> Relógio RX Sky-Dweller Prata Silicone Branco
+2026-11-28 17:54:22 | INFO     | [MASK #253] ID 46757787 | Relógio Rolex Sky-Dweller -> Relógio RX Sky-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #254] ID 46757788 | Relógio Rolex Sky-Dweller -> Relógio RX Sky-Dweller
+2026-11-28 17:54:22 | INFO     | [MASK #255] ID 46757789 | Relógio Rolex Sky-Dweller Dourado Mostrador Preto -> Relógio RX Sky-Dweller Dourado Mostrador Preto
+2026-11-28 17:54:22 | INFO     | [MASK #256] ID 46847806 | Relógio PR-OG-1010 -> Relógio PR-OG-1010
+2026-11-28 17:54:22 | INFO     | [MASK #257] ID 46847809 | Relógio PR-RX-1010 -> Relógio PR-RX-1010
+2026-11-28 17:54:22 | INFO     | [MASK #258] ID 46847811 | Relógio PR-RX-1020 -> Relógio PR-RX-1020
+2026-11-28 17:54:22 | INFO     | [MASK #259] ID 46847812 | Relógio PR-RX-1030 -> Relógio PR-RX-1030
+2026-11-28 17:54:22 | INFO     | Mascaramento de marcas concluído: 259 relógios atualizados.
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847806 | Relógio PR-OG-1010 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847807 | Caixa CX-RX-9000 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847808 | Caixa CX-OG-5000 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847809 | Relógio PR-RX-1010 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847811 | Relógio PR-RX-1020 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | [DROPI CAT] ID 46847812 | Relógio PR-RX-1030 -> Relógios Femininos (ID 8485286)
+2026-11-28 17:54:22 | INFO     | Classificação/ajustes Dropi concluídos: 6 produtos.
