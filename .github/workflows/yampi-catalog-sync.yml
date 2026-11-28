@@ -14,6 +14,8 @@ on:
       - 'ai-enrich-live-*'
       - 'dropi-cats-test-*'
       - 'dropi-cats-live-*'
+      - 'mask-brands-test-*'
+      - 'mask-brands-live-*'
   workflow_dispatch:
     inputs:
       mode:
@@ -34,6 +36,8 @@ on:
           - fashion-brands-live
           - dropi-cats-test
           - dropi-cats-live
+          - mask-brands-test
+          - mask-brands-live
       overwrite:
         description: 'Reescrever descrições/SEO já preenchidos?'
         required: false
@@ -85,8 +89,14 @@ jobs:
           set -o pipefail
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json fetch 2>&1 | tee -a data/logs/last_run.txt
 
+      - name: Ocultar Marcas Originais nos Rel\u00f3gios (Exceto Dropi)
+        if: ${{ startsWith(github.ref, 'refs/tags/mask-brands-') || inputs.mode == 'mask-brands-test' || inputs.mode == 'mask-brands-live' }}
+        run: |
+          set -o pipefail
+          python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json mask-brands 2>&1 | tee -a data/logs/last_run.txt
+
       - name: Criar Categorias e Classificar Produtos Dropi
-        if: ${{ startsWith(github.ref, 'refs/tags/dropi-cats-') || inputs.mode == 'dropi-cats-test' || inputs.mode == 'dropi-cats-live' }}
+        if: ${{ startsWith(github.ref, 'refs/tags/dropi-cats-') || inputs.mode == 'dropi-cats-test' || startsWith(github.ref, 'refs/tags/mask-brands-live-') || inputs.mode == 'dropi-cats-live' || inputs.mode == 'mask-brands-live' }}
         run: |
           set -o pipefail
           EXEC_FLAG=""
@@ -130,7 +140,7 @@ jobs:
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json transform $OVERWRITE_FLAG --store-name "${{ inputs.store_name }}" 2>&1 | tee -a data/logs/last_run.txt
 
       - name: Validar Envio em Lote (Dry-Run Push)
-        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || startsWith(github.ref, 'refs/tags/ai-enrich-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' || startsWith(github.ref, 'refs/tags/dropi-cats-test-') || inputs.mode == 'ai-enrich-test' || inputs.mode == 'dropi-cats-test' }}
+        if: ${{ startsWith(github.ref, 'refs/tags/sync-test-') || startsWith(github.ref, 'refs/tags/basic-rules-test-') || startsWith(github.ref, 'refs/tags/ai-enrich-test-') || inputs.mode == 'dry-run-push' || inputs.mode == 'fetch-and-transform' || inputs.mode == 'basic-rules-test' || startsWith(github.ref, 'refs/tags/dropi-cats-test-') || inputs.mode == 'ai-enrich-test' || startsWith(github.ref, 'refs/tags/mask-brands-test-') || inputs.mode == 'dropi-cats-test' || inputs.mode == 'mask-brands-test' }}
         run: |
           set -o pipefail
           python3 scripts/yampi_batch_updater.py --staging-file data/staging/yampi_catalog_staging.json push 2>&1 | tee -a data/logs/last_run.txt

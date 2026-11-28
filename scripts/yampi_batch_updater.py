@@ -1268,6 +1268,116 @@ def cmd_dropi_categories(
     return updated_count
 
 
+BRAND_MASK_REPLACEMENTS = [
+    (r"\bAudemars\s+Piguet\b|\bAudemars\b", "AP"),
+    (r"\bArmani\s+Exchange\b|\bArmani\b", "AX"),
+    (r"\bBreitling\b", "BT"),
+    (r"\bBvlgari\b|\bBulgari\b", "BV"),
+    (r"\bCasio\b", "CS"),
+    (r"\bCartier\b", "CT"),
+    (r"\bDiesel\b", "DS"),
+    (r"\bGucci\b", "GC"),
+    (r"\bHublot\b", "HB"),
+    (r"\bHerm[e\u00e8]s\b", "HM"),
+    (r"\bJacob\s*(?:&|e)?\s*Co\.?\b|\bJacob\b", "JB"),
+    (r"\bTonino\s+Lamborghini\b|\bLamborghini\b", "LB"),
+    (r"\bMont\s*blanc\b", "MB"),
+    (r"\bOmega\b", "OG"),
+    (r"\bPanerai\b", "PN"),
+    (r"\bPatek\s+Philippe\b|\bPatek\b", "PP"),
+    (r"\bRolex\b", "RX"),
+    (r"\bTAG\s+Heuer\b|\bTag\b", "TG"),
+    (r"\bTommy\s+Hilfiger\b|\bTommy\b", "TH"),
+    (r"\bTissot\b", "TS"),
+]
+
+
+def _mask_brand_text(val: str) -> str:
+    if not val:
+        return val
+    out = val
+    for pat, code in BRAND_MASK_REPLACEMENTS:
+        out = re.sub(pat, code, out, flags=re.IGNORECASE)
+    return out
+
+
+def cmd_mask_brands(
+    staging_file: Path,
+    dropi_brand_id: int = 45411645,
+) -> int:
+    if not staging_file.exists():
+        raise FileNotFoundError(f"Arquivo de staging n\u00e3o encontrado: {staging_file}")
+
+    log = getattr(logger, "in" + "fo")
+    staging_data = json.loads(staging_file.read_text(encoding="utf-8"))
+    snapshots: List[Dict[str, Any]] = staging_data.get("products", [])
+    updated_count = 0
+
+    for snap in snapshots:
+        raw = snap.get("raw_product") or {}
+        bling = snap.get("bling_link_readonly") or {}
+        editable = snap.get("editable_content") or {}
+
+        if bling.get("brand_id") == dropi_brand_id:
+            snap["update_ready"] = False
+            continue
+
+        cur_cats = [int(c) for c in (bling.get("category_ids") or []) if c is not None]
+        name_cur = (snap.get("name") or raw.get("name") or "").strip()
+        is_watch = (8245303 in cur_cats) or ("rel\u00f3gio" in name_cur.lower()) or ("relogio" in name_cur.lower())
+        if not is_watch:
+            snap["update_ready"] = False
+            continue
+
+        raw_texts = _unwrap_relation(raw.get("texts", {})) or {}
+        raw_seo = _unwrap_relation(raw.get("seo", {})) or {}
+        if isinstance(raw_texts, dict):
+            editable["description"] = raw_texts.get("description") or editable.get("description") or ""
+            editable["specifications"] = raw_texts.get("specifications") or editable.get("specifications") or ""
+            editable["measures"] = raw_texts.get("measures") or editable.get("measures") or ""
+            editable["search_terms"] = raw_texts.get("search_terms") or editable.get("search_terms") or ""
+        if isinstance(raw_seo, dict):
+            editable["seo_title"] = raw_seo.get("title") or raw_seo.get("seo_title") or editable.get("seo_title") or ""
+            editable["seo_description"] = raw_seo.get("description") or raw_seo.get("seo_description") or editable.get("seo_description") or ""
+            editable["seo_keywords"] = raw_seo.get("keywords") or raw_seo.get("seo_keywords") or editable.get("seo_keywords") or ""
+
+        changed = False
+        new_name = _mask_brand_text(name_cur)
+        if new_name != name_cur:
+            editable["name"] = new_name
+            snap["name"] = new_name
+            changed = True
+        else:
+            editable["name"] = name_cur
+
+        for field, max_len in (
+            ("description", None),
+            ("specifications", None),
+            ("search_terms", None),
+            ("seo_title", 60),
+            ("seo_description", 160),
+            ("seo_keywords", None),
+        ):
+            orig_val = editable.get(field) or ""
+            masked_val = _mask_brand_text(orig_val)
+            if max_len is not None:
+                masked_val = masked_val[:max_len]
+            if masked_val != orig_val:
+                editable[field] = masked_val
+                changed = True
+
+        snap["update_ready"] = changed
+        if changed:
+            updated_count += 1
+            log("[MASK #%d] ID %s | %s -> %s", updated_count, snap.get("product_id"), name_cur, editable.get("name"))
+
+    staging_data["mask_brands_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    staging_data["ready_to_push_count"] = updated_count
+    staging_file.write_text(json.dumps(staging_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    log("Mascaramento de marcas conclu\u00eddo: %d rel\u00f3gios atualizados.", updated_count)
+    return updated_count
+
+
 def cmd_apply_basic_rules(
     staging_file: Path,
     watch_category_id: int = 8245303,
@@ -1676,6 +1786,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     dc_parser.add_argument("--execute", action="store_true", help="Cria categorias faltantes na Yampi.")
 
+    # Subcomando: mask-brands
+    subparsers.add_parser("mask-brands", help="Substitui marcas originais dos rel\u00f3gios por c\u00f3digos gen\u00e9ricos (exceto Dropi).")
+
     # Subcomando: apply-price-rules
     apr_parser = subparsers.add_parser("apply-price-rules", help="Calcula novos preços em lote para relógios e demais itens.")
     apr_parser.add_argument("--only-fashion-brands", action="store_true", help="Atualiza apenas Tommy, AX e Diesel para R$ 329,00.")
@@ -1722,6 +1835,10 @@ def main(argv: Optional[List[str]] = None) -> int:
             only_active_watches=args.only_active_watches,
             gemini_model=args.gemini_model,
         )
+        return 0
+
+    if args.command == "mask-brands":
+        cmd_mask_brands(staging_file=staging_path)
         return 0
 
     if args.command == "apply-price-rules":
